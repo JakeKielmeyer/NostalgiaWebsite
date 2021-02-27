@@ -1,5 +1,9 @@
 import React from "react";
 import pupper from "../images/HorizontalDashboard.jpg";
+import puzzle from "../images/puzzle-04.png";
+import record from "../images/record-01.png";
+import video from "../images/Video-02.png";
+import camera from "../images/camera-03.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -14,7 +18,6 @@ const styles = {
     paddingLeft: "4rem",
     minHeight: "600px",
     backgroundSize: "cover",
-    BackgroundColor: "#000",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
@@ -41,32 +44,36 @@ const styles = {
   },
 };
 
-const Home = (props) => {
+const About = (props) => {
   const { classes } = props;
   return (
-<div>
-  <div className="welcome" style={{ backgroundColor: "#000" }}>
+  <div className="about" style={{ backgroundColor: "#ffff" }}>
+
     <Grid 
-      container
-      direction="row"
-      justify="space-evenly"
-      alignItems="center"
-    >
-    <Grid item >
-      <Box mt={10}>
-          <Typography variant="h3">Bridge the Gap</Typography>
-         <Box mt={5}>
-            <Typography variant="h4">Reminisce to classic moments, timeless songs, and iconic videos. Use Nostalgia Therapy to easily provide reminiscence therapy to a loved one with Alzheimer's disease.</Typography>
-            </Box>
-        </Box>
-    </Grid>      
-    <Grid item>
-          <img src = {pupper}></img>
+        container
+        direction="row"
+        justify="space-evenly"
+        alignItems="center"
+    >      
+        <Grid item xs={12}>
+            <Typography variant="h3">About Nostalgia</Typography>
+        </Grid>            
+        <Grid item xs={3}>
+            <img src = {camera}></img>
+        </Grid>        
+         <Grid item xs={3}>
+            <img src = {record}></img>
+        </Grid>    
+        <Grid item xs={3}>
+            <img src = {video}></img>
+        </Grid>        
+        <Grid item xs={3}>
+            <img src = {puzzle}></img>
+        </Grid>
     </Grid>
-  </Grid>
- </div>
-</div>
+    
+  </div>
   );
 };
 
-export default withStyles(styles)(Home);
+export default withStyles(styles)(About);

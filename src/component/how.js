@@ -14,7 +14,7 @@ import Grid from "@material-ui/core/Grid";
 const styles = {
 };
 
-const About = (props) => {
+const How = (props) => {
   const { classes } = props;
   return (
     
@@ -26,28 +26,31 @@ const About = (props) => {
         alignItems="center"
     >      
         <Grid item xs={12}>
-            <Typography variant="h3">About Nostalgia</Typography>
+            <Typography variant="h3">How it Works</Typography>
         </Grid>
 
         <Grid item sm={6} lg={3}>
         <Typography variant="h4">Nostalgic Moments</Typography>
             <img src = {camera}></img>
-
+            <Typography variant="h5">Look at all of these cute photos</Typography>
         </Grid>        
+
          <Grid item sm={6} lg={3}>
          <Typography variant="h4">Nostalgia Radio</Typography>
             <img src = {record}></img>
-
+            <Typography variant="h5">Listen to hits of the day</Typography>
         </Grid>    
+
         <Grid item sm={6} lg={3}>
         <Typography variant="h4">Nostalgia TV</Typography>
             <img src = {video}></img>
-
+            <Typography variant="h5">Watch hours of classic tv</Typography>
         </Grid>        
+
         <Grid item sm={6} lg={3}>
         <Typography variant="h4">Puzzle Fun</Typography>
             <img src = {puzzle}></img>
-
+        <Typography variant="h5">Make a moment come to life</Typography>
         </Grid>
     </Grid>
     
@@ -55,4 +58,4 @@ const About = (props) => {
   );
 };
 
-export default withStyles(styles)(About);
+export default withStyles(styles)(How);

@@ -10,6 +10,9 @@ import { MuiThemeProvider } from "@material-ui/core/styles";
 //pages
 import Home from "./pages/home";
 import About from "../src/component/about";
+import Call from "../src/component/cta";
+import Call2 from "../src/component/cta2";
+import How from "../src/component/how"
 
 const theme = createMuiTheme({
   typography: {
@@ -32,6 +35,9 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Call />
+      <How />
+      <Call2 />
       <Footer />
     </div>
     </MuiThemeProvider>

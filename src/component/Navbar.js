@@ -32,37 +32,34 @@ const styles = {
   },
 };
 
-
 function Navbar(props) {
     const { classes } = props;
     return (
       <AppBar position="absolute" className={classes.appBar}>
         <ToolBar className={classes.navContainer}>
-          
+
             <Button color="inherit" className={classes.brandName}>
               Nostalgia Therapy
             </Button>
           
-          
             <Button color="inherit" className={classes.navLink}>
-              Music{" "}
-            </Button>
-          
-          
-            <Button color="inherit" className={classes.navLink}>
-              Video
+              About{""}
             </Button>
           
             <Button color="inherit" className={classes.navLink}>
-              Photos{" "}
+              N/A
             </Button>
           
             <Button color="inherit" className={classes.navLink}>
-              Puzzle
+              Signup{" "}
+            </Button>
+          
+            <Button color="inherit" className={classes.navLink}>
+              Login
             </Button>
     
             <Button color="inherit" className={classes.navLink}>
-              Logout
+              Caregiver Corner
             </Button>
         </ToolBar>
       </AppBar>

@@ -1,11 +1,12 @@
 import React from "react";
-import pupper from "../images/HorizontalDashboard.jpg";
+import iPadDash from "../images/iPadDashboard.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
 
 const styles = {
   welcome: {
@@ -45,23 +46,33 @@ const Home = (props) => {
   const { classes } = props;
   return (
 <div>
-  <div className="welcome" style={{ backgroundColor: "#000" }}>
+  <div className="welcome" style={{ backgroundColor: "#fff" }}>
     <Grid 
       container
       direction="row"
-      justify="space-evenly"
       alignItems="center"
     >
-    <Grid item >
+    <Grid item item sm={6}>
       <Box mt={10}>
-          <Typography variant="h3">Bridge the Gap</Typography>
+          <Typography variant="h3">Reconnect, reminisce, and bring joy back with Cherub</Typography>
          <Box mt={5}>
-            <Typography variant="h4">Reminisce to classic moments, timeless songs, and iconic videos. Use Nostalgia Therapy to easily provide reminiscence therapy to a loved one with Alzheimer's disease.</Typography>
-            </Box>
+            <Typography variant="h4">Built on trusted memory care processes, Cherub
+            creates a personalized and fun experience for families to reconnect to a loved one
+            with Alzheimer's disease.
+            </Typography>
+            <Button
+              variant="contained"
+              style={{ marginTop: "20px", textTransform: "capitalize",}}
+            >
+              Try it!
+            </Button>
+          </Box>
         </Box>
     </Grid>      
-    <Grid item>
-          <img src = {pupper}></img>
+    <Grid item sm={6}>
+          <img src = {iPadDash}
+          style={{ marginLeft: "40px"}}
+          ></img>
     </Grid>
   </Grid>
  </div>

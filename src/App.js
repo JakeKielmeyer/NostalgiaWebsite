@@ -1,4 +1,3 @@
-import Animals from '../src/images/moments/Animals.jpg';
 import Footer from "../src/component/Footer";
 import Navbar from "../src/component/Navbar";
 import './App.css';
@@ -10,9 +9,13 @@ import { MuiThemeProvider } from "@material-ui/core/styles";
 //pages
 import Home from "./pages/home";
 import About from "../src/component/about";
-import Call from "../src/component/cta";
-import Call2 from "../src/component/cta2";
-import How from "../src/component/how"
+import Photos from "../src/component/photos";
+import Music from "../src/component/music";
+import Video from "../src/component/video";
+import Puzzle from "../src/component/puzzle";
+import Science from "../src/component/science";
+// import Call from "../src/component/cta";
+// import Call2 from "../src/component/cta2";
 
 const theme = createMuiTheme({
   typography: {
@@ -35,9 +38,11 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Call />
-      <How />
-      <Call2 />
+      <Photos />
+      <Music />
+      <Video />
+      <Puzzle />
+      <Science />
       <Footer />
     </div>
     </MuiThemeProvider>

@@ -10,7 +10,7 @@
 }
 
 .welcome h3 {
-  color: white;
+  color: #000;
 }
 
 .welcome h4 {
@@ -23,22 +23,41 @@
   margin-top: 2rem;
 }
 
+.welcome button {
+  text-transform: none;
+  font-size: 1.5rem;
+}
+
 .about {
   display: flex;
-  padding: 7% 15%;
-  text-align: center;
+  padding-left: 4rem;
+  padding-right: 5rem;
+  min-height: 600px;
+  /* background-image: url(images/Pupper.jpg); */
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
 
+.about h3 {
+  color: #000;
+}
+
 .about h4 {
-  margin-top: 70px;
+  color: #8f8f8f;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 .about img {
   max-width: 100%;
   max-height: 100%;
+  margin-top: 2rem;
+}
+
+.about button {
+  text-transform: none;
+  font-size: 1.5rem;
 }
 
 .cta {

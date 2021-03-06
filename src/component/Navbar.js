@@ -13,6 +13,7 @@ const styles = {
   },
 
   brandName: {
+    // color: "#DB7093",
     color: "#3fa9f5",
     fontSize: "1.18rem",
     fontFamily: "Leviathan",
@@ -21,7 +22,7 @@ const styles = {
 
   navContainer: {
     display: "flex",
-    color: "white",
+    color: "#000",
     width: "60vw",
     justifyContent: "space-between",
   },
@@ -29,6 +30,7 @@ const styles = {
   navLink: {
     fontFamily: "KOJ",
     fontSize: "1.15rem",
+    textTransform: "capitalize",
   },
 };
 
@@ -39,28 +41,29 @@ function Navbar(props) {
         <ToolBar className={classes.navContainer}>
 
             <Button color="inherit" className={classes.brandName}>
-              Nostalgia Therapy
+              Cherub
             </Button>
           
             <Button color="inherit" className={classes.navLink}>
-              About{""}
+              What is Cherub?{""}
+            </Button>
+                  
+            <Button color="inherit" className={classes.navLink}>
+              How it Works{" "}
             </Button>
           
             <Button color="inherit" className={classes.navLink}>
-              N/A
-            </Button>
-          
-            <Button color="inherit" className={classes.navLink}>
-              Signup{" "}
-            </Button>
-          
-            <Button color="inherit" className={classes.navLink}>
-              Login
+              The Science
             </Button>
     
             <Button color="inherit" className={classes.navLink}>
-              Caregiver Corner
+              Try It!
             </Button>
+
+            <Button color="inherit" className={classes.navLink}>
+              Login
+            </Button>
+
         </ToolBar>
       </AppBar>
     );

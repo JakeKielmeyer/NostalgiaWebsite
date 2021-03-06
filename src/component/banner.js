@@ -1,5 +1,5 @@
 import React from "react";
-import iPadPhotos from "../images/iPadPhotos.png";
+import iPadDash from "../images/iPadDashboard.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -9,7 +9,7 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
 const styles = {
-  photos: {
+  banner: {
     display: "flex",
     paddingLeft: "4rem",
     paddingRight: "5rem",
@@ -42,22 +42,22 @@ const styles = {
     fontSize: "1.5rem",
     fontFamily: "KOW",
   },
+
 };
 
-function Photos(props) {
+function Banner(props) {
   const { classes } = props;
   return (
 <div>
-  <div className={classes.photos}>
+  <div className={classes.banner}>
     <Grid 
       container
       direction="row"
       alignItems="center"
     >
     <Grid item item sm={6}>
-      <Box mt={10} className={classes.head}>
-          <Typography variant="h3">The Power of Photos
-</Typography>
+      <Box mt={10}>
+          <Typography variant="h3" className={classes.head}>Reconnect, reminisce, and bring joy back with Cherub</Typography>
          <Box mt={5}>
             <Typography variant="h4" className={classes.text}>Built on trusted memory care processes, Cherub
             creates a personalized and fun experience for families to reconnect to a loved one
@@ -66,7 +66,7 @@ function Photos(props) {
             <Button
               variant="contained"
               className={classes.cta}
-              style={{ marginTop: "20px"}}
+              style={{ margin: "20px", textTransform: "capitalize"}}
             >
               Try it!
             </Button>
@@ -74,7 +74,7 @@ function Photos(props) {
         </Box>
     </Grid>      
     <Grid item sm={6}>
-          <img src = {iPadPhotos}
+          <img src = {iPadDash}
           className={classes.hero}
           ></img>
     </Grid>
@@ -84,4 +84,4 @@ function Photos(props) {
   );
 };
 
-export default withStyles(styles)(Photos);
+export default withStyles(styles)(Banner);

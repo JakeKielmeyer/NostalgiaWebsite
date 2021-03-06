@@ -9,30 +9,60 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
 const styles = {
+  about: {
+    display: "flex",
+    paddingLeft: "4rem",
+    paddingRight: "5rem",
+    minHeight: "100vh",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundAttachment: "fixed",
+    backgroundColor: "#ffff",
+  },
+  
+   head: {
+    color: "#000",
+  },
+  
+   text: {
+    color: "#8f8f8f",
+  },
+  
+   hero: {
+    maxWidth: "100%",
+    maxHeight: "100%",
+    marginTop: "2rem",
+  },
+  
+   cta: {
+    textTransform: "none",
+    fontSize: "1.5rem",
+    fontFamily: "KOW",
+  },
 };
 
-const About = (props) => {
+function About(props) {
   const { classes } = props;
   return (
     
-  <div className="about" style={{ backgroundColor: "#ffff" }}>
+  <div className={classes.about}>
     <Grid 
       container
       direction="row"
       alignItems="center"
     >
     <Grid item sm={6}>
-        <img src = {Cherub}></img>
+        <img className={classes.hero} src = {Cherub}></img>
     </Grid>
 
     <Grid item item sm={6}>
       <Box mt={10} 
         style={{ marginLeft: "40px"}}
       >
-        <Typography variant="h3">Hi, I’m Cherub</Typography>
+        <Typography variant="h3" className={classes.head}>Hi, I’m Cherub</Typography>
             <Box mt={5}>
             
-            <Typography variant="h4"
+            <Typography variant="h4" className={classes.text}
             >I’m the queen of cuddles, a master of food snatching, and through warm love
             and care I helped make Alzheimer’s a little better for my family.
             <br></br><br></br>
@@ -43,7 +73,8 @@ const About = (props) => {
 
             <Button
               variant="contained"
-              style={{ margin: "20px", textTransform: "capitalize",}}
+              className={classes.cta}
+              style={{ margin: "20px"}}
             >
               Try it!
             </Button>

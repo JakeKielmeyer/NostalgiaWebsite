@@ -13,7 +13,6 @@ const styles = {
   },
 
   brandName: {
-    // color: "#DB7093",
     color: "#3fa9f5",
     fontSize: "1.18rem",
     fontFamily: "Leviathan",
@@ -22,8 +21,8 @@ const styles = {
 
   navContainer: {
     display: "flex",
-    color: "#000",
-    width: "60vw",
+    color: "#fff",
+    width: "75vw",
     justifyContent: "space-between",
   },
 
@@ -41,23 +40,19 @@ function Navbar(props) {
         <ToolBar className={classes.navContainer}>
 
             <Button color="inherit" className={classes.brandName}>
-              Cherub
+              Nostalgia Therapy
             </Button>
           
             <Button color="inherit" className={classes.navLink}>
-              What is Cherub?{""}
+              About{""}
             </Button>
                   
             <Button color="inherit" className={classes.navLink}>
-              How it Works{" "}
-            </Button>
-          
-            <Button color="inherit" className={classes.navLink}>
-              The Science
+              How it Works
             </Button>
     
             <Button color="inherit" className={classes.navLink}>
-              Try It!
+              Try It
             </Button>
 
             <Button color="inherit" className={classes.navLink}>

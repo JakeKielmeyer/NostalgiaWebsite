@@ -9,44 +9,43 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
 const styles = {
-    welcome: {
-      color: "white",
-      display: "flex",
-      paddingLeft: "4rem",
-      minHeight: "600px",
-      backgroundSize: "cover",
-      BackgroundColor: "#000",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
-      backgroundAttachment: "fixed",
-    },
+  science: {
+    display: "flex",
+    paddingLeft: "4rem",
+    paddingRight: "5rem",
+    minHeight: "100vh",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundAttachment: "fixed",
+    backgroundColor: "#000",
+  },
   
-    contents: {
-      color: "white",
-      minHeight: "800px",
-      paddingLeft: "4rem",
-      paddingTop: "3rem",
-      backgroundColor: "rgba(0, 0, 0, 0.9)",
-     
-    },
+   head: {
+    color: "#fff",
+  },
   
-    rows: {
-      paddingBottom: "50px",
-      
-    },
+   text: {
+    color: "#8f8f8f",
+  },
   
-    rowsTitle: {
-      paddingBottom: "40px",
-      justifyContent: "space-around",
-      
-    },
-  };
+   hero: {
+    maxWidth: "100%",
+    maxHeight: "100%",
+    marginTop: "2rem",
+  },
+  
+   cta: {
+    textTransform: "none",
+    fontSize: "1.5rem",
+    fontFamily: "KOW",
+  },
+};
 
-const Science = (props) => {
+function Science(props) {
     const { classes } = props;
     return (
   <div>
-    <div className="about" style={{ backgroundColor: "#fff" }}>
+    <div className={classes.science}>
       <Grid 
         container
         direction="row"
@@ -54,11 +53,15 @@ const Science = (props) => {
       >
       <Grid item item sm={6}>
         <Box mt={10}>
-            <Typography variant="h3">
+            <Typography variant="h3"
+            className={classes.head}
+            >
             The Science Behind Nostalgia Therapy
             </Typography>
            <Box mt={5}>
-              <Typography variant="h4">
+              <Typography variant="h4"
+              className={classes.text}
+              >
               I’m the queen of cuddles, a master of food snatching, and through warm love
             and care I helped make Alzheimer’s a little better for my family.
             <br></br><br></br>
@@ -67,8 +70,9 @@ const Science = (props) => {
             for you to sing along  to and give you puzzles to play to help keep your brain active. 
               </Typography>
               <Button
+              className={classes.cta}
                 variant="contained"
-                style={{ margin: "30px", textTransform: "capitalize",}}
+                style={{ margin: "30px"}}
               >
                 Try it!
               </Button>
@@ -77,6 +81,7 @@ const Science = (props) => {
       </Grid>      
       <Grid item sm={6}>
             <img src = {Brain}
+            className={classes.hero}
             style={{ marginLeft: "40px"}}
             ></img>
       </Grid>

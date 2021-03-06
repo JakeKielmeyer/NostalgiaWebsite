@@ -9,44 +9,43 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
 const styles = {
-    welcome: {
-      color: "white",
-      display: "flex",
-      paddingLeft: "4rem",
-      minHeight: "600px",
-      backgroundSize: "cover",
-      BackgroundColor: "#000",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
-      backgroundAttachment: "fixed",
-    },
+  video: {
+    display: "flex",
+    paddingLeft: "4rem",
+    paddingRight: "5rem",
+    minHeight: "800px",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundAttachment: "fixed",
+    backgroundColor: "#000",
+  },
   
-    contents: {
-      color: "white",
-      minHeight: "800px",
-      paddingLeft: "4rem",
-      paddingTop: "3rem",
-      backgroundColor: "rgba(0, 0, 0, 0.9)",
-     
-    },
+   head: {
+    color: "#fff",
+  },
   
-    rows: {
-      paddingBottom: "50px",
-      
-    },
+   text: {
+    color: "#8f8f8f",
+  },
   
-    rowsTitle: {
-      paddingBottom: "40px",
-      justifyContent: "space-around",
-      
-    },
-  };
+   hero: {
+    maxWidth: "100%",
+    maxHeight: "100%",
+    marginTop: "2rem",
+  },
+  
+   cta: {
+    textTransform: "none",
+    fontSize: "1.5rem",
+    fontFamily: "KOW",
+  },
+};
 
-const Video = (props) => {
+function Video(props) {
     const { classes } = props;
     return (
   <div>
-    <div className="about" style={{ backgroundColor: "#fff" }}>
+    <div className={classes.video}>
       <Grid 
         container
         direction="row"
@@ -54,11 +53,15 @@ const Video = (props) => {
       >
       <Grid item item sm={6}>
         <Box mt={10}>
-            <Typography variant="h3">
+            <Typography variant="h3" 
+            className={classes.head}
+            >
             Videos to Make you Laugh
             </Typography>
            <Box mt={5}>
-              <Typography variant="h4">
+              <Typography variant="h4"
+              className={classes.text}
+              >
               I’m the queen of cuddles, a master of food snatching, and through warm love
             and care I helped make Alzheimer’s a little better for my family.
             <br></br><br></br>
@@ -68,7 +71,8 @@ const Video = (props) => {
               </Typography>
               <Button
                 variant="contained"
-                style={{ marginTop: "20px", textTransform: "capitalize",}}
+                className={classes.cta}
+                style={{ marginTop: "20px"}}
               >
                 Try it!
               </Button>
@@ -77,6 +81,7 @@ const Video = (props) => {
       </Grid>      
       <Grid item sm={6}>
             <img src = {iPadVideo}
+            className={classes.hero}
             style={{ marginLeft: "40px"}}
             ></img>
       </Grid>

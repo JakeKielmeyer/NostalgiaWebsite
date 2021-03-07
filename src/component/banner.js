@@ -22,13 +22,19 @@ const styles = {
   
   head: {
     color: "#fff",
+    '@media (max-width:414px)': {
+      fontSize: '2rem',
+      marginTop: "125px",
   },
-  
+},
   text: {
     color: "#8f8f8f",
     fontSize: "2rem",
     lineHeight: "1.25",
+    '@media (max-width:414px)': {
+      fontSize: '1.5rem',
   },
+},
   
   hero: {
     maxWidth: "100%",
@@ -38,7 +44,7 @@ const styles = {
   },
   
   cta: {
-    textTransform: "none",
+    textTransform: "capitalize",
     fontSize: "1.5rem",
     fontFamily: "KOW",
   },
@@ -66,7 +72,6 @@ function Banner(props) {
             <Button
               variant="contained"
               className={classes.cta}
-              style={{ margin: "20px", textTransform: "capitalize"}}
             >
               Try it!
             </Button>

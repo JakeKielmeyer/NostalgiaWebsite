@@ -1,6 +1,8 @@
 import Footer from "../src/component/Footer";
 import Navbar from "../src/component/Navbar";
 
+// import DenseAppBar from "../src/component/AppBar"
+
 import './App.css';
 import './index.css';
 
@@ -28,6 +30,7 @@ function App() {
     <MuiThemeProvider theme={theme}>
     <div>
       <Navbar />
+      {/* <DenseAppBar/> */}
       <Home />
       <Footer />
     </div>

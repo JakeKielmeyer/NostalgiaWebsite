@@ -10,7 +10,7 @@ import Button from "@material-ui/core/Button";
 
 const styles = {
   photos: {
-    display: "flex",
+    paddingTop: "6rem",
     paddingLeft: "4rem",
     paddingRight: "5rem",
     minHeight: "100vh",
@@ -20,14 +20,30 @@ const styles = {
     backgroundColor: "#000",
   },
   
-  head: {
+  big: {
+    textAlign: "center",
     color: "#fff",
+    fontSize: "4rem",
+  },
+
+  head: {
+    textAlign: "left",
+    color: "#fff",
+    fontSize: "4rem",
+    margin: "35px 0 50px",
   },
   
+  slogan: {
+    margin: "35px 0 50px",
+    textAlign: "center",
+    color: "#fff",
+    fontSize: "2.5rem",
+    fontFamily: "KOJ",
+    fontWeight: "lighter",
+  },
+
   text: {
     color: "#8f8f8f",
-    fontSize: "2rem",
-    lineHeight: "1.25",
   },
   
   hero: {
@@ -47,17 +63,20 @@ const styles = {
 function Photos(props) {
   const { classes } = props;
   return (
-<div>
+
   <div className={classes.photos}>
+    <Typography variant = "h3" className={classes.big}>How it Works</Typography>
+    <Typography variant = "h4" className={classes.slogan}>Simple reminscense therapy</Typography>
+    
     <Grid 
       container
       direction="row"
       alignItems="center"
     >
-    <Grid item item sm={6}>
-      <Box mt={10} className={classes.head}>
-          <Typography variant="h3">The Power of Photos
-</Typography>
+   
+    <Grid item item sm={5}>
+      <Box mt={10}>
+          <Typography variant="h3" className={classes.head}>Nostalgic Moments</Typography>
          <Box mt={5}>
             <Typography variant="h4" className={classes.text}>Built on trusted memory care processes, Cherub
             creates a personalized and fun experience for families to reconnect to a loved one
@@ -73,14 +92,14 @@ function Photos(props) {
           </Box>
         </Box>
     </Grid>      
-    <Grid item sm={6}>
+    <Grid item sm={7}>
           <img src = {iPadPhotos}
           className={classes.hero}
           ></img>
     </Grid>
   </Grid>
  </div>
-</div>
+
   );
 };
 

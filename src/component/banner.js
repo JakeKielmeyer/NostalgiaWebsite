@@ -63,7 +63,7 @@ function Banner(props) {
     >
     <Grid item item sm={6}>
       <Box mt={10}>
-          <Typography variant="h3" className={classes.head}>Reconnect, reminisce, and bring joy back with Cherub</Typography>
+          <Typography variant="h3" className={classes.head}>Reconnect, reminisce, and bring joy back with Nostalgia Therapy</Typography>
          <Box mt={5}>
             <Typography variant="h4" className={classes.text}>Built on trusted memory care processes, Cherub
             creates a personalized and fun experience for families to reconnect to a loved one

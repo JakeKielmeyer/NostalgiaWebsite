@@ -10,7 +10,8 @@ import Button from "@material-ui/core/Button";
 
 const styles = {
   about: {
-    display: "flex",
+    // display: "flex",
+    paddingTop: "6rem",
     paddingLeft: "4rem",
     paddingRight: "5rem",
     minHeight: "100vh",
@@ -20,10 +21,27 @@ const styles = {
     backgroundColor: "#ffff",
   },
   
-   head: {
+  big: {
+    textAlign: "center",
     color: "#000",
+    fontSize: "4rem",
+  },
+
+   head: {
+    textAlign: "left",
+    color: "#000",
+    fontSize: "4rem",
   },
   
+  slogan: {
+    margin: "35px 0 50px",
+    textAlign: "center",
+    color: "#000",
+    fontSize: "2.5rem",
+    fontFamily: "KOJ",
+    fontWeight: "lighter",
+  },
+
    text: {
     color: "#8f8f8f",
   },
@@ -44,31 +62,30 @@ const styles = {
 function About(props) {
   const { classes } = props;
   return (
-    
-  <div className={classes.about}>
-    <Grid 
+
+    <div className={classes.about}>
+    <Typography variant = "h3" className={classes.big}>How it Works</Typography>
+    <Typography variant = "h4" className={classes.slogan}>Simple reminscense therapy</Typography>
+      <Grid 
       container
       direction="row"
       alignItems="center"
+      mt={50}
     >
-    <Grid item sm={6}>
+    <Grid item sm={5}>
         <img className={classes.hero} src = {Cherub}></img>
     </Grid>
 
-    <Grid item item sm={6}>
+    <Grid item item sm={7}>
       <Box mt={10} 
         style={{ marginLeft: "40px"}}
       >
-        <Typography variant="h3" className={classes.head}>Hi, I’m Cherub</Typography>
             <Box mt={5}>
-            
+            <Typography variant = "h4" className={classes.slogan}>Effective and simple reminscense therapy </Typography>
             <Typography variant="h4" className={classes.text}
-            >I’m the queen of cuddles, a master of food snatching, and through warm love
-            and care I helped make Alzheimer’s a little better for my family.
-            <br></br><br></br>
-            Now I help other families and their loved ones with Alzheimer’s with my app. 
-            I use photos to create conversation, classic shows to help you laugh, play music 
-            for you to sing along  to and give you puzzles to play to help keep your brain active. 
+            >Nostalgia Therapy combines photos, music, videos and activities like puzzles into a personalized
+            and effective reminscense therapy experience. Use Nostalgia Therapy to improve quality of time spent togehter with a loved
+            who has Alzheimer's or another form of Dementia.
             </Typography>
 
             <Button

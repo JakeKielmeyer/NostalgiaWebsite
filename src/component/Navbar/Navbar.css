@@ -1,0 +1,116 @@
+.NavbarItems {
+    background-color: white;
+    box-shadow: none;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 80px;
+    font-size: 1.2rem; */
+}
+
+.navbar-logo {
+    color: #3fa9f5;
+    font-size: 1.18rem;
+    font-family: Leviathan;
+    text-transform: capitalize;
+}
+
+.fa-react {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-links {
+    font-family: KOJ;
+    font-size: 1.15rem;
+    padding: 0.5rem 1rem;
+    text-transform: "capitalize",
+}
+
+.nav-links:hover {
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+    color: #000;
+}
+
+.menu-icon {
+    display: none;
+} 
+
+@media screen and (max-width: 960px) {
+
+    .NavbarItems {
+        background-color: white;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 94.7%;
+        height: 375px;
+        position: absolute;
+        top: 40px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        grid-gap: 10px;
+        list-style: none;
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        background: white;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 75%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background-color: #000;
+        color: #fff;
+        border-radius: 0;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times {
+        color: #000f;
+        font-size: 2rem;
+    }
+
+
+}
+

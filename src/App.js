@@ -1,10 +1,6 @@
 import Footer from "../src/component/Footer";
-import Navbar from "../src/component/Navbar";
-
-// import DenseAppBar from "../src/component/AppBar"
-
+import Navbar from "../src/component/Navbar/Navbar";
 import './App.css';
-import './index.css';
 
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 import { MuiThemeProvider } from "@material-ui/core/styles";
@@ -30,7 +26,6 @@ function App() {
     <MuiThemeProvider theme={theme}>
     <div>
       <Navbar />
-      {/* <DenseAppBar/> */}
       <Home />
       <Footer />
     </div>

@@ -1,35 +1,84 @@
-import React, { Component } from 'react';
-import { MenuItems } from "./MenuItems"
-import './Navbar.css';
+//mui stuff
+import AppBar from "@material-ui/core/AppBar";
+import ToolBar from "@material-ui/core/Toolbar";
+import Button from "@material-ui/core/Button";
+import { Link } from "react-router-dom";
 
-class Navbar extends Component {
-    state = { clicked: false }
+import withStyles from "@material-ui/core/styles/withStyles";
 
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
-    }
+const styles = {
+  appBar: {
+    background: "#333333",
+    boxShadow: "none",
+    paddingLeft: "2rem",
+  },
 
-    render() {
-        return(
-            <nav className="NavbarItems">
-                <h1 className="navbar-logo">Nostalgia Therapy</h1>
-                <div className="menu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-                </div>
-                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-                    {MenuItems.map((item, index) => {
-                        return (
-                            <li key={index}>
-                                <a className={item.cName} href={item.url}>
-                                {item.title}
-                                </a>
-                            </li>
-                        )
-                    })}
-                </ul>
-            </nav>
-        )
-    }
+  brandName: {
+    color: "#3fa9f5",
+    fontSize: "1.18rem",
+    fontFamily: "Leviathan",
+    textTransform: "capitalize",
+    '@media (min-width:760px)': {
+      fontSize: '1rem',
+   },
+  },
+
+  navContainer: {
+    display: "flex",
+    color: "white",
+    width: "88vw",
+    justifyContent: "space-between",
+  },
+
+  navLink: {
+    padding: "0 1rem",
+    fontFamily: "KOJ",
+    fontSize: "1.15rem",
+    display: "flex",
+    textTransform: "capitalize",
+    '@media (min-width:760px)': {
+      fontSize: '1rem',
+   },
+  },
+};
+
+function logoutHandle(){
+  localStorage.clear();
+};
+
+function Navbar(props) {
+  const { classes } = props;
+  return (
+    <AppBar position="absolute" className={classes.appBar}>
+      <ToolBar className={classes.navContainer}>
+
+          <Button color="inherit" className={classes.brandName}>
+            Nostalgia Therapy
+          </Button>
+
+
+          <Button color="inherit" className={classes.navLink}>
+            About{" "}
+          </Button>
+
+
+          <Button color="inherit" className={classes.navLink}>
+            Features
+          </Button>
+
+
+          <Button color="inherit" className={classes.navLink}>
+            Sign Up{" "}
+          </Button>
+
+
+          <Button color="inherit" className={classes.navLink}>
+            Sign In
+          </Button>
+
+      </ToolBar>
+    </AppBar>
+  );
 }
 
-export default Navbar
+export default withStyles(styles)(Navbar);

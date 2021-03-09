@@ -22,33 +22,62 @@ const styles = {
   
   head: {
     color: "#fff",
+    marginTop: "125px",
+    marginLeft: "200px",
+    '@media (max-width: 768px)': {
+      marginLeft: "70px",
+      marginTop: "80px",
+  },
     '@media (max-width:414px)': {
-      fontSize: '2rem',
-      marginTop: "125px",
+      fontSize: '1.75rem',
+      marginTop: "115px",
+      margin: "0",
   },
 },
+
   text: {
     color: "#8f8f8f",
+    marginLeft: "70px",
     fontSize: "2rem",
     lineHeight: "1.25",
     '@media (max-width:414px)': {
       fontSize: '1.5rem',
+      margin: "0",
   },
 },
   
   hero: {
     maxWidth: "100%",
     maxHeight: "100%",
-    marginTop: "2rem",
+    marginTop: ".5rem",
     marginLeft: "40px",
+    '@media (max-width:414px)': {
+      fontSize: '1.5rem',
+      margin: "0",
   },
+},
   
   cta: {
-    textTransform: "capitalize",
+    textTransform: "none",
     fontSize: "1.5rem",
     fontFamily: "KOW",
+    marginLeft: "400px",
+    '@media (max-width: 768px)': {
+      marginLeft: "280px",
   },
+  '@media (max-width:414px)': {
+    fontSize: '1.5rem',
+    marginLeft: "90px",
+  },
+},
 
+  cta2: {
+    backgroundColor: "black",
+    textTransform: "none",
+    fontSize: "1.5rem",
+    fontFamily: "KOW",
+    marginLeft: "400px",
+  },
 };
 
 function Banner(props) {
@@ -61,28 +90,34 @@ function Banner(props) {
       direction="row"
       alignItems="center"
     >
-    <Grid item item sm={6}>
+    <Grid item item sm={12}>
       <Box mt={10}>
-          <Typography variant="h3" className={classes.head}>Reconnect, reminisce, and bring joy back with Nostalgia Therapy</Typography>
+          <Typography variant="h3" className={classes.head}>Reminsicense Therapy Simplified</Typography>
          <Box mt={5}>
-            <Typography variant="h4" className={classes.text}>Built on trusted memory care processes, Cherub
-            creates a personalized and fun experience for families to reconnect to a loved one
-            with Alzheimer's disease.
+            <Typography variant="h4" className={classes.text}>Therapy designed to reconnect families
+            to loved ones with Alzheimer's.
             </Typography>
-            <Button
-              variant="contained"
-              className={classes.cta}
-            >
-              Try it!
-            </Button>
           </Box>
         </Box>
     </Grid>      
-    <Grid item sm={6}>
+    <Grid item sm={12}>
           <img src = {iPadDash}
           className={classes.hero}
           ></img>
     </Grid>
+
+    <Grid item sm={12}>
+    <Button
+      variant="contained"
+      className={classes.cta}>Sign Up
+    </Button>
+  </Grid>
+  <Grid item sm={12}>
+    <Button
+      variant="contained"
+      className={classes.cta2}>SPACER
+    </Button>
+  </Grid>
   </Grid>
  </div>
 </div>

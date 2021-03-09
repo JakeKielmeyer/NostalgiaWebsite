@@ -1,5 +1,5 @@
 import React from "react";
-import Cherub from "../images/Cherub.png";
+import iPadDashboard from "../images/iPadDashboard.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -13,75 +13,116 @@ const styles = {
     display: "flex",
     paddingLeft: "4rem",
     paddingRight: "5rem",
-    minHeight: "100vh",
+    minHeight: "80vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
-    backgroundColor: "#ffff",
+    backgroundColor: "#fff",
   },
   
-   head: {
+  head: {
     color: "#000",
+    marginTop: "125px",
+    marginLeft: "260px",
+    '@media (max-width: 1024px)': {
+      marginLeft: "15px",
+      marginBottom: "20px",
   },
-  
-   text: {
+    '@media (max-width: 768px)': {
+      marginLeft: "125px",
+      marginTop: "5px",
+  },
+    '@media (max-width:414px)': {
+      fontSize: '1.75rem',
+      marginTop: "115px",
+      margin: "0",
+  },
+},
+
+  text: {
     color: "#8f8f8f",
+    marginLeft: "70px",
+    fontSize: "2rem",
+    lineHeight: "1.25",
+    '@media (max-width: 1024px)': {
+      marginLeft: "15px",
+      marginRight: "15px",
+      marginTop: "100px",
   },
+    '@media (max-width: 768px)': {
+      marginLeft: "70px",
+      marginTop: "5px",
+  },
+    '@media (max-width:414px)': {
+      fontSize: '1.5rem',
+      margin: "0",
+  },
+},
   
-   hero: {
+  hero: {
     maxWidth: "100%",
     maxHeight: "100%",
-    marginTop: "2rem",
+    marginTop: ".5rem",
+    marginLeft: "40px",
+    '@media (max-width: 1024px)': {
+      marginLeft: "15px",
+      marginTop: "10px",
   },
+    '@media (max-width:414px)': {
+      fontSize: '1.5rem',
+      margin: "0",
+  },
+},
   
-   cta: {
+  cta: {
     textTransform: "none",
     fontSize: "1.5rem",
     fontFamily: "KOW",
+    '@media (max-width: 1024px)': {
+      marginLeft: "150px",
+      marginTop: "10px",
+  },
+    marginLeft: "400px",
+    '@media (max-width: 768px)': {
+      marginLeft: "280px",
+  },
+  '@media (max-width:414px)': {
+    fontSize: '1.5rem',
+    marginLeft: "50px",
+    },
   },
 };
+
+
 
 function About(props) {
   const { classes } = props;
   return (
-    
-  <div className={classes.about}>
-    <Grid 
+    <div className={classes.about}>
+ 
+ <Grid 
       container
       direction="row"
       alignItems="center"
     >
-    <Grid item sm={6}>
-        <img className={classes.hero} src = {Cherub}></img>
-    </Grid>
+    <Grid container item sm={12} md={5}>  
+          <Typography variant="h3" className={classes.head}>What is Nostalgia Therapy?</Typography>       
+          <Typography variant="h4" className={classes.text}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+        that are designed to increase quality of life and time spent together.
+        </Typography>
+    </Grid>  
 
-    <Grid item item sm={6}>
-      <Box mt={10} 
-        style={{ marginLeft: "40px"}}
-      >
-        <Typography variant="h3" className={classes.head}>Hi, I’m Cherub</Typography>
-            <Box mt={5}>
-            
-            <Typography variant="h4" className={classes.text}
-            >I’m the queen of cuddles, a master of food snatching, and through warm love
-            and care I helped make Alzheimer’s a little better for my family.
-            <br></br><br></br>
-            Now I help other families and their loved ones with Alzheimer’s with my app. 
-            I use photos to create conversation, classic shows to help you laugh, play music 
-            for you to sing along  to and give you puzzles to play to help keep your brain active. 
-            </Typography>
-
-            <Button
-              variant="contained"
-              className={classes.cta}
-              style={{ margin: "20px"}}
-            >
-              Try it!
-            </Button>
-          </Box>
-        </Box>
-    </Grid>      
-  </Grid>    
+    <Grid container item sm={12} md={7}>  
+          <img src = {iPadDashboard}
+          className={classes.hero}
+          ></img>
+                <Button
+        variant="contained"
+        className={classes.cta}>Sign Up
+      </Button>
+    </Grid>     
+   
+  </Grid>
   </div>
   );
 };

@@ -7,7 +7,7 @@ import Photos from "../component/photos";
 import Music from "../component/music";
 import Video from "../component/video";
 import Puzzle from "../component/puzzle";
-import Science from "../component/science";
+// import Science from "../component/science";
 
 //mui stuff
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -26,7 +26,7 @@ const Home = (props) => {
   <Music />
   <Video />
   <Puzzle />
-  <Science />
+
 </div>
   );
 };

@@ -9,97 +9,122 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
 const styles = {
-  photos: {
-    paddingTop: "6rem",
+  photo: {
+    display: "flex",
     paddingLeft: "4rem",
     paddingRight: "5rem",
-    minHeight: "100vh",
+    minHeight: "80vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
     backgroundColor: "#000",
   },
   
-  big: {
-    textAlign: "center",
-    color: "#fff",
-    fontSize: "4rem",
-  },
-
   head: {
-    textAlign: "left",
     color: "#fff",
-    fontSize: "4rem",
-    margin: "35px 0 50px",
+    marginTop: "125px",
+    marginLeft: "260px",
+    '@media (max-width: 1024px)': {
+      marginLeft: "15px",
+      marginTop: "0",
   },
-  
-  slogan: {
-    margin: "35px 0 50px",
-    textAlign: "center",
-    color: "#fff",
-    fontSize: "2.5rem",
-    fontFamily: "KOJ",
-    fontWeight: "lighter",
+    '@media (max-width: 768px)': {
+      marginLeft: "175px",
+      marginTop: "5px",
   },
+    '@media (max-width:414px)': {
+      fontSize: '1.75rem',
+      marginTop: "115px",
+      margin: "0",
+  },
+},
 
   text: {
     color: "#8f8f8f",
+    marginLeft: "70px",
+    fontSize: "2rem",
+    lineHeight: "1.25",
+    '@media (max-width: 1024px)': {
+      marginLeft: "15px",
+      marginRight: "15px",
+      marginTop: "100px",
   },
+    '@media (max-width: 768px)': {
+      marginLeft: "70px",
+      marginTop: "5px",
+  },
+    '@media (max-width:414px)': {
+      fontSize: '1.5rem',
+      margin: "0",
+  },
+},
   
   hero: {
     maxWidth: "100%",
     maxHeight: "100%",
-    marginTop: "2rem",
+    marginTop: ".5rem",
     marginLeft: "40px",
+    '@media (max-width: 1024px)': {
+      marginLeft: "15px",
+      marginTop: "10px",
   },
+    '@media (max-width:414px)': {
+      fontSize: '1.5rem',
+      margin: "0",
+  },
+},
   
   cta: {
     textTransform: "none",
     fontSize: "1.5rem",
     fontFamily: "KOW",
+    '@media (max-width: 1024px)': {
+      marginLeft: "150px",
+      marginTop: "0",
+  },
+    marginLeft: "400px",
+    '@media (max-width: 768px)': {
+      marginLeft: "280px",
+  },
+  '@media (max-width:414px)': {
+    fontSize: '1.5rem',
+    marginLeft: "50px",
+    },
   },
 };
+
+
 
 function Photos(props) {
   const { classes } = props;
   return (
-
-  <div className={classes.photos}>
-    <Typography variant = "h3" className={classes.big}>How it Works</Typography>
-    <Typography variant = "h4" className={classes.slogan}>Simple reminscense therapy</Typography>
-    
-    <Grid 
+    <div className={classes.photo}>
+ 
+ <Grid 
       container
       direction="row"
       alignItems="center"
     >
    
-    <Grid item item sm={5}>
-      <Box mt={10}>
-          <Typography variant="h3" className={classes.head}>Nostalgic Moments</Typography>
-         <Box mt={5}>
-            <Typography variant="h4" className={classes.text}>Built on trusted memory care processes, Cherub
-            creates a personalized and fun experience for families to reconnect to a loved one
-            with Alzheimer's disease.
-            </Typography>
-            <Button
-              variant="contained"
-              className={classes.cta}
-              style={{ marginTop: "20px"}}
-            >
-              Try it!
-            </Button>
-          </Box>
-        </Box>
+    <Grid container item sm={12} md={5}>  
+          <Typography variant="h3" className={classes.head}>Nostalgic Moments</Typography>       
+          <Typography variant="h4" className={classes.text}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+        that are designed to increase quality of life and time spent together.
+        </Typography>
     </Grid>      
-    <Grid item sm={7}>
+
+    <Grid container item sm={12} md={7}>  
           <img src = {iPadPhotos}
           className={classes.hero}
           ></img>
-    </Grid>
-  </Grid>
- </div>
+            <Button
+        variant="contained"
+        className={classes.cta}>Sign Up
+      </Button>
+    </Grid>  
 
+  </Grid>
+  </div>
   );
 };
 

@@ -51,7 +51,7 @@ function Video(props) {
         direction="row"
         alignItems="center"
       >
-      <Grid item item sm={6}>
+      <Grid item item sm={12}>
         <Box mt={10}>
             <Typography variant="h3" 
             className={classes.head}

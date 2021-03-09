@@ -1,5 +1,5 @@
 import React from "react";
-import Cherub from "../images/Cherub.png";
+import iPadDashboard from "../images/iPadDashboard.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -10,95 +10,119 @@ import Button from "@material-ui/core/Button";
 
 const styles = {
   about: {
-    // display: "flex",
-    paddingTop: "6rem",
+    display: "flex",
     paddingLeft: "4rem",
     paddingRight: "5rem",
-    minHeight: "100vh",
+    minHeight: "80vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
-    backgroundColor: "#ffff",
+    backgroundColor: "#fff",
   },
   
-  big: {
-    textAlign: "center",
+  head: {
     color: "#000",
-    fontSize: "4rem",
+    marginTop: "125px",
+    marginLeft: "260px",
+    '@media (max-width: 1024px)': {
+      marginLeft: "15px",
+      marginBottom: "20px",
   },
+    '@media (max-width: 768px)': {
+      marginLeft: "125px",
+      marginTop: "5px",
+  },
+    '@media (max-width:414px)': {
+      fontSize: '1.75rem',
+      marginTop: "115px",
+      margin: "0",
+  },
+},
 
-   head: {
-    textAlign: "left",
-    color: "#000",
-    fontSize: "4rem",
-  },
-  
-  slogan: {
-    margin: "35px 0 50px",
-    textAlign: "center",
-    color: "#000",
-    fontSize: "2.5rem",
-    fontFamily: "KOJ",
-    fontWeight: "lighter",
-  },
-
-   text: {
+  text: {
     color: "#8f8f8f",
+    marginLeft: "70px",
+    fontSize: "2rem",
+    lineHeight: "1.25",
+    '@media (max-width: 1024px)': {
+      marginLeft: "15px",
+      marginRight: "15px",
+      marginTop: "100px",
   },
+    '@media (max-width: 768px)': {
+      marginLeft: "70px",
+      marginTop: "5px",
+  },
+    '@media (max-width:414px)': {
+      fontSize: '1.5rem',
+      margin: "0",
+  },
+},
   
-   hero: {
+  hero: {
     maxWidth: "100%",
     maxHeight: "100%",
-    marginTop: "2rem",
+    marginTop: ".5rem",
+    marginLeft: "40px",
+    '@media (max-width: 1024px)': {
+      marginLeft: "15px",
+      marginTop: "10px",
   },
+    '@media (max-width:414px)': {
+      fontSize: '1.5rem',
+      margin: "0",
+  },
+},
   
-   cta: {
+  cta: {
     textTransform: "none",
     fontSize: "1.5rem",
     fontFamily: "KOW",
+    '@media (max-width: 1024px)': {
+      marginLeft: "150px",
+      marginTop: "10px",
+  },
+    marginLeft: "400px",
+    '@media (max-width: 768px)': {
+      marginLeft: "280px",
+  },
+  '@media (max-width:414px)': {
+    fontSize: '1.5rem',
+    marginLeft: "50px",
+    },
   },
 };
+
+
 
 function About(props) {
   const { classes } = props;
   return (
-
     <div className={classes.about}>
-    <Typography variant = "h3" className={classes.big}>How it Works</Typography>
-    <Typography variant = "h4" className={classes.slogan}>Simple reminscense therapy</Typography>
-      <Grid 
+ 
+ <Grid 
       container
       direction="row"
       alignItems="center"
-      mt={50}
     >
-    <Grid item sm={5}>
-        <img className={classes.hero} src = {Cherub}></img>
-    </Grid>
+    <Grid container item sm={12} md={5}>  
+          <Typography variant="h3" className={classes.head}>What is Nostalgia Therapy?</Typography>       
+          <Typography variant="h4" className={classes.text}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+        that are designed to increase quality of life and time spent together.
+        </Typography>
+    </Grid>  
 
-    <Grid item item sm={7}>
-      <Box mt={10} 
-        style={{ marginLeft: "40px"}}
-      >
-            <Box mt={5}>
-            <Typography variant = "h4" className={classes.slogan}>Effective and simple reminscense therapy </Typography>
-            <Typography variant="h4" className={classes.text}
-            >Nostalgia Therapy combines photos, music, videos and activities like puzzles into a personalized
-            and effective reminscense therapy experience. Use Nostalgia Therapy to improve quality of time spent togehter with a loved
-            who has Alzheimer's or another form of Dementia.
-            </Typography>
-
-            <Button
-              variant="contained"
-              className={classes.cta}
-              style={{ margin: "20px"}}
-            >
-              Try it!
-            </Button>
-          </Box>
-        </Box>
-    </Grid>      
-  </Grid>    
+    <Grid container item sm={12} md={7}>  
+          <img src = {iPadDashboard}
+          className={classes.hero}
+          ></img>
+                <Button
+        variant="contained"
+        className={classes.cta}>Sign Up
+      </Button>
+    </Grid>     
+   
+  </Grid>
   </div>
   );
 };

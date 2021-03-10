@@ -14,80 +14,133 @@ const styles = {
     display: "flex",
     paddingLeft: "4rem",
     paddingRight: "5rem",
-    minHeight: "100vh",
+    minHeight: "80vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
-    backgroundColor: "#ffff",
+    backgroundColor: "#fff",
   },
   
-   head: {
+  head: {
     color: "#000",
+    marginTop: "125px",
+    marginLeft: "260px",
+    '@media (max-width: 1024px)': {
+      marginLeft: "90px",
+      marginTop: "0",
   },
-  
-   text: {
+    '@media (max-width: 768px)': {
+      marginLeft: "270px",
+      marginTop: "15px",
+  },
+    '@media (max-width:414px)': {
+      fontSize: '1.75rem',
+      marginTop: "10px",
+      marginLeft: "100px",
+  },
+},
+
+  text: {
     color: "#8f8f8f",
+    marginLeft: "70px",
+    fontSize: "2rem",
+    lineHeight: "1.25",
+    '@media (max-width: 1024px)': {
+      marginLeft: "70px",
+      marginRight: "20px",
+      marginTop: "20px",
   },
-  
-   hero: {
-    maxWidth: "100%",
-    maxHeight: "100%",
-    marginTop: "2rem",
+    '@media (max-width: 768px)': {
+      display: "none",
   },
+},
+
+text1: {
+  color: "#8f8f8f",
+  marginLeft: "70px",
+  fontSize: "2rem",
+  lineHeight: "1.25",
+  display: "none",
+  '@media (max-width: 768px)': {
+    marginLeft: "70px",
+    marginTop: "5px",
+    display: "block",
+},
+  '@media (max-width:414px)': {
+    fontSize: '1.5rem',
+    margin: "20px",
+    display: "block",
+  },
+},
   
-   cta: {
+  hero: {
+    maxWidth: "90%",
+    maxHeight: "90%",
+    marginTop: ".5rem",
+    marginLeft: "40px",
+    '@media (max-width: 1024px)': {
+      marginTop: "10px",
+      marginLeft: "120px",
+      maxWidth: "70%",
+      maxHeight: "70%",
+  },
+    '@media (max-width:414px)': {
+      fontSize: '1.5rem',
+      marginLeft: "50px",
+  },
+},
+  cta: {
     textTransform: "none",
     fontSize: "1.5rem",
     fontFamily: "KOW",
+    '@media (max-width: 1024px)': {
+      marginLeft: "150px",
+      marginTop: "10px",
+  },
+    marginLeft: "400px",
+    '@media (max-width: 768px)': {
+      marginLeft: "280px",
+  },
+  '@media (max-width:414px)': {
+    fontSize: '1.5rem',
+    marginLeft: "50px",
+    },
   },
 };
+
 
 function Puzzle(props) {
   const { classes } = props;
   return (
-    
-  <div className={classes.puzzle}>
-    <Grid 
+    <div className={classes.puzzle}>
+ 
+ <Grid 
       container
       direction="row"
       alignItems="center"
     >
-    <Grid item sm={6}>
-        <img 
-        className={classes.hero}
-        src = {iPadPuzzle}></img>
-    </Grid>
+    <Grid container item sm={12} md={5}>  
+          <Typography variant="h3" className={classes.head}>Puzzle</Typography>       
+          <Typography variant="h4" className={classes.text}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+        that are designed to increase quality of life and time spent together.
+        </Typography>
+    </Grid>  
 
-    <Grid item item sm={6}>
-      <Box mt={10} 
-        style={{ marginLeft: "40px"}}
-      >
-        <Typography variant="h3"
-        className={classes.head}
-        >Puzzles to Stimulate</Typography>
-            <Box mt={5}>
-            
-            <Typography variant="h4"
-            className={classes.text}
-            >I’m the queen of cuddles, a master of food snatching, and through warm love
-            and care I helped make Alzheimer’s a little better for my family.
-            <br></br><br></br>
-            Now I help other families and their loved ones with Alzheimer’s with my app. 
-            I use photos to create conversation, classic shows to help you laugh, play music 
-            for you to sing along  to and give you puzzles to play to help keep your brain active. 
-            </Typography>
-
-            <Button
-              variant="contained"
-              className={classes.cta}
-              style={{ margin: "20px"}}
-            >
-              Try it!
-            </Button>
-          </Box>
-        </Box>
-    </Grid>      
-  </Grid>    
+    <Grid container item sm={12} md={7}>  
+          <img src = {iPadPuzzle}
+          className={classes.hero}
+          ></img>
+          <Typography variant="h4" className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          </Typography>
+      
+      <Button
+        variant="contained"
+        className={classes.cta}>Sign Up
+      </Button>
+    </Grid>     
+   
+  </Grid>
   </div>
   );
 };

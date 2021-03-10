@@ -13,82 +13,144 @@ const styles = {
     display: "flex",
     paddingLeft: "4rem",
     paddingRight: "5rem",
-    minHeight: "800px",
+    minHeight: "80vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
     backgroundColor: "#000",
   },
   
-   head: {
+  head: {
     color: "#fff",
+    marginTop: "125px",
+    marginLeft: "260px",
+    '@media (max-width: 1024px)': {
+      marginTop: "0",
+      marginLeft: "45px",
   },
-  
-   text: {
-    color: "#8f8f8f",
+    '@media (max-width: 768px)': {
+      display: "none",
   },
+},
+
+head1: {
+  display: "none",
+
+  '@media (max-width: 768px)': {
+    color: "#fff",
+    marginTop: "5px",
+    marginLeft: "180px",
+    display: "block",
+},
+'@media (max-width:414px)': {
+  fontSize: '1.75rem',
+  marginTop: "5px",
+  marginLeft: "50px",
+},
+},
+
+text: {
+  color: "#8f8f8f",
+  marginLeft: "70px",
+  fontSize: "2rem",
+  lineHeight: "1.25",
+  '@media (max-width: 1024px)': {
+    marginLeft: "45px",
+    marginTop: "20px",
+},
+  '@media (max-width: 768px)': {
+    display: "none",
+},
+},
+
+text1: {
+color: "#8f8f8f",
+marginLeft: "70px",
+fontSize: "2rem",
+lineHeight: "1.25",
+display: "none",
+'@media (max-width: 768px)': {
+  marginLeft: "70px",
+  marginTop: "5px",
+  display: "block",
+},
+'@media (max-width:414px)': {
+  fontSize: '1.5rem',
+  margin: "0",
+  display: "block",
+},
+},
   
-   hero: {
+  hero: {
     maxWidth: "100%",
     maxHeight: "100%",
-    marginTop: "2rem",
+    marginTop: ".5rem",
+    marginLeft: "40px",
+    filter: "drop-shadow(0 0 0.1rem white)",
+    '@media (max-width: 1024px)': {
+      marginLeft: "15px",
+      marginTop: "10px",
   },
+    '@media (max-width:414px)': {
+      fontSize: '1.5rem',
+      margin: "0",
+  },
+},
   
-   cta: {
+  cta: {
     textTransform: "none",
     fontSize: "1.5rem",
     fontFamily: "KOW",
+    '@media (max-width: 1024px)': {
+      marginLeft: "150px",
+      marginTop: "0",
+  },
+    marginLeft: "400px",
+    '@media (max-width: 768px)': {
+      marginLeft: "280px",
+  },
+  '@media (max-width:414px)': {
+    fontSize: '1.5rem',
+    marginLeft: "50px",
+    },
   },
 };
 
+
+
 function Video(props) {
-    const { classes } = props;
-    return (
-  <div>
+  const { classes } = props;
+  return (
     <div className={classes.video}>
-      <Grid 
-        container
-        direction="row"
-        alignItems="center"
-      >
-      <Grid item item sm={12}>
-        <Box mt={10}>
-            <Typography variant="h3" 
-            className={classes.head}
-            >
-            Videos to Make you Laugh
-            </Typography>
-           <Box mt={5}>
-              <Typography variant="h4"
-              className={classes.text}
-              >
-              I’m the queen of cuddles, a master of food snatching, and through warm love
-            and care I helped make Alzheimer’s a little better for my family.
-            <br></br><br></br>
-            Now I help other families and their loved ones with Alzheimer’s with my app. 
-            I use photos to create conversation, classic shows to help you laugh, play music 
-            for you to sing along  to and give you puzzles to play to help keep your brain active. 
-              </Typography>
-              <Button
-                variant="contained"
-                className={classes.cta}
-                style={{ marginTop: "20px"}}
-              >
-                Try it!
-              </Button>
-            </Box>
-          </Box>
-      </Grid>      
-      <Grid item sm={6}>
-            <img src = {iPadVideo}
-            className={classes.hero}
-            style={{ marginLeft: "40px"}}
-            ></img>
-      </Grid>
-    </Grid>
-   </div>
+ 
+ <Grid 
+      container
+      direction="row"
+      alignItems="center"
+    >
+    <Grid container item sm={12} md={7}>  
+    <Typography variant="h3" className={classes.head1}>Nostalgia TV</Typography>  
+          <img src = {iPadVideo}
+          className={classes.hero}>
+          </img>
+          <Typography variant="h4" className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+            that are designed to increase quality of life and time spent together.
+          </Typography>
+        <Button
+          variant="contained"
+          className={classes.cta}>Sign Up
+      </Button>
+    </Grid>     
+    <Grid container item sm={12} md={5}>  
+          <Typography variant="h3" className={classes.head}>Nostalgic Moments</Typography>       
+          <Typography variant="h4" className={classes.text}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+        that are designed to increase quality of life and time spent together.
+        </Typography>
+    </Grid>      
+
+  </Grid>
   </div>
-    );
-  };
+  );
+};
 
 export default withStyles(styles)(Video);

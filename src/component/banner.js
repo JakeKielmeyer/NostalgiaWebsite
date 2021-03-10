@@ -51,6 +51,7 @@ const styles = {
     maxHeight: "100%",
     marginTop: ".5rem",
     marginLeft: "40px",
+    filter: "drop-shadow(0 0 0.1rem white)",
     '@media (max-width:414px)': {
       fontSize: '1.5rem',
       margin: "0",

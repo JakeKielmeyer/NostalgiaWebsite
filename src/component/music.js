@@ -7,6 +7,7 @@ import Box from "@material-ui/core/Box";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
+
 const styles = {
   music: {
     display: "flex",
@@ -24,17 +25,17 @@ const styles = {
     marginTop: "125px",
     marginLeft: "260px",
     '@media (max-width: 1024px)': {
-      marginLeft: "15px",
-      marginBottom: "20px",
+      marginLeft: "90px",
+      marginTop: "0",
   },
     '@media (max-width: 768px)': {
-      marginLeft: "125px",
-      marginTop: "5px",
+      marginLeft: "270px",
+      marginTop: "15px",
   },
     '@media (max-width:414px)': {
       fontSize: '1.75rem',
-      marginTop: "115px",
-      margin: "0",
+      marginTop: "10px",
+      marginLeft: "100px",
   },
 },
 
@@ -44,35 +45,49 @@ const styles = {
     fontSize: "2rem",
     lineHeight: "1.25",
     '@media (max-width: 1024px)': {
-      marginLeft: "15px",
-      marginRight: "15px",
-      marginTop: "100px",
+      marginLeft: "70px",
+      marginRight: "20px",
+      marginTop: "20px",
   },
     '@media (max-width: 768px)': {
-      marginLeft: "70px",
-      marginTop: "5px",
+      display: "none",
   },
-    '@media (max-width:414px)': {
-      fontSize: '1.5rem',
-      margin: "0",
+},
+
+text1: {
+  color: "#8f8f8f",
+  marginLeft: "70px",
+  fontSize: "2rem",
+  lineHeight: "1.25",
+  display: "none",
+  '@media (max-width: 768px)': {
+    marginLeft: "70px",
+    marginTop: "5px",
+    display: "block",
+},
+  '@media (max-width:414px)': {
+    fontSize: '1.5rem',
+    margin: "20px",
+    display: "block",
   },
 },
   
   hero: {
-    maxWidth: "100%",
-    maxHeight: "100%",
+    maxWidth: "90%",
+    maxHeight: "90%",
     marginTop: ".5rem",
     marginLeft: "40px",
     '@media (max-width: 1024px)': {
-      marginLeft: "15px",
       marginTop: "10px",
+      marginLeft: "120px",
+      maxWidth: "70%",
+      maxHeight: "70%",
   },
     '@media (max-width:414px)': {
       fontSize: '1.5rem',
-      margin: "0",
+      marginLeft: "50px",
   },
 },
-  
   cta: {
     textTransform: "none",
     fontSize: "1.5rem",
@@ -110,11 +125,15 @@ function Music(props) {
         </Typography>
     </Grid>  
 
-    <Grid container item sm={12} md={6}>  
+    <Grid container item sm={12} md={7}>  
           <img src = {iPadMusic}
           className={classes.hero}
           ></img>
-                <Button
+          <Typography variant="h4" className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          </Typography>
+      
+      <Button
         variant="contained"
         className={classes.cta}>Sign Up
       </Button>

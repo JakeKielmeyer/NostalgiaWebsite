@@ -77,7 +77,7 @@ const styles = {
     textTransform: "none",
     fontSize: "1.5rem",
     fontFamily: "KOW",
-    marginLeft: "400px",
+    marginLeft: "100px",
   },
 };
 

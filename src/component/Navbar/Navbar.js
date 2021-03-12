@@ -11,6 +11,9 @@ const styles = {
     background: "#333333",
     boxShadow: "none",
     paddingLeft: "2rem",
+    '@media (max-width:414px)': {
+      display: "none",
+    },
   },
 
   brandName: {

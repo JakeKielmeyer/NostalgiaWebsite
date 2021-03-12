@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState}  from "react";
 import iPadDashboard from "../images/iPadDashboard.png";
 
 //mui stuff
@@ -70,7 +70,6 @@ text1: {
     display: "block",
   },
 },
-  
   hero: {
     maxWidth: "100%",
     maxHeight: "100%",
@@ -102,8 +101,34 @@ text1: {
     marginLeft: "50px",
     },
   },
+  more:{
+    display: "none",
+  },
 };
 
+
+// function myFunction() {
+
+//   var more = document.getElementsByClassName("more");
+//   var btnText = document.getElementById("myBtn");
+
+//   if (more.display === "none") {
+//     btnText.innerHTML = "Read Less"; 
+//     more.display = "inline";
+//   } else {
+//     btnText.innerHTML = "Read More"; 
+//     more.display = "none";
+//   }
+
+// }
+function myFunction() {
+  var x = document.getElementsByClassName("more");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
 function About(props) {
   const { classes } = props;
@@ -112,13 +137,21 @@ function About(props) {
     <Grid 
       container
       direction="row"
-      alignItems="center"
-    >
+      alignItems="center">
+
     <Grid container item sm={12} md={5}>  
           <Typography variant="h3" className={classes.head}>What is Nostalgia Therapy?</Typography>       
           <Typography variant="h4" className={classes.text}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
-          </Typography> 
+              <span className={classes.more}>
+              Nostalgia Therapy is based on proven reminsicense therapy tools 
+              that are designed to increase quality of life and time spent together.
+              Nostalgia Therapy is based on proven reminsicense therapy tools 
+              that are designed to increase quality of life and time spent together.
+              </span>
+              </Typography> 
+             
+              <button onClick={myFunction} id="myBtn">Read More</button>
     </Grid>  
 
     <Grid container item sm={12} md={7}>  

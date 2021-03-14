@@ -67,7 +67,22 @@ head1: {
       margin: "0",
   },
 },
-  
+
+hero2: {
+  maxWidth: "70%",
+  maxHeight: "70%",
+  margin: "20px",
+  filter: "drop-shadow(0 0 0.1rem white)",
+  '@media (max-width: 1024px)': {
+    marginLeft: "15px",
+    marginTop: "10px",
+},
+  '@media (max-width:414px)': {
+    fontSize: '1.5rem',
+    margin: "0",
+},
+},
+
   cta: {
     textTransform: "none",
     fontSize: "1.5rem",
@@ -92,6 +107,7 @@ head1: {
   },
     readB: {
       display: "none",
+      backgroundColor: "#8f8f8f",
       '@media (max-width: 768px)': {
         display: "block",
     },
@@ -116,7 +132,7 @@ head1: {
     },
   },
   textB: {
-    color: "#8f8f8f",
+    color: "#333333",
     display: "none",
     '@media (max-width: 768px)': {
       marginLeft: "70px",
@@ -134,6 +150,7 @@ head1: {
 function Photos(props) {
   const { classes } = props;
   return (
+  <div>
     <div className={classes.photo}>
  
  <Grid 
@@ -149,22 +166,6 @@ function Photos(props) {
           <Typography variant="h4" className={classes.textB}>Nostalgia Therapy is based on proven reminsicense therapy tools 
             that are designed to increase quality of life and time spent together.
           </Typography>
-        
-        {/* Landscape Mode */}
-        <div className={classes.readB}>
-          <ReadWhiteB>
-                <Typography variant="h4" className={classes.textB}>
-                Nostalgia Therapy is based on proven reminsicense therapy tools 
-                that are designed to increase quality of life and time spent together.
-                Nostalgia Therapy is based on proven reminsicense therapy tools 
-                that are designed to increase quality of life and time spent together.
-                </Typography>
-          </ReadWhiteB>
-        </div>
-        <Button
-          variant="contained"
-          className={classes.cta}>Sign Up
-        </Button>
     </Grid>     
     
     <Grid container item sm={12} md={5}>  
@@ -173,7 +174,7 @@ function Photos(props) {
         that are designed to increase quality of life and time spent together.
         </Typography>
     
-    {/* Portrait Mode */}
+    {/* Landscape Mode */}
       <div className={classes.readA}>
         <ReadWhiteA>
               <Typography variant="h4" className={classes.textA}>
@@ -185,9 +186,36 @@ function Photos(props) {
         </ReadWhiteA>
       </div>
     </Grid>      
-
   </Grid>
   </div>
+    {/* Portrait Mode */}
+      <div className={classes.readB}>
+        <ReadWhiteB>
+          <Typography variant="h4" className={classes.textB}>
+            Nostalgia Therapy is based on proven reminsicense therapy tools 
+            that are designed to increase quality of life and time spent together.
+            Nostalgia Therapy is based on proven reminsicense therapy tools 
+            that are designed to increase quality of life and time spent together.
+              <img 
+                src = {iPadPhotos}
+                className={classes.hero2}>
+              </img>
+            Nostalgia Therapy is based on proven reminsicense therapy tools 
+            that are designed to increase quality of life and time spent together.
+            Nostalgia Therapy is based on proven reminsicense therapy tools 
+            that are designed to increase quality of life and time spent together.
+            Nostalgia Therapy is based on proven reminsicense therapy tools 
+            that are designed to increase quality of life and time spent together.
+            Nostalgia Therapy is based on proven reminsicense therapy tools 
+            that are designed to increase quality of life and time spent together.
+          </Typography>
+        </ReadWhiteB>        
+          <Button
+            variant="contained"
+            className={classes.cta}>Sign Up
+          </Button>
+      </div>
+    </div>
   );
 };
 

@@ -1,6 +1,6 @@
 import React,{useState}  from "react";
 import iPadDashboard from "../images/iPadDashboard.png";
-
+import jakeAndGrandpa from "../images/Jake and Grandpa.png"
 //mui stuff
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -125,9 +125,8 @@ textB: {
  },
 
  readTextB: {
-   margin: "7px",
+   margin: "10px 50px",
  }
-
 };
 
 function About(props) {
@@ -168,38 +167,40 @@ function About(props) {
               that are designed to increase quality of life and time spent together.
           </Typography> 
     </Grid>  
-{/* Portrait Mode */}
-<Grid container item sm={12}> 
-       
-    </Grid>  
   </Grid>    
   </div>
+  {/* Portrait Mode */}
   <div className={classes.readB}>
-<ReadB>
-      <Typography variant="h4" className={classes.readTextB}>
-      Nostalgia Therapy is based on proven reminsicense therapy tools 
-      that are designed to increase quality of life and time spent together.
-      Nostalgia Therapy is based on proven reminsicense therapy tools 
-      that are designed to increase quality of life and time spent together.
-      that are designed to increase quality of life and time spent together.
-      Nostalgia Therapy is based on proven reminsicense therapy tools 
-      that are designed to increase quality of life and time spent together.
-      that are designed to increase quality of life and time spent together.
-      Nostalgia Therapy is based on proven reminsicense therapy tools 
-      that are designed to increase quality of life and time spent together.
-      that are designed to increase quality of life and time spent together.
-      Nostalgia Therapy is based on proven reminsicense therapy tools 
-      that are designed to increase quality of life and time spent together.
-      that are designed to increase quality of life and time spent together.
-      Nostalgia Therapy is based on proven reminsicense therapy tools 
-      that are designed to increase quality of life and time spent together.
-      </Typography>
-</ReadB>
- <Button
-          variant="contained"
-          className={classes.cta}>Sign Up
+    <ReadB>
+          <Typography variant="h4" className={classes.readTextB}>
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+            <img 
+              src = {jakeAndGrandpa}
+              className={classes.hero}>
+            </img>
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          </Typography>
+    </ReadB>
+    
+      <Button
+        variant="contained"
+        className={classes.cta}>Sign Up
       </Button>
-</div>
+  </div>
 </div>
   );
 };

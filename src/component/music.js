@@ -42,8 +42,8 @@ const styles = {
 },
 
   hero: {
-    maxWidth: "100%",
-    maxHeight: "100%",
+    maxWidth: "80%",
+    maxHeight: "80%",
     marginTop: ".5rem",
     marginLeft: "40px",
     '@media (max-width: 1024px)': {

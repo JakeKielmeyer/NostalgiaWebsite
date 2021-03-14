@@ -16,10 +16,10 @@ function ReadWhiteB({ children }) {
     <>
       <div className={isHidden ? classes.hidden : null}>{children}</div>
       <Button 
-      size="small"
+      size="Large"
       style = {{marginLeft: "68px", color: "white"}}
       onClick={() => 
-      setIsHidden(!isHidden)}>{isHidden ? "Learn More ⬇" : "⬆"}
+      setIsHidden(!isHidden)}>{isHidden ? "Learn More ⬇" : "Collapse ⬆"}
       </Button>
     </>
   );

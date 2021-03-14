@@ -9,6 +9,9 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
 
+import ReadA from "./ReadA";
+import ReadB from "./ReadB";
+
 const styles = {
   puzzle: {
     display: "flex",
@@ -26,67 +29,32 @@ const styles = {
     marginTop: "125px",
     marginLeft: "260px",
     '@media (max-width: 1024px)': {
-      marginLeft: "90px",
+      marginLeft: "15px",
       marginTop: "0",
   },
     '@media (max-width: 768px)': {
-      marginLeft: "270px",
-      marginTop: "15px",
+      marginLeft: "125px",
+      marginTop: "5px",
   },
     '@media (max-width:414px)': {
       fontSize: '1.75rem',
-      marginTop: "10px",
-      marginLeft: "100px",
+      marginTop: "5px",
+      marginLeft: "30px",
   },
 },
 
-  text: {
-    color: "#8f8f8f",
-    marginLeft: "70px",
-    fontSize: "2rem",
-    lineHeight: "1.25",
-    '@media (max-width: 1024px)': {
-      marginLeft: "70px",
-      marginRight: "20px",
-      marginTop: "20px",
-  },
-    '@media (max-width: 768px)': {
-      display: "none",
-  },
-},
-
-text1: {
-  color: "#8f8f8f",
-  marginLeft: "70px",
-  fontSize: "2rem",
-  lineHeight: "1.25",
-  display: "none",
-  '@media (max-width: 768px)': {
-    marginLeft: "70px",
-    marginTop: "5px",
-    display: "block",
-},
-  '@media (max-width:414px)': {
-    fontSize: '1.5rem',
-    margin: "20px",
-    display: "block",
-  },
-},
-  
   hero: {
-    maxWidth: "90%",
-    maxHeight: "90%",
+    maxWidth: "100%",
+    maxHeight: "100%",
     marginTop: ".5rem",
     marginLeft: "40px",
     '@media (max-width: 1024px)': {
+      marginLeft: "15px",
       marginTop: "10px",
-      marginLeft: "120px",
-      maxWidth: "70%",
-      maxHeight: "70%",
   },
     '@media (max-width:414px)': {
       fontSize: '1.5rem',
-      marginLeft: "50px",
+      margin: "0",
   },
 },
   cta: {
@@ -106,41 +74,112 @@ text1: {
     marginLeft: "50px",
     },
   },
+
+  readA: {
+  '@media (max-width: 768px)': {
+    display: "none",
+  }, 
+},
+  readB: {
+    display: "none",
+    '@media (max-width: 768px)': {
+      display: "block",
+  },
+    '@media (max-width:414px)': {
+      fontSize: '1.5rem',
+      margin: "0",
+      display: "block",
+    },
+  }, 
+  textA: {
+    color: "#8f8f8f",
+    marginLeft: "70px",
+    fontSize: "2rem",
+    lineHeight: "1.25",
+    '@media (max-width: 1024px)': {
+      marginLeft: "15px",
+      marginRight: "15px",
+      marginTop: "20px",
+  },
+    '@media (max-width: 768px)': {
+      display: "none",
+  },
+},
+
+textB: {
+  color: "#8f8f8f",
+  marginLeft: "70px",
+  lineHeight: "1.25",
+  display: "none",
+  '@media (max-width: 768px)': {
+    marginLeft: "70px",
+    marginTop: "5px",
+    display: "block",
+},
+  '@media (max-width:414px)': {
+    fontSize: '1.5rem',
+    margin: "0",
+    display: "block",
+  },
+ },
 };
+
 
 
 function Puzzle(props) {
   const { classes } = props;
   return (
     <div className={classes.puzzle}>
- 
- <Grid 
+    <Grid 
       container
       direction="row"
-      alignItems="center"
-    >
+      alignItems="center">
+
     <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>Puzzle</Typography>       
-          <Typography variant="h4" className={classes.text}>Nostalgia Therapy is based on proven reminsicense therapy tools 
-        that are designed to increase quality of life and time spent together.
-        </Typography>
+          <Typography variant="h3" className={classes.head}>What is Nostalgia Therapy?</Typography>       
+          <Typography variant="h4" className={classes.textA}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+              that are designed to increase quality of life and time spent together.</Typography> 
+      
+      {/* Portrait Mode */}
+      <div className={classes.readA}>
+        <ReadA>
+              <Typography variant="h4" className={classes.textA}>
+              Nostalgia Therapy is based on proven reminsicense therapy tools 
+              that are designed to increase quality of life and time spent together.
+              Nostalgia Therapy is based on proven reminsicense therapy tools 
+              that are designed to increase quality of life and time spent together.
+              </Typography>
+        </ReadA>
+      </div>
     </Grid>  
 
     <Grid container item sm={12} md={7}>  
-          <img src = {iPadPuzzle}
-          className={classes.hero}
-          ></img>
-          <Typography variant="h4" className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
-          that are designed to increase quality of life and time spent together.
-          </Typography>
-      
-      <Button
-        variant="contained"
-        className={classes.cta}>Sign Up
+          <img 
+            src = {iPadPuzzle}
+            className={classes.hero}>
+          </img>
+          <Typography variant="h4" 
+              className={classes.textB}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+              that are designed to increase quality of life and time spent together.
+          </Typography> 
+
+{/* Landscape Mode */}
+      <div className={classes.readB}>
+        <ReadB>
+              <Typography variant="h4" className={classes.textB}>
+              Nostalgia Therapy is based on proven reminsicense therapy tools 
+              that are designed to increase quality of life and time spent together.
+              Nostalgia Therapy is based on proven reminsicense therapy tools 
+              that are designed to increase quality of life and time spent together.
+              </Typography>
+        </ReadB>
+      </div>
+        <Button
+          variant="contained"
+          className={classes.cta}>Sign Up
       </Button>
-    </Grid>     
-   
-  </Grid>
+      </Grid>   
+  </Grid>    
   </div>
   );
 };

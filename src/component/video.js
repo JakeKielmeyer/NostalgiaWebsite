@@ -8,6 +8,9 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
+import ReadWhiteA from "./ReadWhiteA";
+import ReadWhiteB from "./ReadWhiteB";
+
 const styles = {
   video: {
     display: "flex",
@@ -46,39 +49,7 @@ head1: {
   fontSize: '1.75rem',
   marginTop: "5px",
   marginLeft: "50px",
-},
-},
-
-text: {
-  color: "#8f8f8f",
-  marginLeft: "70px",
-  fontSize: "2rem",
-  lineHeight: "1.25",
-  '@media (max-width: 1024px)': {
-    marginLeft: "45px",
-    marginTop: "20px",
-},
-  '@media (max-width: 768px)': {
-    display: "none",
-},
-},
-
-text1: {
-color: "#8f8f8f",
-marginLeft: "70px",
-fontSize: "2rem",
-lineHeight: "1.25",
-display: "none",
-'@media (max-width: 768px)': {
-  marginLeft: "70px",
-  marginTop: "5px",
-  display: "block",
-},
-'@media (max-width:414px)': {
-  fontSize: '1.5rem',
-  margin: "0",
-  display: "block",
-},
+  },
 },
   
   hero: {
@@ -114,9 +85,51 @@ display: "none",
     marginLeft: "50px",
     },
   },
+  readA: {
+    '@media (max-width: 768px)': {
+      display: "none",
+    }, 
+  },
+    readB: {
+      display: "none",
+      '@media (max-width: 768px)': {
+        display: "block",
+    },
+      '@media (max-width:414px)': {
+        fontSize: '1.5rem',
+        margin: "0",
+        display: "block",
+      },
+    }, 
+    textA: {
+      color: "#8f8f8f",
+      marginLeft: "70px",
+      fontSize: "2rem",
+      lineHeight: "1.25",
+      '@media (max-width: 1024px)': {
+        marginLeft: "45px",
+        marginRight: "15px",
+        marginTop: "20px",
+    },
+      '@media (max-width: 768px)': {
+        display: "none",
+    },
+  },
+  textB: {
+    color: "#8f8f8f",
+    display: "none",
+    '@media (max-width: 768px)': {
+      marginLeft: "70px",
+      marginTop: "5px",
+      display: "block",
+  },
+    '@media (max-width:414px)': {
+      fontSize: '1.5rem',
+      margin: "0",
+      display: "block",
+    },
+   },
 };
-
-
 
 function Video(props) {
   const { classes } = props;
@@ -129,23 +142,48 @@ function Video(props) {
       alignItems="center"
     >
     <Grid container item sm={12} md={7}>  
-    <Typography variant="h3" className={classes.head1}>Nostalgia TV</Typography>  
+    <Typography variant="h3" className={classes.head1}>Nostalgic Moments</Typography>  
           <img src = {iPadVideo}
           className={classes.hero}>
           </img>
-          <Typography variant="h4" className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+          <Typography variant="h4" className={classes.textB}>Nostalgia Therapy is based on proven reminsicense therapy tools 
             that are designed to increase quality of life and time spent together.
           </Typography>
+        
+        {/* Landscape Mode */}
+        <div className={classes.readB}>
+          <ReadWhiteB>
+                <Typography variant="h4" className={classes.textB}>
+                Nostalgia Therapy is based on proven reminsicense therapy tools 
+                that are designed to increase quality of life and time spent together.
+                Nostalgia Therapy is based on proven reminsicense therapy tools 
+                that are designed to increase quality of life and time spent together.
+                </Typography>
+          </ReadWhiteB>
+        </div>
         <Button
           variant="contained"
           className={classes.cta}>Sign Up
-      </Button>
+        </Button>
     </Grid>     
+    
     <Grid container item sm={12} md={5}>  
           <Typography variant="h3" className={classes.head}>Nostalgic Moments</Typography>       
-          <Typography variant="h4" className={classes.text}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+          <Typography variant="h4" className={classes.textA}>Nostalgia Therapy is based on proven reminsicense therapy tools 
         that are designed to increase quality of life and time spent together.
         </Typography>
+    
+    {/* Portrait Mode */}
+      <div className={classes.readA}>
+        <ReadWhiteA>
+              <Typography variant="h4" className={classes.textA}>
+              Nostalgia Therapy is based on proven reminsicense therapy tools 
+              that are designed to increase quality of life and time spent together.
+              Nostalgia Therapy is based on proven reminsicense therapy tools 
+              that are designed to increase quality of life and time spent together.
+              </Typography>
+        </ReadWhiteA>
+      </div>
     </Grid>      
 
   </Grid>

@@ -7,8 +7,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
-import ReadA from "./ReadA";
-import ReadB from "./ReadB";
+import ReadMore from "./ReadMore";
 
 const styles = {
   about: {
@@ -65,7 +64,7 @@ const styles = {
       marginTop: "10px",
   },
     '@media (max-width: 768px)': {
-      marginLeft: "160px",
+      marginLeft: "280px",
   },
   '@media (max-width:414px)': {
     fontSize: '1.5rem',
@@ -74,7 +73,6 @@ const styles = {
   },
 
   readA: {
-    // backgroundColor: "red",
   '@media (max-width: 768px)': {
     display: "none",
   }, 
@@ -86,7 +84,6 @@ const styles = {
   },
     '@media (max-width:414px)': {
       fontSize: '1.5rem',
-      margin: "0",
       display: "block",
     },
   }, 
@@ -146,14 +143,14 @@ function About(props) {
       
       {/* Landscape Mode */}
       <div className={classes.readA}>
-        <ReadA>
+        <ReadMore>
               <Typography variant="h4" className={classes.textA} style={{backgroundColor: "#8f8f8f", color: "#000",}}>
               Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
               Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
               </Typography>
-        </ReadA>
+        </ReadMore>
       </div>
     </Grid>  
 
@@ -171,7 +168,7 @@ function About(props) {
   </div>
   {/* Portrait Mode */}
   <div className={classes.readB}>
-    <ReadB>
+    <ReadMore>
           <Typography variant="h4" className={classes.readTextB}>
           Nostalgia Therapy is based on proven reminsicense therapy tools 
           that are designed to increase quality of life and time spent together.
@@ -194,7 +191,7 @@ function About(props) {
           Nostalgia Therapy is based on proven reminsicense therapy tools 
           that are designed to increase quality of life and time spent together.
           </Typography>
-    </ReadB>
+    </ReadMore>
     
       <Button
         variant="contained"
@@ -206,5 +203,3 @@ function About(props) {
 };
 
 export default withStyles(styles)(About);
-
-// style={{backgroundColor: "#8f8f8f", color: "#000", marginTop: "10px",}}

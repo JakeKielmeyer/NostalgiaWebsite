@@ -7,6 +7,7 @@ import Photos from "../component/photos";
 import Music from "../component/music";
 import Video from "../component/video";
 import Puzzle from "../component/puzzle";
+import Call from "../component/callToAction";
 // import Science from "../component/science";
 
 //mui stuff
@@ -22,9 +23,13 @@ const Home = (props) => {
 <div>
   <Banner/>
   <About/>
+  <Call/>
   <Photos />
+  <Call/>
   <Music />
+  <Call/>
   <Video />
+  <Call/>
   <Puzzle />
 
 </div>

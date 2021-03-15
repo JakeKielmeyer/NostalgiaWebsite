@@ -60,7 +60,7 @@ const styles = {
     fontFamily: "KOW",
     marginBottom: "15px",
     '@media (max-width: 1024px)': {
-      marginLeft: "150px",
+      marginLeft: "350px",
       marginTop: "10px",
   },
     '@media (max-width: 768px)': {
@@ -77,6 +77,7 @@ const styles = {
     display: "none",
   }, 
 },
+
   readB: {
     display: "none",
     '@media (max-width: 768px)': {
@@ -94,9 +95,7 @@ const styles = {
     fontSize: "2rem",
     lineHeight: "1.25",
     '@media (max-width: 1024px)': {
-      marginLeft: "15px",
-      marginRight: "15px",
-      marginTop: "20px",
+      margin: "25px",
   },
     '@media (max-width: 768px)': {
       display: "none",
@@ -121,9 +120,13 @@ textB: {
   },
  },
 
+ readTextA: {
+  margin: "50px 50px 10px",
+},
+
  readTextB: {
    margin: "10px 50px",
- }
+ },
 };
 
 function About(props) {
@@ -138,20 +141,10 @@ function About(props) {
 
     <Grid container item sm={12} md={5}>  
           <Typography variant="h3" className={classes.head}>What is Nostalgia Therapy?</Typography>       
-          <Typography variant="h4" className={classes.readTextA}>Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.</Typography> 
-      
-      {/* Landscape Mode */}
-      <div className={classes.readA}>
-        <ReadMore>
-              <Typography variant="h4" className={classes.textA} style={{backgroundColor: "#8f8f8f", color: "#000",}}>
-              Nostalgia Therapy is based on proven reminsicense therapy tools 
+          <Typography variant="h4" 
+              className={classes.textA}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
-              Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.
-              </Typography>
-        </ReadMore>
-      </div>
+          </Typography> 
     </Grid>  
 
     <Grid container item sm={12} md={7}>  
@@ -163,9 +156,46 @@ function About(props) {
               className={classes.textB}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
           </Typography> 
-    </Grid>  
+    </Grid> 
+
+    <Grid container item sm={12}>
+          {/* Landscape Mode */}
+      <div className={classes.readA}>
+        <ReadMore>
+              <Typography variant="h4" className={classes.readTextA}>
+              Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+            <img 
+              src = {jakeAndGrandpa}
+              className={classes.hero}>
+            </img>
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+              </Typography>
+        </ReadMore>
+        
+        <Button
+          variant="contained"
+          className={classes.cta}>Sign Up
+        </Button>
+
+      </div> 
+    </Grid>
   </Grid>    
-  </div>
+</div>
+
   {/* Portrait Mode */}
   <div className={classes.readB}>
     <ReadMore>

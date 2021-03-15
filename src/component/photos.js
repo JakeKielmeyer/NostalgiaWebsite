@@ -167,25 +167,41 @@ function Photos(props) {
             that are designed to increase quality of life and time spent together.
           </Typography>
     </Grid>     
-    
-    <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>Nostalgic Moments</Typography>       
-          <Typography variant="h4" className={classes.textA}>Nostalgia Therapy is based on proven reminsicense therapy tools 
-        that are designed to increase quality of life and time spent together.
-        </Typography>
-    
-    {/* Landscape Mode */}
+    <Grid container item sm={12}>
+          {/* Landscape Mode */}
       <div className={classes.readA}>
         <ReadMore>
-              <Typography variant="h4" className={classes.textA}>
+              <Typography variant="h4" className={classes.readTextA}>
               Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.
-              Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+            <img 
+              src = {iPadPhotos}
+              className={classes.hero}>
+            </img>
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
               </Typography>
         </ReadMore>
-      </div>
-    </Grid>      
+        
+        <Button
+          variant="contained"
+          className={classes.cta}>Sign Up
+        </Button>
+
+      </div> 
+    </Grid>
   </Grid>
   </div>
     {/* Portrait Mode */}

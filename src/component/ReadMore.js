@@ -9,20 +9,20 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function ReadWhiteB({ children }) {
+function ReadMore({ children }) {
   const classes = useStyles();
   const [isHidden, setIsHidden] = useState(true);
   return (
     <>
       <div className={isHidden ? classes.hidden : null}>{children}</div>
       <Button 
-      size="small"
-      style = {{marginLeft: "68px", color: "white"}}
+      size="Large"
+      style = {{margin: "15px 80px", backgroundColor: "#DCDCDC", fontFamily: "KOW", textTransform: "capitalize"}}
       onClick={() => 
-      setIsHidden(!isHidden)}>{isHidden ? "Learn More ⬇" : "⬆"}
+      setIsHidden(!isHidden)}>{isHidden ? "Learn More ⬇" : "Collapse ⬆"}
       </Button>
     </>
   );
 }
 
-export default ReadWhiteB;
+export default ReadMore;

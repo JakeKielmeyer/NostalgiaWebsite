@@ -22,6 +22,19 @@ const styles = {
     backgroundColor: "#000",
   },
   
+    
+  headp: {
+    color: "#fff",
+    margin: "25px auto",
+    disaply: "none",
+    '@media (max-width: 1024px)': {
+      display: "none",
+  },
+    '@media (max-width: 768px)': {
+      display: "block",
+  },
+},
+
   head: {
     color: "#fff",
     marginTop: "125px",
@@ -95,6 +108,7 @@ function Photos(props) {
       alignItems="center">
 
     <Grid container item sm={12} md={7}>  
+    <Typography variant="h3" className={classes.headp}>Nostalgic Moments</Typography>
           <img 
             src = {iPadPhotos}
             className={classes.hero}>

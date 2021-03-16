@@ -31,8 +31,7 @@ const styles = {
       marginTop: "0",
   },
     '@media (max-width: 768px)': {
-      marginLeft: "125px",
-      marginTop: "5px",
+      margin: "5px auto",
   },
     '@media (max-width:414px)': {
       fontSize: '1.75rem',

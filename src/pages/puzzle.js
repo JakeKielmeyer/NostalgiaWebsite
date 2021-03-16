@@ -29,8 +29,7 @@ const styles = {
       marginTop: "0",
   },
     '@media (max-width: 768px)': {
-      marginLeft: "125px",
-      marginTop: "5px",
+      margin: "15px auto",
   },
     '@media (max-width:414px)': {
       fontSize: '1.75rem',
@@ -38,20 +37,20 @@ const styles = {
       marginLeft: "30px",
   },
 },
+
 hero: {
   maxWidth: "80%",
   maxHeight: "80%",
-  marginTop: ".5rem",
-  marginLeft: "40px",
+  margin: ".5rem auto",
+  filter: "drop-shadow(0 0 0.1rem white)",
   '@media (max-width: 1024px)': {
-    marginLeft: "15px",
-    marginTop: "10px",
 },
   '@media (max-width:414px)': {
     fontSize: '1.5rem',
     margin: "0",
 },
 },
+
 text1: {
   color: "#8f8f8f",
   fontSize: "2rem",
@@ -93,7 +92,7 @@ function Puzzle(props) {
       alignItems="center">
 
     <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>What is Nostalgia Therapy?</Typography>       
+          <Typography variant="h3" className={classes.head}>Puzzle Fun</Typography>       
           <Typography variant="h4" 
               className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.

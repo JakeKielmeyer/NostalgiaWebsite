@@ -20,7 +20,7 @@ const styles = {
     backgroundColor: "#fff",
   },
   
-  head: {
+head: {
     color: "#000",
     marginTop: "125px",
     marginLeft: "260px",

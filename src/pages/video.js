@@ -22,6 +22,18 @@ const styles = {
     backgroundColor: "#000",
   },
   
+  headp: {
+    color: "#fff",
+    margin: "25px auto",
+    disaply: "none",
+    '@media (max-width: 1024px)': {
+      display: "none",
+  },
+    '@media (max-width: 768px)': {
+      display: "block",
+  },
+},
+
   head: {
     color: "#fff",
     marginTop: "125px",
@@ -38,12 +50,9 @@ const styles = {
   hero: {
     maxWidth: "80%",
     maxHeight: "80%",
-    marginTop: ".5rem",
-    marginLeft: "40px",
+    margin: ".5rem auto",
     filter: "drop-shadow(0 0 0.1rem white)",
     '@media (max-width: 1024px)': {
-      marginLeft: "15px",
-      marginTop: "10px",
   },
     '@media (max-width:414px)': {
       fontSize: '1.5rem',
@@ -95,6 +104,7 @@ function Video(props) {
       alignItems="center">
 
     <Grid container item sm={12} md={7}>  
+    <Typography variant="h3" className={classes.headp}>Nostalgia TV</Typography>
           <img 
             src = {iPadVideo}
             className={classes.hero}>

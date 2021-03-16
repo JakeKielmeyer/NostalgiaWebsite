@@ -8,7 +8,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
-import ReadMore from "./ReadMore";
+import ReadMore from "../ReadMore";
 
 const styles = {
   photo: {
@@ -235,4 +235,4 @@ function Photos(props) {
   );
 };
 
-export default withStyles(styles)(Photos);
+// export default withStyles(styles)(Photos);

@@ -2,11 +2,11 @@ import React from "react";
 
 // Compenents
 import Banner from "../component/banner";
-import About from "../component/about";
-import Photos from "../component/photos";
-import Music from "../component/music";
-import Video from "../component/video";
-import Puzzle from "../component/puzzle";
+import About from "./about";
+import Photos from "./photo";
+import Music from "./music";
+import Video from "./video";
+import Puzzle from "./puzzle";
 import Call from "../component/callToAction";
 // import Science from "../component/science";
 
@@ -14,7 +14,7 @@ import Call from "../component/callToAction";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 const styles = {
-  
+
 };
 
 const Home = (props) => {

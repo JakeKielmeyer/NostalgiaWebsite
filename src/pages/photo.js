@@ -1,5 +1,5 @@
 import React from "react";
-import iPadVideo from "../images/iPadVideo.png";
+import iPadPhotos from "../images/iPadPhotos.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -8,9 +8,10 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
-import ReadMore from "./ReadMore";
+import ReadMore from "../component/ReadMore";
+
 const styles = {
-  video: {
+  photo: {
     display: "flex",
     paddingLeft: "4rem",
     paddingRight: "5rem",
@@ -146,11 +147,11 @@ hero2: {
   }
  };
 
-function Video(props) {
+function Photos(props) {
   const { classes } = props;
   return (
   <div>
-    <div className={classes.video}>
+    <div className={classes.photo}>
  
  <Grid 
       container
@@ -158,33 +159,49 @@ function Video(props) {
       alignItems="center"
     >
     <Grid container item sm={12} md={7}>  
-    <Typography variant="h3" className={classes.head1}>Nostalgia TV</Typography>  
-          <img src = {iPadVideo}
+    <Typography variant="h3" className={classes.head1}>Nostalgic Moments</Typography>  
+          <img src = {iPadPhotos}
           className={classes.hero}>
           </img>
           <Typography variant="h4" className={classes.textB}>Nostalgia Therapy is based on proven reminsicense therapy tools 
             that are designed to increase quality of life and time spent together.
           </Typography>
     </Grid>     
-    
-    <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>Nostalgic Moments</Typography>       
-          <Typography variant="h4" className={classes.textA}>Nostalgia Therapy is based on proven reminsicense therapy tools 
-        that are designed to increase quality of life and time spent together.
-        </Typography>
-    
-    {/* Landscape Mode */}
+    <Grid container item sm={12}>
+          {/* Landscape Mode */}
       <div className={classes.readA}>
         <ReadMore>
-              <Typography variant="h4" className={classes.textA}>
+              <Typography variant="h4" className={classes.readTextA}>
               Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.
-              Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+            <img 
+              src = {iPadPhotos}
+              className={classes.hero}>
+            </img>
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
+          that are designed to increase quality of life and time spent together.
+          Nostalgia Therapy is based on proven reminsicense therapy tools 
+          that are designed to increase quality of life and time spent together.
               </Typography>
         </ReadMore>
-      </div>
-    </Grid>      
+        
+        <Button
+          variant="contained"
+          className={classes.cta}>Sign Up
+        </Button>
+
+      </div> 
+    </Grid>
   </Grid>
   </div>
     {/* Portrait Mode */}
@@ -196,7 +213,7 @@ function Video(props) {
             Nostalgia Therapy is based on proven reminsicense therapy tools 
             that are designed to increase quality of life and time spent together.
               <img 
-                src = {iPadVideo}
+                src = {iPadPhotos}
                 className={classes.hero2}>
               </img>
             Nostalgia Therapy is based on proven reminsicense therapy tools 
@@ -218,4 +235,4 @@ function Video(props) {
   );
 };
 
-export default withStyles(styles)(Video);
+export default withStyles(styles)(Photos);

@@ -1,5 +1,5 @@
 import React from "react";
-import iPadMusic from "../images/iPadMusic.png";
+import iPadPuzzle from "../images/iPadPuzzle.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -8,10 +8,10 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
-import ReadMore from "./ReadMore";
+import ReadMore from "../ReadMore";
 
 const styles = {
-  music: {
+  puzzle: {
     display: "flex",
     paddingLeft: "4rem",
     paddingRight: "5rem",
@@ -127,18 +127,18 @@ textB: {
  }
 };
 
-function Music(props) {
+function Puzzle(props) {
   const { classes } = props;
   return (
     <div>
-      <div  className={classes.music}>
+      <div  className={classes.puzzle}>
     <Grid 
       container
       direction="row"
       alignItems="center">
 
     <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>Nostalgia Radio</Typography>       
+          <Typography variant="h3" className={classes.head}>What is Nostalgia Therapy?</Typography>       
           <Typography variant="h4" className={classes.readTextA}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.</Typography> 
       
@@ -157,7 +157,7 @@ function Music(props) {
 
     <Grid container item sm={12} md={7}>  
           <img 
-            src = {iPadMusic}
+            src = {iPadPuzzle}
             className={classes.hero}>
           </img>
           <Typography variant="h4" 
@@ -179,7 +179,7 @@ function Music(props) {
           Nostalgia Therapy is based on proven reminsicense therapy tools 
           that are designed to increase quality of life and time spent together.
             <img 
-              src = {iPadMusic}
+              src = {iPadPuzzle}
               className={classes.hero}>
             </img>
           that are designed to increase quality of life and time spent together.
@@ -204,4 +204,4 @@ function Music(props) {
 };
 
 
-export default withStyles(styles)(Music);
+export default withStyles(styles)(Puzzle);

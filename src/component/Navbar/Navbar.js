@@ -2,7 +2,13 @@
 import AppBar from "@material-ui/core/AppBar";
 import ToolBar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
-import { Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 import withStyles from "@material-ui/core/styles/withStyles";
 
@@ -45,43 +51,79 @@ const styles = {
   },
 };
 
-function logoutHandle(){
-  localStorage.clear();
-};
-
 function Navbar(props) {
   const { classes } = props;
   return (
+  <Router>
     <AppBar position="absolute" className={classes.appBar}>
       <ToolBar className={classes.navContainer}>
-
+        <Link to="/home">
           <Button color="inherit" className={classes.brandName}>
             Nostalgia Therapy
           </Button>
-
-
+        </Link>
+        <Link to="./pages/music"> 
           <Button color="inherit" className={classes.navLink}>
-            About{" "}
+            Music
           </Button>
-
-
+        </Link>
+        <Link to="./pages/video">
           <Button color="inherit" className={classes.navLink}>
-            Features
+            Video
           </Button>
-
-
+        </Link>
+        <Link to="/photo">
           <Button color="inherit" className={classes.navLink}>
-            Sign Up{" "}
+            Photos
           </Button>
-
-
+        </Link>
+        <Link to="./pages/puzzle">
           <Button color="inherit" className={classes.navLink}>
-            Sign In
+            Puzzle
           </Button>
+        </Link>
 
       </ToolBar>
     </AppBar>
+  </Router>
+
   );
 }
+
+
+// function Navbar(props) {
+//   const { classes } = props;
+//   return (
+//     <AppBar position="absolute" className={classes.appBar}>
+//       <ToolBar className={classes.navContainer}>
+//         <Link to = "/home">
+//         <Button color="inherit" className={classes.brandName}>
+//             Nostalgia Therapy
+//           </Button>
+//         </Link>
+
+//           <Button color="inherit" className={classes.navLink}>
+//             About{""}
+//           </Button>
+
+
+//           <Button color="inherit" className={classes.navLink}>
+//             Features
+//           </Button>
+
+
+//           <Button color="inherit" className={classes.navLink}>
+//             Sign Up{" "}
+//           </Button>
+
+
+//           <Button color="inherit" className={classes.navLink}>
+//             Sign In
+//           </Button>
+
+//       </ToolBar>
+//     </AppBar>
+//   );
+// }
 
 export default withStyles(styles)(Navbar);

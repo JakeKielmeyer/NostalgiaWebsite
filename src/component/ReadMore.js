@@ -17,7 +17,7 @@ function ReadMore({ children }) {
       <div className={isHidden ? classes.hidden : null}>{children}</div>
       <Button 
       size="Large"
-      style = {{margin: "15px 80px", backgroundColor: "#DCDCDC", fontFamily: "KOW", textTransform: "capitalize"}}
+      style = {{margin: "15px 80px", backgroundColor: "#DCDCDC", fontFamily: "KOW", fontSize: "1.5rem", textTransform: "none"}}
       onClick={() => 
       setIsHidden(!isHidden)}>{isHidden ? "Learn More ⬇" : "Collapse ⬆"}
       </Button>

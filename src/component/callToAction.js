@@ -10,52 +10,35 @@ import Button from "@material-ui/core/Button";
 const styles = {
   call: {
     display: "flex",
-    paddingLeft: "4rem",
-    paddingRight: "5rem",
+    padding: "1.25rem 4rem",
     minHeight: "20vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
     backgroundColor: "#8f8f8f",
   },
+
   head: {
     color: "#fff",
     '@media (max-width: 1024px)': {
-        margin: "10px 20px",
+        margin: "10px auto",
         display: "block",
   },
-},
-textB: {
-    color: "#000",
-    fontSize: "2rem",
-    lineHeight: "1.25",
-    display: "none",
-    '@media (max-width: 768px)': {
-      marginBottom: "15px",
-      display: "block",
-  },
-    '@media (max-width:414px)': {
-      fontSize: '1.5rem',
-      margin: "0",
-      display: "block",
+  '@media (max-width:414px)': {
+    margin: "5px auto",
+    fontSize: '1.3rem',
     },
-   },
+},
+
    cta: {
     textTransform: "none",
     fontSize: "1.5rem",
     fontFamily: "KOW",
-    marginBottom: "15px",
-    '@media (max-width: 1024px)': {
-      marginLeft: "150px",
-      marginTop: "0",
-  },
-    marginLeft: "400px",
+    margin: "15px auto 2px",
     '@media (max-width: 768px)': {
-      marginLeft: "280px",
   },
   '@media (max-width:414px)': {
     fontSize: '1.5rem',
-    marginLeft: "50px",
     },
   },
 };
@@ -72,12 +55,11 @@ function Call(props) {
         <Grid container item sm={12}>  
           <Typography variant="h3" className={classes.head}>Start Your Free Two Week Trial Today</Typography>       
         </Grid>  
-
-        <Grid container item sm={12}>  
-            <Typography variant="h4" className={classes.textB}>Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.</Typography> 
-        </Grid>
         
+        <Grid container item sm={12}>  
+          <Typography variant="h6" className={classes.head}>Only $15 a month</Typography>       
+        </Grid>  
+
         <Button
             variant="contained"
             className={classes.cta}>Sign Up

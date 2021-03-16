@@ -36,8 +36,8 @@ const styles = {
 },
   
   hero: {
-    maxWidth: "100%",
-    maxHeight: "100%",
+    maxWidth: "80%",
+    maxHeight: "80%",
     marginTop: ".5rem",
     marginLeft: "40px",
     filter: "drop-shadow(0 0 0.1rem white)",
@@ -105,17 +105,22 @@ function Video(props) {
           </Typography> 
     </Grid>  
     <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>Nostalgic Moments</Typography>       
+          <Typography variant="h3" className={classes.head}>Nostalgia TV</Typography>       
           <Typography variant="h4" className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>  
-    {/* Landscape Mode */}
-    <Grid container item sm={12}>
-      <AboutMoreLM/>
-    </Grid>
   
   </Grid>    
 </div>
+ <Grid 
+      container
+      direction="row"
+      alignItems="center"></Grid>
+
+    {/* Landscape Mode */}
+    <Grid container item sm={12} style = {{background: "white"}}>
+      <AboutMoreLM/>
+    </Grid>
 {/* Portrait Mode */}
 <AboutMore/>
 </div>

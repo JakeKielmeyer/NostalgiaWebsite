@@ -15,7 +15,7 @@ const styles = {
     }, 
   },
   readTextA: {
-    color: "white",
+    color: "#000",
     margin: "50px 50px 10px",
   },
   hero: {
@@ -38,11 +38,8 @@ const styles = {
     fontFamily: "KOW",
     marginBottom: "15px",
     '@media (max-width: 1024px)': {
-      marginLeft: "350px",
+      marginLeft: "500px",
       marginTop: "10px",
-  },
-    '@media (max-width: 768px)': {
-      marginLeft: "280px",
   },
   '@media (max-width:414px)': {
     fontSize: '1.5rem',

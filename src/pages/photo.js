@@ -109,13 +109,17 @@ function Photos(props) {
           <Typography variant="h4" className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>  
-    {/* Landscape Mode */}
-    <Grid container item sm={12}>
-      <AboutMoreLM/>
-    </Grid>
-  
   </Grid>    
 </div>
+ <Grid 
+      container
+      direction="row"
+      alignItems="center"></Grid>
+      
+    {/* Landscape Mode */}
+    <Grid container item sm={12} style = {{background: "white"}}>
+      <AboutMoreLM/>
+    </Grid>
 {/* Portrait Mode */}
 <AboutMore/>
 </div>

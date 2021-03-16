@@ -3,12 +3,12 @@ import iPadMusic from "../images/iPadMusic.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
 
-import ReadMore from "../component/ReadMore";
+// Components
+import AboutMore from "../component/about/portrait";
+import AboutMoreL from "../component/about/landscape";
 
 const styles = {
   music: {
@@ -55,41 +55,8 @@ const styles = {
       margin: "0",
   },
 },
-  cta: {
-    textTransform: "none",
-    fontSize: "1.5rem",
-    fontFamily: "KOW",
-    marginBottom: "15px",
-    '@media (max-width: 1024px)': {
-      marginLeft: "150px",
-      marginTop: "10px",
-  },
-    '@media (max-width: 768px)': {
-      marginLeft: "280px",
-  },
-  '@media (max-width:414px)': {
-    fontSize: '1.5rem',
-    marginLeft: "50px",
-    },
-  },
 
-  readA: {
-  '@media (max-width: 768px)': {
-    display: "none",
-  }, 
-},
-  readB: {
-    display: "none",
-    '@media (max-width: 768px)': {
-      display: "block",
-  },
-    '@media (max-width:414px)': {
-      fontSize: '1.5rem',
-      display: "block",
-    },
-  }, 
-
-  textA: {
+  text1: {
     color: "#8f8f8f",
     marginLeft: "70px",
     fontSize: "2rem",
@@ -104,7 +71,7 @@ const styles = {
   },
 },
 
-textB: {
+text2: {
   color: "#8f8f8f",
   marginLeft: "70px",
   fontSize: "2rem",
@@ -121,10 +88,6 @@ textB: {
     display: "block",
   },
  },
-
- readTextB: {
-   margin: "10px 50px",
- }
 };
 
 function Music(props) {
@@ -139,20 +102,8 @@ function Music(props) {
 
     <Grid container item sm={12} md={5}>  
           <Typography variant="h3" className={classes.head}>Nostalgia Radio</Typography>       
-          <Typography variant="h4" className={classes.readTextA}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+          <Typography variant="h4" className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.</Typography> 
-      
-      {/* Landscape Mode */}
-      <div className={classes.readA}>
-        <ReadMore>
-              <Typography variant="h4" className={classes.textA} style={{backgroundColor: "#8f8f8f", color: "#000",}}>
-              Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.
-              Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.
-              </Typography>
-        </ReadMore>
-      </div>
     </Grid>  
 
     <Grid container item sm={12} md={7}>  
@@ -161,44 +112,20 @@ function Music(props) {
             className={classes.hero}>
           </img>
           <Typography variant="h4" 
-              className={classes.textB}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+              className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
           </Typography> 
     </Grid>  
+
+    {/* Landscape Mode */}
+    <Grid container item sm={12}>
+      <AboutMoreL/>
+    </Grid>
+  
   </Grid>    
-  </div>
-  {/* Portrait Mode */}
-  <div className={classes.readB}>
-    <ReadMore>
-          <Typography variant="h4" className={classes.readTextB}>
-          Nostalgia Therapy is based on proven reminsicense therapy tools 
-          that are designed to increase quality of life and time spent together.
-          Nostalgia Therapy is based on proven reminsicense therapy tools 
-          that are designed to increase quality of life and time spent together.
-          that are designed to increase quality of life and time spent together.
-          Nostalgia Therapy is based on proven reminsicense therapy tools 
-          that are designed to increase quality of life and time spent together.
-            <img 
-              src = {iPadMusic}
-              className={classes.hero}>
-            </img>
-          that are designed to increase quality of life and time spent together.
-          Nostalgia Therapy is based on proven reminsicense therapy tools 
-          that are designed to increase quality of life and time spent together.
-          that are designed to increase quality of life and time spent together.
-          Nostalgia Therapy is based on proven reminsicense therapy tools 
-          that are designed to increase quality of life and time spent together.
-          that are designed to increase quality of life and time spent together.
-          Nostalgia Therapy is based on proven reminsicense therapy tools 
-          that are designed to increase quality of life and time spent together.
-          </Typography>
-    </ReadMore>
-    
-      <Button
-        variant="contained"
-        className={classes.cta}>Sign Up
-      </Button>
-  </div>
+</div>
+{/* Portrait Mode */}
+<AboutMore/>
 </div>
   );
 };

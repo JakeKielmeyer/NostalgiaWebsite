@@ -38,6 +38,20 @@ const styles = {
       marginLeft: "30px",
   },
 },
+hero: {
+  maxWidth: "100%",
+  maxHeight: "100%",
+  marginTop: ".5rem",
+  marginLeft: "40px",
+  '@media (max-width: 1024px)': {
+    marginLeft: "15px",
+    marginTop: "10px",
+},
+  '@media (max-width:414px)': {
+    fontSize: '1.5rem',
+    margin: "0",
+},
+},
 text1: {
   color: "#8f8f8f",
   fontSize: "2rem",
@@ -66,21 +80,6 @@ text2: {
     display: "block",
   },
  },
-
-  hero: {
-    maxWidth: "100%",
-    maxHeight: "100%",
-    marginTop: ".5rem",
-    marginLeft: "40px",
-    '@media (max-width: 1024px)': {
-      marginLeft: "15px",
-      marginTop: "10px",
-  },
-    '@media (max-width:414px)': {
-      fontSize: '1.5rem',
-      margin: "0",
-  },
-},
 };
 
 function About(props) {
@@ -101,7 +100,7 @@ function About(props) {
           </Typography> 
     </Grid>  
 
-    <Grid container item sm={12} md={7}>  
+    <Grid container item sm={12} md={5}>  
           <img 
             src = {iPadDashboard}
             className={classes.hero}>
@@ -111,7 +110,7 @@ function About(props) {
               that are designed to increase quality of life and time spent together.
           </Typography> 
     </Grid> 
-
+{/* Landscape Mode */}
     <Grid container item sm={12}>
       <AboutMoreL/>
     </Grid>

@@ -3,8 +3,6 @@ import iPadPhotos from "../images/iPadPhotos.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
-import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 

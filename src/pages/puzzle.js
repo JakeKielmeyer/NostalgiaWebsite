@@ -84,7 +84,7 @@ text2: {
 function Puzzle(props) {
   const { classes } = props;
   return (
-    <div>
+    <div id="puzzle">
       <div  className={classes.puzzle}>
     <Grid 
       container

@@ -2,7 +2,7 @@
 import AppBar from "@material-ui/core/AppBar";
 import ToolBar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
-import { Link } from "react-router-dom";
+
 
 import withStyles from "@material-ui/core/styles/withStyles";
 
@@ -45,43 +45,89 @@ const styles = {
   },
 };
 
-function logoutHandle(){
-  localStorage.clear();
-};
-
 function Navbar(props) {
   const { classes } = props;
   return (
+
     <AppBar position="absolute" className={classes.appBar}>
       <ToolBar className={classes.navContainer}>
 
           <Button color="inherit" className={classes.brandName}>
             Nostalgia Therapy
           </Button>
-
-
+        
+        <a class="navLink" href="#about">
           <Button color="inherit" className={classes.navLink}>
-            About{" "}
+            About
           </Button>
-
-
+        </a>
+        
+        <a class="navLink" href="#photos">
           <Button color="inherit" className={classes.navLink}>
-            Features
+            Nostalgic Moments
           </Button>
+        </a>
 
-
+        <a class="navLink" href="#NostalgiaRadio">
           <Button color="inherit" className={classes.navLink}>
-            Sign Up{" "}
+            Music
           </Button>
+        </a>
 
-
+        <a class="navLink" href="#video">
           <Button color="inherit" className={classes.navLink}>
-            Sign In
+            Nostalgia TV
           </Button>
-
+        </a>
+    
+        <a class="navLink" href="#puzzle">
+          <Button color="inherit" className={classes.navLink}>
+            Puzzle
+          </Button>
+       </a>
+ 
       </ToolBar>
     </AppBar>
+
+
   );
 }
+
+<a class="Class-Name" href="#The-ID-Name">Music</a>
+
+// function Navbar(props) {
+//   const { classes } = props;
+//   return (
+//     <AppBar position="absolute" className={classes.appBar}>
+//       <ToolBar className={classes.navContainer}>
+//         <Link to = "/home">
+//         <Button color="inherit" className={classes.brandName}>
+//             Nostalgia Therapy
+//           </Button>
+//         </Link>
+
+//           <Button color="inherit" className={classes.navLink}>
+//             About{""}
+//           </Button>
+
+
+//           <Button color="inherit" className={classes.navLink}>
+//             Features
+//           </Button>
+
+
+//           <Button color="inherit" className={classes.navLink}>
+//             Sign Up{" "}
+//           </Button>
+
+
+//           <Button color="inherit" className={classes.navLink}>
+//             Sign In
+//           </Button>
+
+//       </ToolBar>
+//     </AppBar>
+//   );
+// }
 
 export default withStyles(styles)(Navbar);

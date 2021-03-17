@@ -5,16 +5,13 @@ import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
+import Button from "@material-ui/core/Button";
 
 const drawerWidth = 240;
 
@@ -84,6 +81,16 @@ const useStyles = makeStyles((theme) => ({
     }),
     marginRight: 0,
   },
+  navLink: {
+    padding: "0 1rem",
+    fontFamily: "KOJ",
+    fontSize: "1.15rem",
+    display: "flex",
+    textTransform: "capitalize",
+    '@media (min-width:760px)': {
+      fontSize: '1rem',
+   },
+  },
 }));
 
 export default function MobileNavbar() {
@@ -139,15 +146,39 @@ export default function MobileNavbar() {
           </IconButton>
         </div>
         <Divider />
-        <List>
-          {['About', 'Features', 'Sign Up', 'Sign In'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon></ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
+          <ul>
+            <a class="navLink" href="#about">
+              <Button color="inherit" className={classes.navLink}>
+                About
+              </Button>
+          </a>
+          <a class="navLink" href="#photos">
+              <Button color="inherit" className={classes.navLink}>
+                Nostalgic Moments
+              </Button>
+          </a>
+
+          <a class="navLink" href="#NostalgiaRadio">
+              <Button color="inherit" className={classes.navLink}>
+                Music
+              </Button>
+          </a>
+
+          <a class="navLink" href="#video">
+            <Button color="inherit" className={classes.navLink}>
+              Nostalgia TV
+            </Button>
+          </a>
+    
+          <a class="navLink" href="#puzzle">
+           <Button color="inherit" className={classes.navLink}>
+              Puzzle
+            </Button>
+          </a>
+        </ul>
+
       </Drawer>
+
     </div>
   );
 }

@@ -100,7 +100,7 @@ text1: {
 function Photos(props) {
   const { classes } = props;
   return (
-    <div>
+    <div id="photos">
       <div  className={classes.photo}>
     <Grid 
       container

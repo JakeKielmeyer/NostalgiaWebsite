@@ -96,7 +96,7 @@ text1: {
 function Video(props) {
   const { classes } = props;
   return (
-    <div>
+    <div id="video">
       <div  className={classes.video}>
     <Grid 
       container

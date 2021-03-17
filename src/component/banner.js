@@ -84,7 +84,7 @@ const styles = {
 function Banner(props) {
   const { classes } = props;
   return (
-<div>
+<div id="banner">
   <div className={classes.banner}>
     <Grid 
       container

@@ -2,12 +2,6 @@
 import AppBar from "@material-ui/core/AppBar";
 import ToolBar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 
 
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -54,42 +48,52 @@ const styles = {
 function Navbar(props) {
   const { classes } = props;
   return (
-  <Router>
+
     <AppBar position="absolute" className={classes.appBar}>
       <ToolBar className={classes.navContainer}>
-        <Link to="/home">
+
           <Button color="inherit" className={classes.brandName}>
             Nostalgia Therapy
           </Button>
-        </Link>
-        <Link to="./pages/music"> 
+        
+        <a class="navLink" href="#about">
+          <Button color="inherit" className={classes.navLink}>
+            About
+          </Button>
+        </a>
+        
+        <a class="navLink" href="#photos">
+          <Button color="inherit" className={classes.navLink}>
+            Nostalgic Moments
+          </Button>
+        </a>
+
+        <a class="navLink" href="#NostalgiaRadio">
           <Button color="inherit" className={classes.navLink}>
             Music
           </Button>
-        </Link>
-        <Link to="./pages/video">
+        </a>
+
+        <a class="navLink" href="#video">
           <Button color="inherit" className={classes.navLink}>
-            Video
+            Nostalgia TV
           </Button>
-        </Link>
-        <Link to="/photo">
-          <Button color="inherit" className={classes.navLink}>
-            Photos
-          </Button>
-        </Link>
-        <Link to="./pages/puzzle">
+        </a>
+    
+        <a class="navLink" href="#puzzle">
           <Button color="inherit" className={classes.navLink}>
             Puzzle
           </Button>
-        </Link>
-
+       </a>
+ 
       </ToolBar>
     </AppBar>
-  </Router>
+
 
   );
 }
 
+<a class="Class-Name" href="#The-ID-Name">Music</a>
 
 // function Navbar(props) {
 //   const { classes } = props;

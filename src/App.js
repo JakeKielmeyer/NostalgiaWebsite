@@ -18,6 +18,8 @@ import Video from "./pages/video";
 import Puzzle from "./pages/puzzle";
 import Call from "../src/component/callToAction";
 
+import Scroll from "../src/component/scroll";
+
 const theme = createMuiTheme(); {
   theme.typography.h3 = {
     fontFamily: "KOW, sans-serif",
@@ -56,6 +58,7 @@ function App() {
         <Video />
          <Call/>
         <Puzzle />
+        <Scroll/>
       <Footer />
     </div>
   </MuiThemeProvider>

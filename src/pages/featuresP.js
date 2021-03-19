@@ -2,7 +2,7 @@ import React,{useState}  from "react";
 import iPadPhotos from "../images/iPadPhotos.png";
 import iPadMusic from "../images/iPadMusic.png";
 import iPadVideo from "../images/iPadVideo.png";
-import iPadPuuzzle from "../images/iPadPuzzle.png";
+import iPadPuzzle from "../images/iPadPuzzle.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -10,35 +10,25 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
-
-
 const styles = {
   features: {
     display: "flex",
-    padding: "6rem 5rem 2rem 4rem",
+    padding: "4rem 5rem 2rem 4rem",
     minHeight: "80vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
     backgroundColor: "#fff",
+    display: "none",
+    '@media (max-width: 768px)': {
+     display: "block",
   },
+},
   
 head: {
-    color: "#000",
-    marginTop: "125px",
-    marginLeft: "260px",
-    '@media (max-width: 1024px)': {
-      margin: "15px auto",
-  },
-    '@media (max-width: 768px)': {
+      color: "#000",
       marginLeft: "250px",
-      marginTop: "5px",
-  },
-    '@media (max-width:414px)': {
-      fontSize: '1.75rem',
-      marginTop: "5px",
-      marginLeft: "30px",
-  },
+      marginBottom: "2rem",
 },
 
 hero: {
@@ -46,56 +36,36 @@ hero: {
   maxHeight: "90%",
   marginTop: ".5rem",
   marginLeft: "40px",
-  position: "relative",
-  zIndex: 1,
-  '@media (max-width: 1024px)': {
-    margin: "10px auto",
+  marginBottom: "1.1rem",
 },
-  '@media (max-width:414px)': {
-    fontSize: '1.5rem',
-    margin: "0",
-  },
-},
-
 
 moments: {
-  marginLeft: "205px",
+  marginLeft: "220px",
   color: "#8f8f8f",
   fontSize: "2rem",
   lineHeight: "1.25",
-    '@media (max-width: 1024px)': {
-      display: "none",
-    },
 },
 
   radio: {
-    marginLeft: "215px",
+    marginLeft: "245px",
     color: "#8f8f8f",
     fontSize: "2rem",
     lineHeight: "1.25",
-    '@media (max-width: 1024px)': {
-      display: "none",
-    },
   },
 
   tv: {
-    marginLeft: "235px",
+    marginLeft: "260px",
     color: "#8f8f8f",
     fontSize: "2rem",
     lineHeight: "1.25",
   },
 
   puzzle: {
-    marginLeft: "255px",
+    marginLeft: "275px",
     color: "#8f8f8f",
     fontSize: "2rem",
     lineHeight: "1.25",
   },
-  hide: {
-    '@media (max-width: 768px)': {
-      display: "none",
-    },
-  }
 };
 
 function Features(props) {
@@ -111,37 +81,8 @@ function Features(props) {
           <Typography variant="h3" className={classes.head}>Features</Typography>       
     </Grid>  
 
-    <Grid container item sm={12} md={6}>  
-    <a class="navLink" href="#photos">
-      <Button>
-      <Typography variant="h3" className={classes.hide}
-        style={{
-          margin: "15px 75px",
-          color: "#8f8f8f",
-          fontSize: "2rem",
-          lineHeight: "1.25",
-        }}
-      >Nostalgic Moments</Typography> 
-      </Button>
-    </a>
-    </Grid> 
-
-    <Grid container item sm={12} md={6}>  
-    <a class="navLink" href="#photos">
-      <Button>
-      <Typography variant="h3" className={classes.hide}
-      style={{
-        margin: "15px 105px",
-        color: "#8f8f8f",
-        fontSize: "2rem",
-        lineHeight: "1.25",
-      }}>
-      Nostalga Radio</Typography> 
-      </Button>
-    </a>
-    </Grid> 
-
-  <Grid contianer item sm= {12}>
+{/* Portrait Mode */}
+<Grid contianer item sm= {12}>
     <a class = "navLink" href = "#photos">
       <Typography variant = "h3" className={classes.moments}>
         Nostalgic Moments
@@ -149,7 +90,7 @@ function Features(props) {
     </a> 
   </Grid>
 
-    <Grid container item sm={12} md={6}>  
+    <Grid container item sm={12} className={classes.hero}>  
     <a class="navLink" href="#photos">
       <Button>
           <img 
@@ -159,16 +100,16 @@ function Features(props) {
       </Button>
     </a>
     </Grid> 
-
+    
     <Grid contianer item sm= {12}>
-    <a class = "navLink" href = "#photos">
+    <a class = "navLink" href = "#NostalgiaRadio">
       <Typography variant = "h3" className={classes.radio}>
         Nostalgia Radio
       </Typography>
     </a> 
   </Grid>
 
-    <Grid container item sm={12} md={6}>  
+    <Grid container item sm={12} className={classes.hero}>  
     <a class="navLink" href="#NostalgiaRadio">
       <Button>
           <img 
@@ -178,43 +119,16 @@ function Features(props) {
       </Button>
     </a>
     </Grid> 
- 
-    <Grid container item sm={12} md={6}>  
-    <a class="navLink" href="#photos">
-      <Button>
-      <Typography variant="h3"   className={classes.hide} style={{
-          margin: "15px 122px",
-          color: "#8f8f8f",
-          fontSize: "2rem",
-          lineHeight: "1.25",
-          }}>Nostalgia TV</Typography> 
-      </Button>
-    </a>
-    </Grid> 
-
-    <Grid container item sm={12} md={6}>  
-    <a class="navLink" href="#photos">
-      <Button>
-      <Typography variant="h3" className={classes.hide}
-        style= {{
-          margin: "15px 135px",
-          color: "#8f8f8f",
-          fontSize: "2rem",
-          lineHeight: "1.25",
-        }}>Puzzle Fun</Typography>         
-      </Button>
-    </a>
-    </Grid> 
 
     <Grid contianer item sm= {12}>
-    <a class = "navLink" href = "#photos">
+    <a class = "navLink" href = "#video">
       <Typography variant = "h3" className={classes.tv}>
         Nostalgia TV
       </Typography>
     </a> 
   </Grid>
     
-    <Grid container item sm={12} md={6}> 
+    <Grid container item sm={12} className={classes.hero}>  
     <a class="navLink" href="#video"> 
       <Button>
           <img 
@@ -226,24 +140,23 @@ function Features(props) {
     </Grid> 
 
     <Grid contianer item sm= {12}>
-    <a class = "navLink" href = "#photos">
-      <Typography variant = "h3" className={classes.puzzle}>
+    <a class = "navLink" href = "#puzzle">
+      <Typography variant = "h3"  className={classes.puzzle}>
         Puzzle Fun
       </Typography>
     </a> 
   </Grid>
 
-    <Grid container item sm={12} md={6}>  
+    <Grid container item sm={12} className={classes.hero}>  
     <a class="navLink" href="#puzzle">
       <Button>
           <img 
-            src = {iPadPuuzzle}
+            src = {iPadPuzzle}
             className={classes.hero}>
           </img>
       </Button>
     </a>
   </Grid> 
-  
   </Grid>    
 </div>
 </div>

@@ -69,13 +69,13 @@ function Navbar(props) {
           </Button>
         </a>
 
-        <a>
+        <a class="navLink" href="https://nostalgiadev-1f319.web.app/signup">
           <Button color="inherit" className={classes.navLink}>
             Sign Up
           </Button>
         </a>
 
-        <a>
+        <a class="navLink" href="https://nostalgiadev-1f319.web.app/">
           <Button color="inherit" className={classes.navLink}>
             Sign In
           </Button>
@@ -98,42 +98,5 @@ function Navbar(props) {
 
   );
 }
-
-<a class="Class-Name" href="#The-ID-Name">Music</a>
-
-// function Navbar(props) {
-//   const { classes } = props;
-//   return (
-//     <AppBar position="absolute" className={classes.appBar}>
-//       <ToolBar className={classes.navContainer}>
-//         <Link to = "/home">
-//         <Button color="inherit" className={classes.brandName}>
-//             Nostalgia Therapy
-//           </Button>
-//         </Link>
-
-//           <Button color="inherit" className={classes.navLink}>
-//             About{""}
-//           </Button>
-
-
-//           <Button color="inherit" className={classes.navLink}>
-//             Features
-//           </Button>
-
-
-//           <Button color="inherit" className={classes.navLink}>
-//             Sign Up{" "}
-//           </Button>
-
-
-//           <Button color="inherit" className={classes.navLink}>
-//             Sign In
-//           </Button>
-
-//       </ToolBar>
-//     </AppBar>
-//   );
-// }
 
 export default withStyles(styles)(Navbar);

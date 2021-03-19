@@ -11,7 +11,7 @@ const styles = {
     background: "#333333",
     boxShadow: "none",
     paddingLeft: "2rem",
-    '@media (max-width:414px)': {
+    '@media (max-width:812px)': {
       display: "none",
     },
   },
@@ -51,10 +51,11 @@ function Navbar(props) {
 
     <AppBar position="absolute" className={classes.appBar}>
       <ToolBar className={classes.navContainer}>
-
-          <Button color="inherit" className={classes.brandName}>
+        <a href= "#banner">
+        <Button color="inherit" className={classes.brandName}>
             Nostalgia Therapy
           </Button>
+        </a>
         
         <a class="navLink" href="#about">
           <Button color="inherit" className={classes.navLink}>
@@ -62,27 +63,32 @@ function Navbar(props) {
           </Button>
         </a>
         
-        <a class="navLink" href="#photos">
+        <a class="navLink" href="#features">
           <Button color="inherit" className={classes.navLink}>
-            Nostalgic Moments
+            Features
           </Button>
         </a>
 
-        <a class="navLink" href="#NostalgiaRadio">
+        <a>
           <Button color="inherit" className={classes.navLink}>
-            Music
+            Sign Up
           </Button>
         </a>
 
-        <a class="navLink" href="#video">
+        <a>
           <Button color="inherit" className={classes.navLink}>
-            Nostalgia TV
+            Sign In
           </Button>
         </a>
-    
-        <a class="navLink" href="#puzzle">
+        <a>
           <Button color="inherit" className={classes.navLink}>
-            Puzzle
+          How To
+          </Button>
+        </a>
+        
+        <a>
+          <Button color="inherit" className={classes.navLink}>
+            Caregiver Corner
           </Button>
        </a>
  

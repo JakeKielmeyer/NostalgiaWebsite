@@ -10,6 +10,8 @@ import { MuiThemeProvider } from "@material-ui/core/styles";
 //pages
 import Home from "./pages/home";
 import About from "./pages/about";
+import Features from "./pages/features";
+
 import Photos from "./pages/photo";
 import Music from "./pages/music";
 import Video from "./pages/video";
@@ -38,22 +40,25 @@ theme.typography.h6 = {
 function App() {
   return (
     <MuiThemeProvider theme={theme}>
-    <div>
-      <MobileNavbar/>
-      <Navbar />
-      <Home />
-      <About/>
-  <Call/>
-  <Photos />
-  <Call/>
-  <Music />
-  <Call/>
-  <Video />
-  <Call/>
-  <Puzzle />
+      <div>
+        <MobileNavbar/>
+        <Navbar />
+        <Home />
+        <About/>
+        <Call/>
+        <Features/>
+        <Call/>
+
+        <Photos />
+        <Call/>
+        <Music />
+        <Call/>
+        <Video />
+         <Call/>
+        <Puzzle />
       <Footer />
     </div>
-    </MuiThemeProvider>
+  </MuiThemeProvider>
   );
 }
 

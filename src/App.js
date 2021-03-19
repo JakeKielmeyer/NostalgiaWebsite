@@ -10,7 +10,8 @@ import { MuiThemeProvider } from "@material-ui/core/styles";
 //pages
 import Home from "./pages/home";
 import About from "./pages/about";
-import Features from "./pages/features";
+import Features from "./pages/featuresP"
+import FeaturesL from "./pages/featuresL";
 
 import Photos from "./pages/photo";
 import Music from "./pages/music";
@@ -49,8 +50,8 @@ function App() {
         <About/>
         <Call/>
         <Features/>
+        <FeaturesL/>
         <Call/>
-
         <Photos />
         <Call/>
         <Music />

@@ -57,19 +57,45 @@ hero: {
   },
 },
 
-overHero: {
-  background: "purple",
-  position: "relative",
-  zIndex: 2,
-},
 
-
-text: {
-  margin: "15px auto",
+moments: {
+  marginLeft: "205px",
   color: "#8f8f8f",
   fontSize: "2rem",
   lineHeight: "1.25",
+    '@media (max-width: 1024px)': {
+      display: "none",
+    },
+},
+
+  radio: {
+    marginLeft: "215px",
+    color: "#8f8f8f",
+    fontSize: "2rem",
+    lineHeight: "1.25",
+    '@media (max-width: 1024px)': {
+      display: "none",
+    },
   },
+
+  tv: {
+    marginLeft: "235px",
+    color: "#8f8f8f",
+    fontSize: "2rem",
+    lineHeight: "1.25",
+  },
+
+  puzzle: {
+    marginLeft: "255px",
+    color: "#8f8f8f",
+    fontSize: "2rem",
+    lineHeight: "1.25",
+  },
+  hide: {
+    '@media (max-width: 768px)': {
+      display: "none",
+    },
+  }
 };
 
 function Features(props) {
@@ -81,12 +107,49 @@ function Features(props) {
       container
       direction="row"
       alignItems="center">
-
     <Grid container item sm={12}>  
           <Typography variant="h3" className={classes.head}>Features</Typography>       
     </Grid>  
+
     <Grid container item sm={12} md={6}>  
-     
+    <a class="navLink" href="#photos">
+      <Button>
+      <Typography variant="h3" className={classes.hide}
+        style={{
+          margin: "15px 75px",
+          color: "#8f8f8f",
+          fontSize: "2rem",
+          lineHeight: "1.25",
+        }}
+      >Nostalgic Moments</Typography> 
+      </Button>
+    </a>
+    </Grid> 
+
+    <Grid container item sm={12} md={6}>  
+    <a class="navLink" href="#photos">
+      <Button>
+      <Typography variant="h3" className={classes.hide}
+      style={{
+        margin: "15px 105px",
+        color: "#8f8f8f",
+        fontSize: "2rem",
+        lineHeight: "1.25",
+      }}>
+      Nostalga Radio</Typography> 
+      </Button>
+    </a>
+    </Grid> 
+
+  <Grid contianer item sm= {12}>
+    <a class = "navLink" href = "#photos">
+      <Typography variant = "h3" className={classes.moments}>
+        Nostalgic Moments
+      </Typography>
+    </a> 
+  </Grid>
+
+    <Grid container item sm={12} md={6}>  
     <a class="navLink" href="#photos">
       <Button>
           <img 
@@ -95,8 +158,15 @@ function Features(props) {
           </img>
       </Button>
     </a>
-      <Typography variant="h3" className={classes.text}>Nostalgic Moments</Typography> 
     </Grid> 
+
+    <Grid contianer item sm= {12}>
+    <a class = "navLink" href = "#photos">
+      <Typography variant = "h3" className={classes.radio}>
+        Nostalgia Radio
+      </Typography>
+    </a> 
+  </Grid>
 
     <Grid container item sm={12} md={6}>  
     <a class="navLink" href="#NostalgiaRadio">
@@ -107,9 +177,43 @@ function Features(props) {
           </img>
       </Button>
     </a>
-      <Typography variant="h3" className={classes.text}>Nostalgia Radio</Typography> 
     </Grid> 
  
+    <Grid container item sm={12} md={6}>  
+    <a class="navLink" href="#photos">
+      <Button>
+      <Typography variant="h3"   className={classes.hide} style={{
+          margin: "15px 122px",
+          color: "#8f8f8f",
+          fontSize: "2rem",
+          lineHeight: "1.25",
+          }}>Nostalgia TV</Typography> 
+      </Button>
+    </a>
+    </Grid> 
+
+    <Grid container item sm={12} md={6}>  
+    <a class="navLink" href="#photos">
+      <Button>
+      <Typography variant="h3" className={classes.hide}
+        style= {{
+          margin: "15px 135px",
+          color: "#8f8f8f",
+          fontSize: "2rem",
+          lineHeight: "1.25",
+        }}>Puzzle Fun</Typography>         
+      </Button>
+    </a>
+    </Grid> 
+
+    <Grid contianer item sm= {12}>
+    <a class = "navLink" href = "#photos">
+      <Typography variant = "h3" className={classes.tv}>
+        Nostalgia TV
+      </Typography>
+    </a> 
+  </Grid>
+    
     <Grid container item sm={12} md={6}> 
     <a class="navLink" href="#video"> 
       <Button>
@@ -119,8 +223,15 @@ function Features(props) {
           </img>
       </Button>
     </a>
-      <Typography variant="h3" className={classes.text}>Videos</Typography> 
     </Grid> 
+
+    <Grid contianer item sm= {12}>
+    <a class = "navLink" href = "#photos">
+      <Typography variant = "h3" className={classes.puzzle}>
+        Puzzle Fun
+      </Typography>
+    </a> 
+  </Grid>
 
     <Grid container item sm={12} md={6}>  
     <a class="navLink" href="#puzzle">
@@ -131,7 +242,6 @@ function Features(props) {
           </img>
       </Button>
     </a>
-      <Typography variant="h3" className={classes.text}>Puzzles</Typography> 
   </Grid> 
   
   </Grid>    

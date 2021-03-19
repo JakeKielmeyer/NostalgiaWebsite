@@ -11,8 +11,7 @@ import AboutMoreL from "../component/about/landscape";
 const styles = {
   puzzle: {
     display: "flex",
-    paddingLeft: "4rem",
-    paddingRight: "5rem",
+    padding: "6rem 5rem 2rem 4rem",
     minHeight: "80vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",

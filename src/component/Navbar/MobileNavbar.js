@@ -23,9 +23,6 @@ const useStyles = makeStyles((theme) => ({
     background: "#333333",
     boxShadow: "none",
     paddingLeft: "2rem",
-    '@media (min-width: 736px)' : {
-      display: 'hidden',
-    },
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -43,9 +40,25 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
     color: "#3fa9f5",
-    fontSize: "1.1rem",
+    fontSize: "1rem",
     fontFamily: "Leviathan",
     textTransform: "capitalize",
+    marginRight: "45rem",
+    '@media (max-width:770px)': {
+      marginRight: "30rem",
+    },
+    '@media (max-width:740px)': {
+      marginRight: "27rem",
+    },
+    '@media (max-width:667px)': {
+      marginRight: "24rem",
+    },
+    '@media (max-width:414px)': {
+      marginRight: "8rem",
+    },
+    '@media (max-width:375px)': {
+      marginRight: "6rem",
+    },
   },
   hide: {
     display: 'none',
@@ -82,13 +95,22 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 0,
   },
   navLink: {
-    padding: "0 1rem",
+    padding: "0 2rem",
+    margin: "50px 0",
     fontFamily: "KOJ",
-    fontSize: "1.15rem",
     display: "flex",
     textTransform: "capitalize",
     '@media (min-width:760px)': {
-      fontSize: '1rem',
+      fontSize: '1.5rem',
+   },
+  },
+  special: {
+    fontFamily: "KOJ",
+    display: "inline",
+    paddingRight: "5px",
+    textTransform: "capitalize",
+    '@media (min-width:760px)': {
+      fontSize: '1.5rem',
    },
   },
 }));
@@ -116,9 +138,11 @@ export default function MobileNavbar() {
         })}
       >
         <Toolbar>
-          <Typography variant="h6" noWrap className={classes.title}>
+        <a href="#banner">
+        <Typography variant="h6" noWrap className={classes.title}>
             Nostalgia Therapy
           </Typography>
+        </a>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -152,27 +176,32 @@ export default function MobileNavbar() {
                 About
               </Button>
           </a>
-          <a class="navLink" href="#photos">
+          <a class="navLink" href="#features">
               <Button color="inherit" className={classes.navLink}>
-                Nostalgic Moments
+                Features
+              </Button>
+          </a>
+          <a>
+              <Button color="inherit" className={classes.navLink}>
+                Sign Up
               </Button>
           </a>
 
-          <a class="navLink" href="#NostalgiaRadio">
+          <a>
               <Button color="inherit" className={classes.navLink}>
-                Music
+                Sign In
               </Button>
           </a>
 
-          <a class="navLink" href="#video">
+          <a>
             <Button color="inherit" className={classes.navLink}>
-              Nostalgia TV
+              How To
             </Button>
           </a>
     
-          <a class="navLink" href="#puzzle">
-           <Button color="inherit" className={classes.navLink}>
-              Puzzle
+          <a>
+           <Button color="inherit" className={classes.special}>
+              Caregiver Corner
             </Button>
           </a>
         </ul>

@@ -10,9 +10,8 @@ import AboutMore from "../component/about/portrait";
 import AboutMoreL from "../component/about/landscape";
 const styles = {
   about: {
+    padding: "6rem 5rem 2rem 4rem",
     display: "flex",
-    paddingLeft: "4rem",
-    paddingRight: "5rem",
     minHeight: "80vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",

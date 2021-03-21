@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
-import More from "../component/about/more";
+import More from "../component/ReadMore/ReadMoreText";
 const styles = {
   about: {
     padding: "6rem 5rem 2rem 4rem",

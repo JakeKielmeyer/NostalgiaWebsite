@@ -3,7 +3,7 @@
 import { Button, makeStyles } from "@material-ui/core";
 import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
-import Cta from "../component/ctaButton";
+import Cta from "../ctaButton";
 
 const useStyles = makeStyles((theme) => ({
   hidden: {

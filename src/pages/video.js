@@ -7,8 +7,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
 // Components
-import AboutMore from "../component/about/portrait";
-import AboutMoreLM from "../component/photo/landscape";
+import More from "../component/ReadMore/ReadMoreText";
 
 const styles = {
   video: {
@@ -128,10 +127,9 @@ function Video(props) {
 
     {/* Landscape Mode */}
     <Grid container item sm={12} style = {{background: "white"}}>
-      <AboutMoreLM/>
+      <More/>
     </Grid>
-{/* Portrait Mode */}
-<AboutMore/>
+
 </div>
   );
 };

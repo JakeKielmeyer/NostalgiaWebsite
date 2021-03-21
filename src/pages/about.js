@@ -6,8 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
-import AboutMore from "../component/about/portrait";
-import AboutMoreL from "../component/about/landscape";
+import More from "../component/ReadMore/ReadMoreText";
 const styles = {
   about: {
     padding: "6rem 5rem 2rem 4rem",
@@ -104,21 +103,14 @@ function About(props) {
             src = {iPadDashboard}
             className={classes.hero}>
           </img>
-          <Typography variant="h4" 
-              className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.
-          </Typography> 
+          <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
     </Grid> 
-{/* Landscape Mode */}
-    <Grid container item sm={12}>
-      <AboutMoreL/>
-    </Grid>
-  </Grid>    
-</div>
+  </Grid>   
 
-{/* Portrait Mode */}
-<AboutMore/>
-  
+</div>  
+    <Grid container item sm={12}>
+      <More/>
+    </Grid>
 </div>
   );
 };

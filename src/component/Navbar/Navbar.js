@@ -8,7 +8,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 
 const styles = {
   appBar: {
-    background: "#333333",
+    background: "transparent",
     boxShadow: "none",
     paddingLeft: "2rem",
     '@media (max-width:812px)': {

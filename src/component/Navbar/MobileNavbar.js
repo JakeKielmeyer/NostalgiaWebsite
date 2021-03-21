@@ -4,7 +4,6 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
@@ -17,10 +16,14 @@ const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
+    '@media (max-width:1024px)': {
+      display: "none",
+    },
+    '@media (max-width:768px)': {
+      display: "flex",
+    },
   },
   appBar: {
-    background: "#333333",
     boxShadow: "none",
     paddingLeft: "2rem",
     transition: theme.transitions.create(['margin', 'width'], {
@@ -60,9 +63,7 @@ const useStyles = makeStyles((theme) => ({
       marginRight: "6rem",
     },
   },
-  hide: {
-    display: 'none',
-  },
+
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
@@ -130,12 +131,15 @@ export default function MobileNavbar() {
 
   return (
     <div className={classes.root}>
-      <CssBaseline />
+      {/* <CssBaseline /> */}
       <AppBar
         position="fixed"
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
+        style = {{
+          background: "transparent"
+        }}
       >
         <Toolbar>
         <a href="#banner">
@@ -144,11 +148,10 @@ export default function MobileNavbar() {
           </Typography>
         </a>
           <IconButton
-            color="inherit"
             aria-label="open drawer"
             edge="end"
             onClick={handleDrawerOpen}
-            className={clsx(open && classes.hide)}
+            style = {{color: "#8f8f8f"}}
           >
             <MenuIcon />
           </IconButton>
@@ -172,35 +175,35 @@ export default function MobileNavbar() {
         <Divider />
           <ul>
             <a class="navLink" href="#about">
-              <Button color="inherit" className={classes.navLink}>
+              <Button className={classes.navLink}>
                 About
               </Button>
           </a>
           <a class="navLink" href="#features">
-              <Button color="inherit" className={classes.navLink}>
+              <Button className={classes.navLink}>
                 Features
               </Button>
           </a>
-          <a>
-              <Button color="inherit" className={classes.navLink}>
+          <a href="https://nostalgiadev-1f319.web.app/" target="_blank">
+              <Button className={classes.navLink}>
                 Sign Up
               </Button>
           </a>
 
-          <a>
-              <Button color="inherit" className={classes.navLink}>
+          <a href="https://nostalgiadev-1f319.web.app/signin" target="_blank">
+              <Button  className={classes.navLink}>
                 Sign In
               </Button>
           </a>
 
           <a>
-            <Button color="inherit" className={classes.navLink}>
+            <Button className={classes.navLink}>
               How To
             </Button>
           </a>
     
           <a>
-           <Button color="inherit" className={classes.special}>
+           <Button className={classes.special}>
               Caregiver Corner
             </Button>
           </a>

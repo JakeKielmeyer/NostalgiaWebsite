@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
-
+import Cta from "../component/ctaButton";
 
 const styles = {
   call: {
@@ -28,18 +28,6 @@ const styles = {
     margin: "5px auto",
     fontSize: '1.3rem',
     },
-},
-
-   cta: {
-    textTransform: "none",
-    fontSize: "1.5rem",
-    fontFamily: "KOW",
-    margin: "15px auto 2px",
-    '@media (max-width: 768px)': {
-  },
-  '@media (max-width:414px)': {
-    fontSize: '1.5rem',
-    },
   },
 };
 
@@ -59,11 +47,7 @@ function Call(props) {
         <Grid container item sm={12}>  
           <Typography variant="h6" className={classes.head}>Only $15 a month</Typography>       
         </Grid>  
-
-        <Button
-            variant="contained"
-            className={classes.cta}>Sign Up
-        </Button>
+          <Cta/>
         </Grid>
 
     </div>

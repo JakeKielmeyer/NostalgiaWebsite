@@ -7,13 +7,12 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
 // Components
-import AboutMore from "../component/about/portrait";
-import AboutMoreLM from "../component/photo/landscape";
+import More from "../component/about/more";
 
 const styles = {
   photo: {
     display: "flex",
-    padding: "6rem 5rem 2rem 4rem",
+    padding: "6rem 5rem 0 4rem",
     minHeight: "80vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -123,18 +122,11 @@ function Photos(props) {
               that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>  
   </Grid>    
-</div>
- <Grid 
-      container
-      direction="row"
-      alignItems="center"></Grid>
-      
-    {/* Landscape Mode */}
-    <Grid container item sm={12} style = {{background: "white"}}>
-      <AboutMoreLM/>
+</div>      
+      {/* Landscape Mode */}
+      <Grid container item sm={12} style = {{background: "white"}}>
+      <More/>
     </Grid>
-{/* Portrait Mode */}
-<AboutMore/>
 </div>
   );
 };

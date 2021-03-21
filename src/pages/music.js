@@ -7,8 +7,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
 // Components
-import AboutMore from "../component/about/portrait";
-import AboutMoreL from "../component/about/landscape";
+import More from "../component/about/more";
 
 const styles = {
   music: {
@@ -88,7 +87,7 @@ text2: {
  },
 };
 
-// hreft="#The_ID_Name"
+// href="#The_ID_Name"
 function Music(props) {
   const { classes } = props;
   return (
@@ -114,17 +113,13 @@ function Music(props) {
               className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
           </Typography> 
-    </Grid>  
-
-    {/* Landscape Mode */}
-    <Grid container item sm={12}>
-      <AboutMoreL/>
-    </Grid>
-  
+    </Grid>   
   </Grid>    
 </div>
-{/* Portrait Mode */}
-<AboutMore/>
+{/* Landscape Mode */}
+    <Grid container item sm={12}>
+      <More/>
+    </Grid>
 </div>
   );
 };

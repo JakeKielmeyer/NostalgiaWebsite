@@ -184,13 +184,13 @@ export default function MobileNavbar() {
                 Features
               </Button>
           </a>
-          <a>
+          <a href="https://nostalgiadev-1f319.web.app/" target="_blank">
               <Button className={classes.navLink}>
                 Sign Up
               </Button>
           </a>
 
-          <a>
+          <a href="https://nostalgiadev-1f319.web.app/signin" target="_blank">
               <Button  className={classes.navLink}>
                 Sign In
               </Button>

@@ -7,6 +7,7 @@ import Box from "@material-ui/core/Box";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
+import Cta from "../component/ctaButton"
 
 const styles = {
   banner: {
@@ -57,28 +58,6 @@ const styles = {
       margin: "0",
   },
 },
-  
-  cta: {
-    textTransform: "none",
-    fontSize: "1.5rem",
-    fontFamily: "KOW",
-    marginLeft: "400px",
-    '@media (max-width: 768px)': {
-      marginLeft: "280px",
-  },
-  '@media (max-width:414px)': {
-    fontSize: '1.5rem',
-    marginLeft: "50px",
-  },
-},
-
-  cta2: {
-    backgroundColor: "black",
-    textTransform: "none",
-    fontSize: "1.5rem",
-    fontFamily: "KOW",
-    marginLeft: "100px",
-  },
 };
 
 function Banner(props) {
@@ -108,17 +87,8 @@ function Banner(props) {
     </Grid>
 
     <Grid item sm={12}>
-    <Button
-      variant="contained"
-      className={classes.cta}>Sign Up
-    </Button>
-  </Grid>
-  <Grid item sm={12}>
-    <Button
-      variant="contained"
-      className={classes.cta2}>SPACER
-    </Button>
-  </Grid>
+      <Cta/>
+    </Grid>
   </Grid>
  </div>
 </div>

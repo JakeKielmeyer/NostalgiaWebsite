@@ -24,10 +24,12 @@ const Cta = (props) => {
   const { classes } = props;
   return (
   <div>
-    <Button
+  <a href="https://nostalgiadev-1f319.web.app/" target="_blank">
+  <Button
       variant="contained"
       className={classes.cta}>Sign Up
     </Button>
+  </a>
   </div>
   );
 };

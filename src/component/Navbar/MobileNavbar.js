@@ -138,7 +138,7 @@ export default function MobileNavbar() {
           [classes.appBarShift]: open,
         })}
         style = {{
-          background: "transparent"
+          background: "#000"
         }}
       >
         <Toolbar>

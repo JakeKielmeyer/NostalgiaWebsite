@@ -12,6 +12,8 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import Button from "@material-ui/core/Button";
 
+import {Link, NavLink} from "react-router-dom";
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -174,11 +176,17 @@ export default function MobileNavbar() {
         </div>
         <Divider />
           <ul>
+          <Link to="/home">
+             <Button color="inherit" className={classes.navLink}>
+               Home
+             </Button>
+           </Link>
             <a class="navLink" href="#about">
               <Button className={classes.navLink}>
                 About
               </Button>
           </a>
+
           <a class="navLink" href="#features">
               <Button className={classes.navLink}>
                 Features
@@ -196,17 +204,17 @@ export default function MobileNavbar() {
               </Button>
           </a>
 
-          <a>
-            <Button className={classes.navLink}>
-              How To
-            </Button>
-          </a>
+          <Link to="/HowTo">
+             <Button color="inherit" className={classes.navLink}>
+               How To
+             </Button>
+           </Link>
     
-          <a>
+          <Link to  = "/caregiver">
            <Button className={classes.special}>
               Caregiver Corner
             </Button>
-          </a>
+          </Link>
         </ul>
 
       </Drawer>

@@ -2,7 +2,7 @@
 import AppBar from "@material-ui/core/AppBar";
 import ToolBar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
-
+import {Link, NavLink} from "react-router-dom";
 
 import withStyles from "@material-ui/core/styles/withStyles";
 
@@ -50,53 +50,58 @@ function Navbar(props) {
   const { classes } = props;
   return (
 
-    <AppBar position="absolute" className={classes.appBar}>
-      <ToolBar className={classes.navContainer}>
-        <a href= "#banner">
-        <Button color="inherit" className={classes.brandName}>
-            Nostalgia Therapy
-          </Button>
-        </a>
+<AppBar position="absolute" className={classes.appBar}>
+       <ToolBar className={classes.navContainer}>
+           <Link to="/home">
+             <Button color="inherit" className={classes.brandName}>
+               Nostalgia Therapy
+             </Button>
+           </Link>
+           <Link to="/home">
+             <Button color="inherit" className={classes.navLink}>
+               Home
+             </Button>
+           </Link>
+
+       <a href="#about">
+           <Button color="inherit" className={classes.navLink}>
+             About
+           </Button>
+         </a>
         
-        <a class="navLink" href="#about">
-          <Button color="inherit" className={classes.navLink}>
-            About
-          </Button>
-        </a>
+         <a href ="#features">
+           <Button color="inherit" className={classes.navLink}>
+             Features
+           </Button>
+         </a>
+
+         <a class="navLink" href="https://nostalgiadev-1f319.web.app/signup">
+           <Button color="inherit" className={classes.navLink}>
+             Sign Up
+           </Button>
+         </a>
+
+         <a class="navLink" href="https://nostalgiadev-1f319.web.app/">
+           <Button color="inherit" className={classes.navLink}>
+             Sign In
+           </Button>
+         </a>
         
-        <a class="navLink" href="#features">
-          <Button color="inherit" className={classes.navLink}>
-            Features
-          </Button>
-        </a>
-
-        <a class="navLink" href="https://nostalgiadev-1f319.web.app/signup">
-          <Button color="inherit" className={classes.navLink}>
-            Sign Up
-          </Button>
-        </a>
-
-        <a class="navLink" href="https://nostalgiadev-1f319.web.app/">
-          <Button color="inherit" className={classes.navLink}>
-            Sign In
-          </Button>
-        </a>
-        <a href="#HowTo">
-          <Button color="inherit" className={classes.navLink}>
-          How To
-          </Button>
-        </a>
+         <Link to="/HowTo">
+           <Button color="inherit" className={classes.navLink}>
+           How To
+           </Button>
+         </Link>
         
-        <a>
-          <Button color="inherit" className={classes.navLink}>
-            Caregiver Corner
-          </Button>
-       </a>
- 
-      </ToolBar>
-    </AppBar>
+         <Link to = "caregiver">
+           <Button color="inherit" className={classes.navLink}>
+             Caregiver Corner
+           </Button>
+        </Link>
 
-
+       </ToolBar>
+     </AppBar>
+    
   );
 }
 

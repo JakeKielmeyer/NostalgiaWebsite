@@ -1,12 +1,13 @@
 import React,{useState}  from "react";
-import iPadDashboard from "../images/iPadDashboard.png";
-import Banner from "../component/banner";
+import iPadDashboard from "../../images/iPadDashboard.png";
+import Banner from "../../component/banner";
+
 //mui stuff
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
-import More from "../component/ReadMore/ReadMoreText";
+import More from "../../component/ReadMore/ReadMoreText";
 const styles = {
   about: {
     padding: "6rem 5rem 2rem 4rem",
@@ -36,6 +37,7 @@ head: {
       marginLeft: "30px",
   },
 },
+
 hero: {
   maxWidth: "100%",
   maxHeight: "100%",
@@ -93,7 +95,7 @@ function HowTo(props) {
       alignItems="center">
 
     <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>What is Nostalgia Therapy?</Typography>       
+          <Typography variant="h3" className={classes.head}>HOW TO</Typography>       
           <Typography variant="h4" 
               className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.

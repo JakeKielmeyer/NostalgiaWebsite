@@ -1,5 +1,5 @@
 import React from "react";
-import iPadMusic from "../images/iPadMusic.png";
+import iPadMusic from "../../images/iPadMusic.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -7,7 +7,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
 // Components
-import More from "../component/ReadMore/ReadMoreText";
+import More from "../../component/ReadMore/ReadMoreText";
 
 const styles = {
   music: {

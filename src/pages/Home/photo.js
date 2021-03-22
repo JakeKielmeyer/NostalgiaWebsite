@@ -1,5 +1,5 @@
 import React from "react";
-import iPadVideo from "../images/iPadVideo.png";
+import iPadPhotos from "../../images/iPadPhotos.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -7,12 +7,12 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
 // Components
-import More from "../component/ReadMore/ReadMoreText";
+import More from "../../component/ReadMore/ReadMoreText";
 
 const styles = {
-  video: {
+  photo: {
     display: "flex",
-    padding: "6rem 5rem 2rem 4rem",
+    padding: "6rem 5rem 0 4rem",
     minHeight: "80vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -20,6 +20,7 @@ const styles = {
     backgroundColor: "#000",
   },
   
+    
   headp: {
     color: "#fff",
     margin: "25px auto",
@@ -46,11 +47,14 @@ const styles = {
 },
   
   hero: {
-    maxWidth: "80%",
-    maxHeight: "80%",
-    margin: ".5rem auto",
+    maxWidth: "100%",
+    maxHeight: "100%",
+    marginTop: ".5rem",
+    marginLeft: "40px",
     filter: "drop-shadow(0 0 0.1rem white)",
     '@media (max-width: 1024px)': {
+      marginLeft: "15px",
+      marginTop: "10px",
   },
     '@media (max-width:414px)': {
       fontSize: '1.5rem',
@@ -91,20 +95,20 @@ text1: {
    },
  };
 
-function Video(props) {
+function Photos(props) {
   const { classes } = props;
   return (
-    <div id="video">
-      <div  className={classes.video}>
+    <div id="photos">
+      <div  className={classes.photo}>
     <Grid 
       container
       direction="row"
       alignItems="center">
 
     <Grid container item sm={12} md={7}>  
-    <Typography variant="h3" className={classes.headp}>Nostalgia TV</Typography>
+    <Typography variant="h3" className={classes.headp}>Nostalgic Moments</Typography>
           <img 
-            src = {iPadVideo}
+            src = {iPadPhotos}
             className={classes.hero}>
           </img>
           <Typography variant="h4" 
@@ -113,25 +117,18 @@ function Video(props) {
           </Typography> 
     </Grid>  
     <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>Nostalgia TV</Typography>       
+          <Typography variant="h3" className={classes.head}>Nostalgic Moments</Typography>       
           <Typography variant="h4" className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>  
-  
   </Grid>    
-</div>
- <Grid 
-      container
-      direction="row"
-      alignItems="center"></Grid>
-
-    {/* Landscape Mode */}
-    <Grid container item sm={12} style = {{background: "white"}}>
+</div>      
+      {/* Landscape Mode */}
+      <Grid container item sm={12} style = {{background: "white"}}>
       <More/>
     </Grid>
-
 </div>
   );
 };
 
-export default withStyles(styles)(Video);
+export default withStyles(styles)(Photos);

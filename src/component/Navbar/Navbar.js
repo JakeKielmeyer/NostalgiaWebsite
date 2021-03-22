@@ -81,7 +81,7 @@ function Navbar(props) {
             Sign In
           </Button>
         </a>
-        <a>
+        <a href="#HowTo">
           <Button color="inherit" className={classes.navLink}>
           How To
           </Button>

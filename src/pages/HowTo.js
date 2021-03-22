@@ -1,6 +1,6 @@
-import React from "react";
-import iPadPuzzle from "../images/iPadPuzzle.png";
-
+import React,{useState}  from "react";
+import iPadDashboard from "../images/iPadDashboard.png";
+import Banner from "../component/banner";
 //mui stuff
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -8,9 +8,9 @@ import Grid from "@material-ui/core/Grid";
 
 import More from "../component/ReadMore/ReadMoreText";
 const styles = {
-  puzzle: {
-    display: "flex",
+  about: {
     padding: "6rem 5rem 2rem 4rem",
+    display: "flex",
     minHeight: "80vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
@@ -18,7 +18,7 @@ const styles = {
     backgroundColor: "#fff",
   },
   
-  head: {
+head: {
     color: "#000",
     marginTop: "125px",
     marginLeft: "260px",
@@ -27,7 +27,8 @@ const styles = {
       marginTop: "0",
   },
     '@media (max-width: 768px)': {
-      margin: "15px auto",
+      marginLeft: "125px",
+      marginTop: "5px",
   },
     '@media (max-width:414px)': {
       fontSize: '1.75rem',
@@ -35,20 +36,20 @@ const styles = {
       marginLeft: "30px",
   },
 },
-
 hero: {
-  maxWidth: "80%",
-  maxHeight: "80%",
-  margin: ".5rem auto",
-  filter: "drop-shadow(0 0 0.1rem white)",
+  maxWidth: "100%",
+  maxHeight: "100%",
+  marginTop: ".5rem",
+  marginLeft: "40px",
   '@media (max-width: 1024px)': {
+    marginLeft: "15px",
+    marginTop: "10px",
 },
   '@media (max-width:414px)': {
     fontSize: '1.5rem',
     margin: "0",
 },
 },
-
 text1: {
   color: "#8f8f8f",
   fontSize: "2rem",
@@ -79,37 +80,36 @@ text2: {
  },
 };
 
-function Puzzle(props) {
+<Banner/>
+
+function HowTo(props) {
   const { classes } = props;
   return (
-    <div id="puzzle">
-      <div  className={classes.puzzle}>
+    <div id="HowTo">
+      <div  className={classes.about}>
     <Grid 
       container
       direction="row"
       alignItems="center">
 
     <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>Puzzle Fun</Typography>       
+          <Typography variant="h3" className={classes.head}>What is Nostalgia Therapy?</Typography>       
           <Typography variant="h4" 
               className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
           </Typography> 
     </Grid>  
 
-    <Grid container item sm={12} md={7}>  
+    <Grid container item sm={12} md={5}>  
           <img 
-            src = {iPadPuzzle}
+            src = {iPadDashboard}
             className={classes.hero}>
           </img>
-          <Typography variant="h4" 
-              className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.
-          </Typography> 
+          <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
     </Grid> 
-  </Grid>    
-</div>
-{/* Landscape Mode */}
+  </Grid>   
+
+</div>  
     <Grid container item sm={12}>
       <More/>
     </Grid>
@@ -117,4 +117,4 @@ function Puzzle(props) {
   );
 };
 
-export default withStyles(styles)(Puzzle);
+export default withStyles(styles)(HowTo);

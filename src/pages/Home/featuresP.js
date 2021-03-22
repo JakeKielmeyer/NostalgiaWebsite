@@ -1,8 +1,8 @@
 import React,{useState}  from "react";
-import iPadPhotos from "../images/iPadPhotos.png";
-import iPadMusic from "../images/iPadMusic.png";
-import iPadVideo from "../images/iPadVideo.png";
-import iPadPuzzle from "../images/iPadPuzzle.png";
+import iPadPhotos from "../../images/iPadPhotos.png";
+import iPadMusic from "../../images/iPadMusic.png";
+import iPadVideo from "../../images/iPadVideo.png";
+import iPadPuzzle from "../../images/iPadPuzzle.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";

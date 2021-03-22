@@ -196,7 +196,7 @@ export default function MobileNavbar() {
               </Button>
           </a>
 
-          <a>
+          <a href="#HowTo">
             <Button className={classes.navLink}>
               How To
             </Button>

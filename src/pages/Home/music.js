@@ -7,7 +7,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
 // Components
-import More from "../../component/ReadMore/ReadMoreText";
+import {CreateMoreMusic} from "../../component/ReadMore/CreateMore";
 
 const styles = {
   music: {
@@ -118,7 +118,7 @@ function Music(props) {
 </div>
 {/* Landscape Mode */}
     <Grid container item sm={12}>
-      <More/>
+      <CreateMoreMusic/>
     </Grid>
 </div>
   );

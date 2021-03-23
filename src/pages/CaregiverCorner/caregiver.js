@@ -1,120 +1,100 @@
 import React,{useState}  from "react";
-import iPadDashboard from "../../images/iPadDashboard.png";
-import Banner from "../../component/banner";
+import iPadDash from "../../images/iPadDashboard.png";
+
+// Components
+import Call from "../../component/callToAction";
+
+// Sections
+import Articles from "./articles";
 
 //mui stuff
+import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
+import Cta from "../../component/ctaButton"
 
-import More from "../../component/ReadMore/ReadMoreText";
 const styles = {
-  about: {
-    padding: "6rem 5rem 2rem 4rem",
+  caregiver: {
     display: "flex",
-    minHeight: "80vh",
+    paddingLeft: "4rem",
+    paddingRight: "5rem",
+    minHeight: "100vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
     backgroundColor: "#fff",
   },
   
-head: {
+  head: {
     color: "#000",
     marginTop: "125px",
-    marginLeft: "260px",
-    '@media (max-width: 1024px)': {
-      marginLeft: "15px",
-      marginTop: "0",
-  },
+    marginLeft: "200px",
     '@media (max-width: 768px)': {
-      marginLeft: "125px",
-      marginTop: "5px",
+      marginLeft: "70px",
+      marginTop: "80px",
   },
     '@media (max-width:414px)': {
       fontSize: '1.75rem',
-      marginTop: "5px",
-      marginLeft: "30px",
+      marginTop: "115px",
+      margin: "0",
   },
 },
 
-hero: {
-  maxWidth: "100%",
-  maxHeight: "100%",
-  marginTop: ".5rem",
-  marginLeft: "40px",
-  '@media (max-width: 1024px)': {
-    marginLeft: "15px",
-    marginTop: "10px",
-},
-  '@media (max-width:414px)': {
-    fontSize: '1.5rem',
-    margin: "0",
-},
-},
-text1: {
-  color: "#8f8f8f",
-  fontSize: "2rem",
-  lineHeight: "1.25",
-  '@media (max-width: 1024px)': {
-    margin: "15px",
-},
-  '@media (max-width: 768px)': {
-    display: "none",
-},
-},
-
-text2: {
-  color: "#8f8f8f",
-  fontSize: "2rem",
-  lineHeight: "1.25",
-  display: "none",
-  '@media (max-width: 768px)': {
-    marginLeft: "20px",
-    marginTop: "30px",
-    display: "block",
-},
-  '@media (max-width:414px)': {
-    fontSize: '1.5rem',
-    margin: "0",
-    display: "block",
+  text: {
+    color: "#8f8f8f",
+    marginLeft: "70px",
+    fontSize: "2rem",
+    lineHeight: "1.25",
+    '@media (max-width:414px)': {
+      fontSize: '1.5rem',
   },
- },
+},
+  
+  hero: {
+    maxWidth: "100%",
+    maxHeight: "100%",
+    marginLeft: "40px",
+    filter: "drop-shadow(0 0 0.1rem white)",
+    '@media (max-width:414px)': {
+      fontSize: '1.5rem',
+      margin: "0",
+  },
+},
 };
-
-<Banner/>
 
 function Caregiver(props) {
   const { classes } = props;
   return (
+  <div>
     <div id="HowTo">
-      <div  className={classes.about}>
+    <div className={classes.caregiver}>
     <Grid 
       container
       direction="row"
-      alignItems="center">
-
-    <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>The Caregiver Corner</Typography>       
-          <Typography variant="h4" 
-              className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.
-          </Typography> 
-    </Grid>  
-
-    <Grid container item sm={12} md={5}>  
-          <img 
-            src = {iPadDashboard}
-            className={classes.hero}>
-          </img>
-          <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
-    </Grid> 
-  </Grid>   
-
-</div>  
-    <Grid container item sm={12}>
-      <More/>
+      alignItems="center"
+    >
+    <Grid item item sm={12}>
+      <Box mt={10}>
+          <Typography variant="h3" className={classes.head}>The Caregiver's Corner</Typography>
+         <Box mt={5}>
+            <Typography variant="h4" className={classes.text}>Resources for Caregivers</Typography>
+          </Box>
+        </Box>
+    </Grid>      
+    <Grid item sm={12}>
+          <img src = {iPadDash}
+          className={classes.hero}
+          ></img>
     </Grid>
+
+    <Grid item sm={12}>
+      <Cta/>
+    </Grid>
+  </Grid>
+ </div>
+</div>
+<Articles/>
 </div>
   );
 };

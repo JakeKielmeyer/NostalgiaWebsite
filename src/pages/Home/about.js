@@ -7,7 +7,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
 import More from "../../component/ReadMore/ReadMoreText";
-import CreateMore from "../../component/ReadMore/CreateMore";
+import {CreateMore} from "../../component/ReadMore/CreateMore";
 
 const styles = {
   about: {

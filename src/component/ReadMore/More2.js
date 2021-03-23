@@ -31,7 +31,7 @@ function More2(props) {
    <Grid container item sm={12}>
       <div className={classes.readA}>
         <ReadMore>
-            {props.key}
+                {props.key}
               <Typography variant="h4" className={classes.readTextA}>
                 {props.text1}
               </Typography>

@@ -7,8 +7,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
 // Components
-import More from "../../component/ReadMore/ReadMoreText";
-import CreateMore from "../../component/ReadMore/CreateMore";
+import {CreateMorePhoto} from "../../component/ReadMore/CreateMore";
 
 const styles = {
   photo: {
@@ -126,7 +125,7 @@ function Photos(props) {
 </div>      
       <Grid container item sm={12} style = {{background: "white"}}>
       {/* <More/> */}
-      <CreateMore/>
+      <CreateMorePhoto/>
     </Grid>
 </div>
   );

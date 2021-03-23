@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
-import More from "../../component/ReadMore/ReadMoreText";
+import {CreateMorePuzzle} from "../../component/ReadMore/CreateMore"
 const styles = {
   puzzle: {
     display: "flex",
@@ -111,7 +111,7 @@ function Puzzle(props) {
 </div>
 {/* Landscape Mode */}
     <Grid container item sm={12}>
-      <More/>
+      <CreateMorePuzzle/>
     </Grid>
 </div>
   );

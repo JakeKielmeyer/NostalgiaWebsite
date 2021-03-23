@@ -7,7 +7,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
 // Components
-import More from "../../component/ReadMore/ReadMoreText";
+import {CreateMoreVideo} from "../../component/ReadMore/CreateMore";
 
 const styles = {
   video: {
@@ -127,7 +127,7 @@ function Video(props) {
 
     {/* Landscape Mode */}
     <Grid container item sm={12} style = {{background: "white"}}>
-      <More/>
+      <CreateMoreVideo/>
     </Grid>
 
 </div>

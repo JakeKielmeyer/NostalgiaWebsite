@@ -1,21 +1,19 @@
 import React,{useState}  from "react";
 import More2 from "./More2";
-import copy, {PhotoSection} from "./Copy";
 
-//mui stuff
-import withStyles from "@material-ui/core/styles/withStyles";
-
+import copy from "./Copy";
+import { photoSection, musicSection, videoSection, puzzleSection } from "./Copy";
 
 const styles = {
 }
 
-function loadText(copy, index) {
+function loadText(photoSection) {
     return (
         <More2 
-            key={copy.id}
-            text1={copy.text1}
-            text2={copy.text2}
-            img={copy.src}
+            key={photoSection.id}
+            text1={photoSection.text1}
+            text2={photoSection.text2}
+            img={photoSection.src}
         />
     )
 }
@@ -28,4 +26,42 @@ function CreateMore() {
     )
 }
 
-export default withStyles(styles)(CreateMore);
+function CreateMorePhoto() {
+    return (
+        <div>
+            {photoSection.map(loadText)}
+        </div>
+    )
+}
+
+function CreateMoreMusic() {
+    return (
+        <div>
+            {musicSection.map(loadText)}
+        </div>
+    )
+}
+
+function CreateMoreVideo() {
+    return (
+        <div>
+            {videoSection.map(loadText)}
+        </div>
+    )
+}
+
+function CreateMorePuzzle() {
+    return (
+        <div>
+            {puzzleSection.map(loadText)}
+        </div>
+    )
+}
+
+export {
+    CreateMore,
+    CreateMorePhoto,
+    CreateMoreMusic,
+    CreateMoreVideo,
+    CreateMorePuzzle,
+};

@@ -1,5 +1,5 @@
 import React,{useState}  from "react";
-import jakeAndGrandpa from "./Jake and Grandpa.png";
+import jakeAndGrandpa from "../../images/Jake and Grandpa.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -30,9 +30,6 @@ const styles = {
     },
   },
 }
-
-
-// {/* Landscape Mode */}
 
 function More(props) {
   const { classes } = props;

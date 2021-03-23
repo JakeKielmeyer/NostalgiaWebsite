@@ -7,6 +7,8 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
 import More from "../../component/ReadMore/ReadMoreText";
+import CreateMore from "../../component/ReadMore/CreateMore";
+
 const styles = {
   about: {
     padding: "6rem 5rem 2rem 4rem",
@@ -109,7 +111,8 @@ function About(props) {
 
 </div>  
     <Grid container item sm={12}>
-      <More/>
+      {/* <More/> */}
+      <CreateMore/>
     </Grid>
 </div>
   );

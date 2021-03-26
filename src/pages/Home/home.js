@@ -9,8 +9,8 @@ import Call from "../../component/callToAction";
 
 // Page Sections
 import About from "./about";
-// import FeaturesP from "./featuresP";
-// import FeaturesL from "./featuresL";
+import FeaturesP from "./featuresP";
+import FeaturesL from "./featuresL";
 import Photo from "./photo";
 import Music from "./music";
 import Video from "./video";
@@ -25,9 +25,9 @@ const Home = (props) => {
   <Banner/>
   <About/>
   <Call/>
-  {/* <FeaturesP/>
-  <FeaturesL/> */}
-  {/* <Call/> */}
+  <FeaturesP/>
+  <FeaturesL/>
+  <Call/> 
   <Photo/>
   <Call/>
   <Music/>

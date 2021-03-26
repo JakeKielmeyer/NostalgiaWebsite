@@ -5,6 +5,7 @@ import iPadPuzzle from "../../images/iPadPuzzle.png";
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
 
 import {CreateMorePuzzle} from "../../component/ReadMore/CreateMore"
 const styles = {
@@ -77,6 +78,35 @@ text2: {
     display: "block",
   },
  },
+ overlay: {
+  zIndex: 2,
+  position: "absolute",
+  backgroundColor: "rgba(143, 143, 143, .6)",
+  top: "2.5rem",
+  marginLeft: "4.75rem",
+  width: "36vw",
+  height: "59vh",
+  textAlign: "center",
+  textTransform: "none",
+  fontSize: "20px",
+  '@media (max-width: 768px)': {
+    zIndex: 2,
+    position: "absolute",
+    backgroundColor: "rgba(143, 143, 143, .6)",
+    top: "2.75rem",
+    marginLeft: "5.75rem",
+    width: "58.5vw",
+    height: "54vh",
+    textAlign: "center",
+    textTransform: "none",
+    fontSize: "20px",
+  },
+},
+overlayText: {
+  color: "#fff",
+  margin: "25px auto",
+  disaply: "none",
+},
 };
 
 function Puzzle(props) {
@@ -97,11 +127,18 @@ function Puzzle(props) {
           </Typography> 
     </Grid>  
 
-    <Grid container item sm={12} md={7}>  
+    <Grid container item sm={12} md={7}
+        style = {{position: "relative"}}
+    >  
           <img 
             src = {iPadPuzzle}
             className={classes.hero}>
           </img>
+          <Button className = {classes.overlay}>
+        <Typography variant = "h3" className= {classes.overlayText}>
+          Try It!
+        </Typography>
+      </Button>
           <Typography variant="h4" 
               className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.

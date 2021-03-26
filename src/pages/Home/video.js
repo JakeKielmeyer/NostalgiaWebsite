@@ -5,6 +5,7 @@ import iPadVideo from "../../images/iPadVideo.png";
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
 
 // Components
 import {CreateMoreVideo} from "../../component/ReadMore/CreateMore";
@@ -89,6 +90,35 @@ text1: {
       display: "block",
     },
    },
+   overlay: {
+    zIndex: 2,
+    position: "absolute",
+    backgroundColor: "rgba(143, 143, 143, .6)",
+    top: "2.5rem",
+    marginLeft: "4.5rem",
+    width: "36vw",
+    height: "58vh",
+    textAlign: "center",
+    textTransform: "none",
+    fontSize: "20px",
+    '@media (max-width: 768px)': {
+      zIndex: 2,
+      position: "absolute",
+      backgroundColor: "rgba(143, 143, 143, .6)",
+      top: "9rem",
+      marginLeft: "5.5rem",
+      width: "58vw",
+      height: "53vh",
+      textAlign: "center",
+      textTransform: "none",
+      fontSize: "20px",
+    },
+  },
+  overlayText: {
+    color: "#fff",
+    margin: "25px auto",
+    disaply: "none",
+  },
  };
 
 function Video(props) {
@@ -101,12 +131,19 @@ function Video(props) {
       direction="row"
       alignItems="center">
 
-    <Grid container item sm={12} md={7}>  
+    <Grid container item sm={12} md={7}
+    style = {{position: "relative"}}
+    >  
     <Typography variant="h3" className={classes.headp}>Nostalgia TV</Typography>
           <img 
             src = {iPadVideo}
             className={classes.hero}>
           </img>
+          <Button className = {classes.overlay}>
+        <Typography variant = "h3" className= {classes.overlayText}>
+          Try It!
+        </Typography>
+      </Button>
           <Typography variant="h4" 
               className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.

@@ -5,6 +5,7 @@ import iPadPhotos from "../../images/iPadPhotos.png";
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
 
 // Components
 import {CreateMorePhoto} from "../../component/ReadMore/CreateMore";
@@ -47,6 +48,7 @@ const styles = {
 },
   
   hero: {
+    zIndex: 0,
     maxWidth: "100%",
     maxHeight: "100%",
     marginTop: ".5rem",
@@ -93,7 +95,36 @@ text1: {
       display: "block",
     },
    },
- };
+   overlay: {
+    zIndex: 2,
+    position: "absolute",
+    backgroundColor: "rgba(143, 143, 143, .6)",
+    top: "2.75rem",
+    marginLeft: "3.5rem",
+    width: "43vw",
+    height: "44vh",
+    textAlign: "center",
+    textTransform: "none",
+    fontSize: "20px",
+    '@media (max-width: 768px)': {
+      zIndex: 2,
+      position: "absolute",
+      backgroundColor: "rgba(143, 143, 143, .6)",
+      top: "9.25rem",
+      marginLeft: "4rem",
+      width: "70vw",
+      height: "40vh",
+      textAlign: "center",
+      textTransform: "none",
+      fontSize: "20px",
+    },
+  },
+  overlayText: {
+    color: "#fff",
+    margin: "25px auto",
+    disaply: "none",
+  },
+};
 
 function Photos(props) {
   const { classes } = props;
@@ -105,26 +136,35 @@ function Photos(props) {
       direction="row"
       alignItems="center">
 
-    <Grid container item sm={12} md={7}>  
+    <Grid container item sm={12} md={7} 
+    style = {{position: "relative"}}
+    >  
     <Typography variant="h3" className={classes.headp}>Nostalgic Moments</Typography>
-          <img 
-            src = {iPadPhotos}
-            className={classes.hero}>
-          </img>
+      
+      <img
+        src = {iPadPhotos}
+        className={classes.hero}>
+      </img>
+      <Button className = {classes.overlay}>
+        <Typography variant = "h3" className= {classes.overlayText}>
+          Try It!
+        </Typography>
+      </Button>
           <Typography variant="h4" 
               className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
           </Typography> 
     </Grid>  
-    <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>Nostalgic Moments</Typography>       
+    <Grid container item sm={12} md={5}
+      style = {{position: "relative"}}
+    >  
+          <Typography variant="h3" className={classes.head}>Nostalgic Moments</Typography>    
           <Typography variant="h4" className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>  
   </Grid>    
 </div>      
       <Grid container item sm={12} style = {{background: "white"}}>
-      {/* <More/> */}
       <CreateMorePhoto/>
     </Grid>
 </div>

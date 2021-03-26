@@ -5,6 +5,7 @@ import iPadMusic from "../../images/iPadMusic.png";
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
 
 // Components
 import {CreateMoreMusic} from "../../component/ReadMore/CreateMore";
@@ -85,6 +86,35 @@ text2: {
     display: "block",
   },
  },
+ overlay: {
+  zIndex: 2,
+  position: "absolute",
+  backgroundColor: "rgba(143, 143, 143, .6)",
+  top: "2.25rem",
+  marginLeft: "2.5rem",
+  width: "44vw",
+  height: "46vh",
+  textAlign: "center",
+  textTransform: "none",
+  fontSize: "20px",
+  '@media (max-width: 768px)': {
+    zIndex: 2,
+    position: "absolute",
+    backgroundColor: "rgba(143, 143, 143, .6)",
+    top: "2.25rem",
+    marginLeft: "3rem",
+    width: "71vw",
+    height: "42vh",
+    textAlign: "center",
+    textTransform: "none",
+    fontSize: "20px",
+  },
+},
+overlayText: {
+  color: "#fff",
+  margin: "25px auto",
+  disaply: "none",
+},
 };
 
 // href="#The_ID_Name"
@@ -104,11 +134,18 @@ function Music(props) {
               that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>  
 
-    <Grid container item sm={12} md={7}>  
+    <Grid container item sm={12} md={7}
+      style = {{position: "relative"}}
+    >  
           <img 
             src = {iPadMusic}
             className={classes.hero}>
           </img>
+          <Button className = {classes.overlay}>
+        <Typography variant = "h3" className= {classes.overlayText}>
+          Try It!
+        </Typography>
+      </Button>
           <Typography variant="h4" 
               className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.

@@ -22,19 +22,19 @@ const Home = (props) => {
   const { classes } = props;
   return (
 <div>
-  <Banner/>
+  {/* <Banner/>
   <About/>
   <Call/>
   <FeaturesP/>
-  <FeaturesL/>
-  <Call/> 
+  <FeaturesL/> */}
+  {/* <Call/>  */}
   <Photo/>
-  <Call/>
-  <Music/>
-  <Call/>
-  <Video/>
-  <Call/>
-  <Puzzle/>
+  {/* <Call/> */}
+  {/* <Music/> */}
+  {/* <Call/> */}
+  {/* <Video/> */}
+  {/* <Call/> */}
+  {/* <Puzzle/> */}
 </div>
   );
 };

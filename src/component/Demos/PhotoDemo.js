@@ -1,6 +1,11 @@
 import React from 'react';
+
+// Images
 import Boomer from "../../images/radio/Boomer1-100.jpg";
-import PhotoDemoA from "./Modal";
+import jakeAndGrandpa from "../ReadMore/Jake and Grandpa.png";
+import Cherub from "../ReadMore/Cherub.png";
+import Commercial from "../../images/tv/Commercial.PNG";
+import Pumpkin from "../../images/puzzles/pumpkin.jpg";
 
 //mui stuff
 import { Typography } from '@material-ui/core';
@@ -9,6 +14,7 @@ import Backdrop from '@material-ui/core/Backdrop';
 import { useSpring, animated } from 'react-spring/web.cjs'; // web.cjs is required for IE 11 support
 import withStyles from "@material-ui/core/styles/withStyles";
 import Button from "@material-ui/core/Button";
+import Carousel from "react-material-ui-carousel";
 
 const styles ={
   modal: {
@@ -125,10 +131,15 @@ function SpringModal(props) {
         }}
       >
         <Fade in={open}>
-          {/* <div className={classes.paper}> */}
-          <PhotoDemoA/>
-           {/* <img src = {Boomer}className = {classes.hero}></img> */}   
-          {/* </div> */}
+        <div>
+            <Carousel>
+            <img src = {Boomer}className = {classes.hero}></img>   
+            <img src = {Pumpkin}className = {classes.hero}></img>   
+            <img src = {Cherub}className = {classes.hero}></img>   
+            <img src = {Commercial}className = {classes.hero}></img>   
+            <img src = {jakeAndGrandpa}className = {classes.hero}></img>   
+            </Carousel>
+        </div>
         </Fade>
       </Modal>
     </div>

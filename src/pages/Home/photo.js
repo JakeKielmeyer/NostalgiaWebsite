@@ -9,6 +9,7 @@ import Button from "@material-ui/core/Button";
 
 // Components
 import {CreateMorePhoto} from "../../component/ReadMore/CreateMore";
+import SpringModal from "../../component/Demos/PhotoDemo";
 
 const styles = {
   photo: {
@@ -145,11 +146,13 @@ function Photos(props) {
         src = {iPadPhotos}
         className={classes.hero}>
       </img>
-      <Button className = {classes.overlay}>
+
+      {/* <Button className = {classes.overlay}>
         <Typography variant = "h3" className= {classes.overlayText}>
-          Try It!
+          Preview
         </Typography>
-      </Button>
+      </Button> */}
+      <SpringModal/>
           <Typography variant="h4" 
               className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.

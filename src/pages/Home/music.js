@@ -129,7 +129,9 @@ function Music(props) {
 
           <img 
             src = {PopSocks}
-            style={{position: "absolute", width: "45%", padding: "10rem 5rem 2rem 4rem" }}>
+            style={{position: "absolute", 
+            width: "45%", 
+            padding: "10rem 5rem 2rem 4rem" }}>
           </img>
 
           <img 
@@ -138,7 +140,10 @@ function Music(props) {
           </img>
 
           <Typography variant="h4" 
-              style={{position: "absolute", color:"white", boxShadow: "white", padding: "30rem 15rem 2rem 4rem", textShadow: "1px 1px 4px #000"}}>
+              style={{position: "absolute", 
+              color:"white", 
+              padding: "30rem 15rem 2rem 4rem", 
+              textShadow: "1px 1px 4px #000"}}>
               Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
           </Typography> 

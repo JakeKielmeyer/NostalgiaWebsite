@@ -2,6 +2,7 @@ import React from "react";
 import JukeBox from "../../images/JukeBox.jpg";
 import PopSocks from "../../images/PopSocks.png";
 import BoomerHeyday from "../../images/BoomerHeyday.png";
+import MusicImg from "../../images/music.jpg";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -14,7 +15,7 @@ import {CreateMoreMusic} from "../../component/ReadMore/CreateMore";
 
 const styles = {
   music: {
-    backgroundImage: `url(${JukeBox})`,
+    backgroundImage: `url(${MusicImg})`,
     backgroundAttachment: "fixed",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",

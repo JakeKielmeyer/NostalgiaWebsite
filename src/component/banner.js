@@ -1,22 +1,26 @@
 import React from "react";
-import Cherub from "../images/Cherub.png";
-
+import Banner1 from "../images/Banner1.jpg";
+import BannerMobile from "../images/bannermobile.jpg";
 //mui stuff
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
-import Cta from "../component/ctaButton"
+import Button from "@material-ui/core/Button";
+
 
 const styles = {
   banner: {
-    backgroundImage: `url(${Cherub})`,
+    backgroundImage: `url(${Banner1})`,
     backgroundAttachment: "fixed",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    minHeight: "90vh",
+    minHeight: "60vh",
+    '@media (max-width: 768px)': {
+      backgroundImage: `url(${BannerMobile})`,
   },
-  
+},
+
   head: {
     color: "#fff",
     marginTop: "125px",
@@ -55,6 +59,19 @@ const styles = {
       margin: "0",
   },
 },
+// cta: {
+//   textTransform: "none",
+//   fontSize: "2rem",
+//   fontFamily: "KOW",
+//   margin: "395px",
+//   whiteSpace: "nowrap",
+//   '@media (max-width:768px)': {
+//     marginLeft: '18rem',
+//     },
+//   '@media (max-width:414px)': {
+//   fontSize: '1.5rem',
+//   },
+// },
 };
 
 function Banner(props) {
@@ -68,18 +85,30 @@ function Banner(props) {
       alignItems="center"
     >
 
-          <Typography variant="h3" className={classes.head}>Reminsicense Therapy Simplified</Typography>
-            <Typography variant="h4"  style={{
-            fontSize: "2rem", position: "absolute", 
-            color:"#fff", 
-            boxShadow: "white", 
-            padding: "0 auto", 
-            textShadow: "1px 1px 4px #000"}}>Therapy designed to reconnect families
-            to loved ones with Alzheimer's.
-            </Typography>   
+<Grid itm sm = {12}>
+<Typography variant = "h3"
+          style={{
+          position: "absolute", 
+          color:"white", 
+          padding: "4.5rem 5rem 0 4rem", 
+          textShadow: "1px 1px 4px #000" }}
+          >
+          Reminsicense Therapy Simplified</Typography>
 
+          <Typography variant="h4" 
+              style={{position: "absolute", 
+              color:"white", 
+              padding: "10rem 15rem 0 4rem", 
+              textShadow: "1px 1px 4px #000"}}>
+              Nostalgia Therapy is based on proven reminsicense therapy tools 
+              that are designed to increase quality of life and time spent together.
+          </Typography> 
+          {/* <Button
+        variant="contained"
+        className={classes.cta}>Sign Up
+    </Button> */}
+</Grid>
 
-      <Cta style = {{padding: "100rem 5rem 2rem 4rem"}}/>
 
 
   </Grid>

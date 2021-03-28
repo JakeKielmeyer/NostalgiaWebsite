@@ -23,6 +23,7 @@ const Home = (props) => {
   return (
 <div>
   <Banner/>
+  <Call/>
   <About/>
   <Call/>
   <FeaturesP/>

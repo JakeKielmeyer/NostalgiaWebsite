@@ -27,14 +27,13 @@ const styles ={
   },
   hero: {
     zIndex: 0,
-    maxWidth: "90%",
-    maxHeight: "90%",
+    maxWidth: "70%",
+    maxHeight: "70%",
     marginTop: ".5rem",
     marginLeft: "40px",
     filter: "drop-shadow(0 0 0.1rem white)",
     '@media (max-width: 1024px)': {
-      marginLeft: "15px",
-      marginTop: "10px",
+      marginLeft: "150px",
   },
     '@media (max-width:414px)': {
       fontSize: '1.5rem',
@@ -132,7 +131,16 @@ function SpringModal(props) {
       >
         <Fade in={open}>
         <div>
-            <Carousel>
+          <Carousel
+            autoPlay={false}
+            fullHeightHover={false}
+            animation={"fade"}
+            timeout={12}
+            navButtonsAlwaysVisible={true}
+            indicatorContainerProps={{
+          style: { width: "0px", height: "0px" },
+        }}
+          >
             <img src = {Boomer}className = {classes.hero}></img>   
             <img src = {Pumpkin}className = {classes.hero}></img>   
             <img src = {Cherub}className = {classes.hero}></img>   

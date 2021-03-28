@@ -1,5 +1,7 @@
 import React from "react";
-import iPadMusic from "../../images/iPadMusic.png";
+import JukeBox from "../../images/JukeBox.jpg";
+import PopSocks from "../../images/PopSocks.png";
+import BoomerHeyday from "../../images/BoomerHeyday.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -11,16 +13,18 @@ import Button from "@material-ui/core/Button";
 import {CreateMoreMusic} from "../../component/ReadMore/CreateMore";
 
 const styles = {
+
+  // backgroundImage: `url(${pupper})`,
   music: {
-    display: "flex",
-    padding: "6rem 5rem 2rem 4rem",
-    minHeight: "80vh",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
+    backgroundImage: `url(${JukeBox})`,
+    minHeight: "500px",
     backgroundAttachment: "fixed",
-    backgroundColor: "#fff",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    minHeight: "80vh",
   },
-  
+
   head: {
     color: "#000",
     marginTop: "125px",
@@ -42,16 +46,6 @@ const styles = {
   hero: {
     maxWidth: "100%",
     maxHeight: "100%",
-    marginTop: ".5rem",
-    marginLeft: "40px",
-    '@media (max-width: 1024px)': {
-      marginLeft: "15px",
-      marginTop: "10px",
-  },
-    '@media (max-width:414px)': {
-      fontSize: '1.5rem',
-      margin: "0",
-  },
 },
 
   text1: {
@@ -117,40 +111,45 @@ overlayText: {
 },
 };
 
-// href="#The_ID_Name"
 function Music(props) {
   const { classes } = props;
   return (
     <div id="NostalgiaRadio">
-      <div  className={classes.music}>
-    <Grid 
-      container
-      direction="row"
-      alignItems="center">
+      <div className={classes.music} >
+    <Grid container direction="row" alignItems="center">
 
-    <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>Nostalgia Radio</Typography>       
-          <Typography variant="h4" className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.</Typography> 
-    </Grid>  
+<Grid container item sm={12}
+      style = {{position: "relative"}}>
 
-    <Grid container item sm={12} md={7}
-      style = {{position: "relative"}}
-    >  
+      {/* <div className={classes.parallax}></div> */}
+      {/* <img src = {JukeBox} className={classes.hero}></img> */}
+ 
+      <Typography variant="h3"
+        style={{
+          position: "absolute", 
+          color:"white", 
+          padding: "4.5rem 5rem 0 4rem", 
+          textShadow: "1px 1px 4px #000" }}>
+          Nostalgia Radio
+      </Typography>
+
           <img 
-            src = {iPadMusic}
-            className={classes.hero}>
+            src = {PopSocks}
+            style={{position: "absolute", width: "45%", padding: "10rem 5rem 2rem 4rem" }}>
           </img>
-          <Button className = {classes.overlay}>
-        <Typography variant = "h3" className= {classes.overlayText}>
-          Try It!
-        </Typography>
-      </Button>
+
+          <img 
+            src = {BoomerHeyday}
+            style={{position: "absolute", width: "45%", padding: "20rem 5rem 2rem 4rem" }}>
+          </img>
+
           <Typography variant="h4" 
-              className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+              style={{position: "absolute", color:"white", boxShadow: "white", padding: "30rem 15rem 2rem 4rem", textShadow: "1px 1px 4px #000"}}>
+              Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
           </Typography> 
     </Grid>   
+
   </Grid>    
 </div>
 {/* Landscape Mode */}

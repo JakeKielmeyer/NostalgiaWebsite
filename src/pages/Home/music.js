@@ -13,11 +13,8 @@ import Button from "@material-ui/core/Button";
 import {CreateMoreMusic} from "../../component/ReadMore/CreateMore";
 
 const styles = {
-
-  // backgroundImage: `url(${pupper})`,
   music: {
     backgroundImage: `url(${JukeBox})`,
-    minHeight: "500px",
     backgroundAttachment: "fixed",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -120,9 +117,6 @@ function Music(props) {
 
 <Grid container item sm={12}
       style = {{position: "relative"}}>
-
-      {/* <div className={classes.parallax}></div> */}
-      {/* <img src = {JukeBox} className={classes.hero}></img> */}
  
       <Typography variant="h3"
         style={{

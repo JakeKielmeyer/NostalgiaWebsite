@@ -1,30 +1,27 @@
 import React from "react";
-import iPadDash from "../images/iPadDashboard.png";
+import Cherub from "../images/Cherub.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
 import Cta from "../component/ctaButton"
 
 const styles = {
   banner: {
-    display: "flex",
-    paddingLeft: "4rem",
-    paddingRight: "5rem",
-    minHeight: "100vh",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
+    backgroundImage: `url(${Cherub})`,
     backgroundAttachment: "fixed",
-    backgroundColor: "#000",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    minHeight: "90vh",
   },
   
   head: {
     color: "#fff",
     marginTop: "125px",
     marginLeft: "200px",
+    marginBottom: "400px",
     '@media (max-width: 768px)': {
       marginLeft: "70px",
       marginTop: "80px",
@@ -70,25 +67,21 @@ function Banner(props) {
       direction="row"
       alignItems="center"
     >
-    <Grid item item sm={12}>
-      <Box mt={10}>
-          <Typography variant="h3" className={classes.head}>Reminsicense Therapy Simplified</Typography>
-         <Box mt={5}>
-            <Typography variant="h4" className={classes.text}>Therapy designed to reconnect families
-            to loved ones with Alzheimer's.
-            </Typography>
-          </Box>
-        </Box>
-    </Grid>      
-    <Grid item sm={12}>
-          <img src = {iPadDash}
-          className={classes.hero}
-          ></img>
-    </Grid>
 
-    <Grid item sm={12}>
-      <Cta/>
-    </Grid>
+          <Typography variant="h3" className={classes.head}>Reminsicense Therapy Simplified</Typography>
+            <Typography variant="h4"  style={{
+            fontSize: "2rem", position: "absolute", 
+            color:"#fff", 
+            boxShadow: "white", 
+            padding: "0 auto", 
+            textShadow: "1px 1px 4px #000"}}>Therapy designed to reconnect families
+            to loved ones with Alzheimer's.
+            </Typography>   
+
+
+      <Cta style = {{padding: "100rem 5rem 2rem 4rem"}}/>
+
+
   </Grid>
  </div>
 </div>

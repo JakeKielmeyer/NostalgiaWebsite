@@ -1,11 +1,12 @@
 import React from "react";
 import iPadPhotos from "../../images/iPadPhotos.png";
+import photos from "../../images/photos.jpg";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
+
 
 // Components
 import {CreateMorePhoto} from "../../component/ReadMore/CreateMore";
@@ -13,13 +14,12 @@ import SpringModal from "../../component/Demos/PhotoDemo";
 
 const styles = {
   photo: {
-    display: "flex",
-    padding: "6rem 5rem 0 4rem",
-    minHeight: "80vh",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
+    backgroundImage: `url(${photos})`,
     backgroundAttachment: "fixed",
-    backgroundColor: "#000",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    minHeight: "80vh",
   },
   
     
@@ -96,35 +96,6 @@ text1: {
       display: "block",
     },
    },
-   overlay: {
-    zIndex: 2,
-    position: "absolute",
-    backgroundColor: "rgba(143, 143, 143, .6)",
-    top: "2.75rem",
-    marginLeft: "3.5rem",
-    width: "43vw",
-    height: "44vh",
-    textAlign: "center",
-    textTransform: "none",
-    fontSize: "20px",
-    '@media (max-width: 768px)': {
-      zIndex: 2,
-      position: "absolute",
-      backgroundColor: "rgba(143, 143, 143, .6)",
-      top: "9.25rem",
-      marginLeft: "4rem",
-      width: "70vw",
-      height: "40vh",
-      textAlign: "center",
-      textTransform: "none",
-      fontSize: "20px",
-    },
-  },
-  overlayText: {
-    color: "#fff",
-    margin: "25px auto",
-    disaply: "none",
-  },
 };
 
 function Photos(props) {
@@ -135,36 +106,37 @@ function Photos(props) {
     <Grid 
       container
       direction="row"
-      alignItems="center">
+      alignItems="center"
+      style = {{
+        position: "relative",
+      }}
+      >
 
-    <Grid container item sm={12} md={7} 
-    style = {{position: "relative"}}
-    >  
-    <Typography variant="h3" className={classes.headp}>Nostalgic Moments</Typography>
+    
+    <Typography variant="h3" 
+     style={{
+          position: "absolute", 
+          color:"white", 
+          padding: "4.5rem 5rem 0 4rem", 
+          textShadow: "1px 1px 4px #000" }}
+    >Nostalgic Moments</Typography>
       
       <img
         src = {iPadPhotos}
-        className={classes.hero}>
+        style={{position: "absolute", 
+            width: "75%", 
+            padding: "42rem 5rem 2rem 4rem" }}>
       </img>
 
-      {/* <Button className = {classes.overlay}>
-        <Typography variant = "h3" className= {classes.overlayText}>
-          Preview
-        </Typography>
-      </Button> */}
       <SpringModal/>
           <Typography variant="h4" 
-              className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+              style={{position: "absolute", 
+              color:"white", 
+              padding: "80rem 15rem 2rem 4rem", 
+              textShadow: "1px 1px 4px #000"}}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
           </Typography> 
-    </Grid>  
-    <Grid container item sm={12} md={5}
-      style = {{position: "relative"}}
-    >  
-          <Typography variant="h3" className={classes.head}>Nostalgic Moments</Typography>    
-          <Typography variant="h4" className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.</Typography> 
-    </Grid>  
+
   </Grid>    
 </div>      
       <Grid container item sm={12} style = {{background: "white"}}>

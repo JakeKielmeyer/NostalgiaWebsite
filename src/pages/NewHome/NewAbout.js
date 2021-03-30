@@ -81,7 +81,7 @@ text2: {
  },
 };
 
-function About(props) {
+function NewAbout(props) {
   const { classes } = props;
   return (
     <div id="about">
@@ -109,11 +109,8 @@ function About(props) {
   </Grid>   
 
 </div>  
-    <Grid container item sm={12}>
-      <CreateMore/>
-    </Grid>
 </div>
   );
 };
 
-export default withStyles(styles)(About);
+export default withStyles(styles)(NewAbout);

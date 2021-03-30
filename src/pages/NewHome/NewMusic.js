@@ -109,7 +109,7 @@ overlayText: {
 },
 };
 
-function Music(props) {
+function NewMusic(props) {
   const { classes } = props;
   return (
     <div id="NostalgiaRadio">
@@ -152,13 +152,13 @@ function Music(props) {
 
   </Grid>    
 </div>
-{/* Landscape Mode */}
-    <Grid container item sm={12}>
+
+    {/* <Grid container item sm={12}>
       <CreateMoreMusic/>
-    </Grid>
+    </Grid> */}
 </div>
   );
 };
 
 
-export default withStyles(styles)(Music);
+export default withStyles(styles)(NewMusic);

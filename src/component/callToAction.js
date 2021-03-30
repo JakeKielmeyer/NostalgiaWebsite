@@ -12,14 +12,22 @@ const styles = {
     display: "flex",
     padding: "1.25rem 4rem",
     minHeight: "20vh",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    backgroundAttachment: "fixed",
-    backgroundColor: "#8f8f8f",
+    background: "linear-gradient(to left top,  #cbcbcb, white)",
   },
 
   head: {
-    color: "#fff",
+    color: "#3fa9f5",
+    '@media (max-width: 1024px)': {
+        margin: "10px auto",
+        display: "block",
+  },
+  '@media (max-width:414px)': {
+    margin: "5px auto",
+    fontSize: '1.3rem',
+    },
+  },
+  text: {
+    color: "#000",
     '@media (max-width: 1024px)': {
         margin: "10px auto",
         display: "block",
@@ -45,7 +53,7 @@ function Call(props) {
         </Grid>  
         
         <Grid container item sm={12}>  
-          <Typography variant="h6" className={classes.head}>Only $15 a month</Typography>       
+          <Typography variant="h6" className={classes.text}>Only $15 a month</Typography>       
         </Grid>  
           <Cta/>
         </Grid>

@@ -120,7 +120,7 @@ text1: {
   },
  };
 
-function Video(props) {
+function NewVideo(props) {
   const { classes } = props;
   return (
     <div id="video">
@@ -142,12 +142,6 @@ function Video(props) {
           Nostalgia TV
       </Typography>
 
-  {/* <Button className = {classes.overlay}>
-        <Typography variant = "h3" className= {classes.overlayText}>
-          Try It!
-        </Typography>
-      </Button> */}
-
       <Typography variant="h4" 
               style={{position: "absolute", 
               color:"white", 
@@ -160,17 +154,17 @@ function Video(props) {
   
   </Grid>    
 </div>
- <Grid 
+ {/* <Grid 
       container
       direction="row"
-      alignItems="center"></Grid>
+      alignItems="center"></Grid> */}
 
-    <Grid container item sm={12} style = {{background: "white"}}>
+    {/* <Grid container item sm={12} style = {{background: "white"}}>
       <CreateMoreVideo/>
-    </Grid>
+    </Grid> */}
 
 </div>
   );
 };
 
-export default withStyles(styles)(Video);
+export default withStyles(styles)(NewVideo);

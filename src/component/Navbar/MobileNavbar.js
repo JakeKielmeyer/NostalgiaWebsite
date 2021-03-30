@@ -140,7 +140,7 @@ export default function MobileNavbar() {
           [classes.appBarShift]: open,
         })}
         style = {{
-          background: "#000"
+          background: "linear-gradient(to left top,  #cbcbcb, white)",
         }}
       >
         <Toolbar>

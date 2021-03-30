@@ -1,28 +1,23 @@
 import React from "react";
-import JukeBox from "../../images/JukeBox.jpg";
-import PopSocks from "../../images/PopSocks.png";
-import BoomerHeyday from "../../images/BoomerHeyday.png";
-import MusicImg from "../../images/music.jpg";
-
+import iPadPuzzle from "../../images/iPadPuzzle.png";
+import puzzlePic from "../../images/puzzle.jpg";
 //mui stuff
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
-// Components
-import {CreateMoreMusic} from "../../component/ReadMore/CreateMore";
-
+import {CreateMorePuzzle} from "../../component/ReadMore/CreateMore"
 const styles = {
-  music: {
-    backgroundImage: `url(${MusicImg})`,
+  puzzle: {
+    backgroundImage: `url(${puzzlePic})`,
     // backgroundAttachment: "fixed",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     minHeight: "80vh",
   },
-
+  
   head: {
     color: "#000",
     marginTop: "125px",
@@ -32,7 +27,7 @@ const styles = {
       marginTop: "0",
   },
     '@media (max-width: 768px)': {
-      margin: "5px auto",
+      margin: "15px auto",
   },
     '@media (max-width:414px)': {
       fontSize: '1.75rem',
@@ -41,35 +36,39 @@ const styles = {
   },
 },
 
-  hero: {
-    maxWidth: "100%",
-    maxHeight: "100%",
+hero: {
+  maxWidth: "80%",
+  maxHeight: "80%",
+  margin: ".5rem auto",
+  filter: "drop-shadow(0 0 0.1rem white)",
+  '@media (max-width: 1024px)': {
+},
+  '@media (max-width:414px)': {
+    fontSize: '1.5rem',
+    margin: "0",
+},
 },
 
-  text1: {
-    color: "#8f8f8f",
-    marginLeft: "70px",
-    fontSize: "2rem",
-    lineHeight: "1.25",
-    '@media (max-width: 1024px)': {
-      marginLeft: "15px",
-      marginRight: "15px",
-      marginTop: "20px",
-  },
-    '@media (max-width: 768px)': {
-      display: "none",
-  },
+text1: {
+  color: "#8f8f8f",
+  fontSize: "2rem",
+  lineHeight: "1.25",
+  '@media (max-width: 1024px)': {
+    margin: "15px",
+},
+  '@media (max-width: 768px)': {
+    display: "none",
+},
 },
 
 text2: {
   color: "#8f8f8f",
-  marginLeft: "70px",
   fontSize: "2rem",
   lineHeight: "1.25",
   display: "none",
   '@media (max-width: 768px)': {
-    marginLeft: "70px",
-    marginTop: "5px",
+    marginLeft: "20px",
+    marginTop: "30px",
     display: "block",
 },
   '@media (max-width:414px)': {
@@ -82,10 +81,10 @@ text2: {
   zIndex: 2,
   position: "absolute",
   backgroundColor: "rgba(143, 143, 143, .6)",
-  top: "2.25rem",
-  marginLeft: "2.5rem",
-  width: "44vw",
-  height: "46vh",
+  top: "2.5rem",
+  marginLeft: "4.75rem",
+  width: "36vw",
+  height: "59vh",
   textAlign: "center",
   textTransform: "none",
   fontSize: "20px",
@@ -93,10 +92,10 @@ text2: {
     zIndex: 2,
     position: "absolute",
     backgroundColor: "rgba(143, 143, 143, .6)",
-    top: "2.25rem",
-    marginLeft: "3rem",
-    width: "71vw",
-    height: "42vh",
+    top: "2.75rem",
+    marginLeft: "5.75rem",
+    width: "58.5vw",
+    height: "54vh",
     textAlign: "center",
     textTransform: "none",
     fontSize: "20px",
@@ -109,56 +108,50 @@ overlayText: {
 },
 };
 
-function Music(props) {
+function NewPuzzle(props) {
   const { classes } = props;
   return (
-    <div id="NostalgiaRadio">
-      <div className={classes.music} >
-    <Grid container direction="row" alignItems="center">
+    <div id="puzzle">
+      <div  className={classes.puzzle}>
+    <Grid 
+      container
+      direction="row"
+      alignItems="center">
 
 <Grid container item sm={12}
       style = {{position: "relative"}}>
- 
-      <Typography variant="h3"
+
+<Typography variant="h3"
         style={{
           position: "absolute", 
           color:"white", 
           padding: "4.5rem 5rem 0 4rem", 
           textShadow: "1px 1px 4px #000" }}>
-          Nostalgia Radio
+          Puzzle Fun
       </Typography>
-
           <img 
-            src = {PopSocks}
-            style={{position: "absolute", 
-            width: "45%", 
-            padding: "10rem 5rem 2rem 4rem" }}>
+            src = {iPadPuzzle}
+            style={{position: "absolute", width: "45%", padding: "10rem 5rem 2rem 4rem" }}>
           </img>
-
-          <img 
-            src = {BoomerHeyday}
-            style={{position: "absolute", width: "45%", padding: "20rem 5rem 2rem 4rem" }}>
-          </img>
-
-          <Typography variant="h4" 
+      
+      <Typography variant="h4" 
               style={{position: "absolute", 
               color:"white", 
-              padding: "30rem 15rem 2rem 4rem", 
+              padding: "40rem 15rem 2rem 4rem", 
               textShadow: "1px 1px 4px #000"}}>
               Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
-          </Typography> 
-    </Grid>   
+          </Typography>  
 
+</Grid>
   </Grid>    
 </div>
-{/* Landscape Mode */}
-    <Grid container item sm={12}>
-      <CreateMoreMusic/>
-    </Grid>
+
+    {/* <Grid container item sm={12}>
+      <CreateMorePuzzle/>
+    </Grid> */}
 </div>
   );
 };
 
-
-export default withStyles(styles)(Music);
+export default withStyles(styles)(NewPuzzle);

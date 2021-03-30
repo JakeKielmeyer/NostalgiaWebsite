@@ -15,6 +15,8 @@ import Photo from "./photo";
 import Music from "./music";
 import Video from "./video";
 import Puzzle from "./puzzle"; 
+import New from "../NewHome/New";
+
 const styles = {
 };
 
@@ -22,20 +24,21 @@ const Home = (props) => {
   const { classes } = props;
   return (
 <div>
-  <Banner/>
+  <New/>
+  {/* <About/> */}
+  {/* <Banner/>
   <Call/>
-  <About/>
-  <Call/>
-  <FeaturesP/>
+  <Call/> */}
+  {/* <FeaturesP/>
   <FeaturesL/>
-  <Call/> 
-  <Photo/>
+  <Call/>  */}
+  {/* <Photo/>
   <Call/>
   <Music/>
   <Call/>
   <Video/>
   <Call/>
-  <Puzzle/>
+  <Puzzle/> */}
 </div>
   );
 };

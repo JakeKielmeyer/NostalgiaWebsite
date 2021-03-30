@@ -6,14 +6,13 @@ import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
-import More from "../../component/ReadMore/ReadMoreText";
 import {CreateMore} from "../../component/ReadMore/CreateMore";
 
 const styles = {
   about: {
     padding: "6rem 5rem 2rem 4rem",
     display: "flex",
-    minHeight: "80vh",
+    minHeight: "63vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
@@ -111,7 +110,6 @@ function About(props) {
 
 </div>  
     <Grid container item sm={12}>
-      {/* <More/> */}
       <CreateMore/>
     </Grid>
 </div>

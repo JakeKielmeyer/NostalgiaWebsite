@@ -1,6 +1,6 @@
 import React from "react";
 import iPadPuzzle from "../../images/iPadPuzzle.png";
-
+import puzzlePic from "../../images/puzzle.jpg";
 //mui stuff
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -10,13 +10,12 @@ import Button from "@material-ui/core/Button";
 import {CreateMorePuzzle} from "../../component/ReadMore/CreateMore"
 const styles = {
   puzzle: {
-    display: "flex",
-    padding: "6rem 5rem 2rem 4rem",
-    minHeight: "80vh",
-    backgroundRepeat: "no-repeat",
+    backgroundImage: `url(${puzzlePic})`,
+    // backgroundAttachment: "fixed",
     backgroundPosition: "center",
-    backgroundAttachment: "fixed",
-    backgroundColor: "#fff",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    minHeight: "80vh",
   },
   
   head: {
@@ -119,31 +118,38 @@ function Puzzle(props) {
       direction="row"
       alignItems="center">
 
-    <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>Puzzle Fun</Typography>       
-          <Typography variant="h4" 
-              className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.
-          </Typography> 
-    </Grid>  
+<Grid container item sm={12}
+      style = {{position: "relative"}}>
 
-    <Grid container item sm={12} md={7}
-        style = {{position: "relative"}}
-    >  
+<Typography variant="h3"
+        style={{
+          position: "absolute", 
+          color:"white", 
+          padding: "4.5rem 5rem 0 4rem", 
+          textShadow: "1px 1px 4px #000" }}>
+          Puzzle Fun
+      </Typography>
           <img 
             src = {iPadPuzzle}
-            className={classes.hero}>
+            style={{position: "absolute", width: "45%", padding: "10rem 5rem 2rem 4rem" }}>
           </img>
-          <Button className = {classes.overlay}>
+      
+      {/* <Button className = {classes.overlay}>
         <Typography variant = "h3" className= {classes.overlayText}>
           Try It!
         </Typography>
-      </Button>
-          <Typography variant="h4" 
-              className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+      </Button> */}
+      
+      <Typography variant="h4" 
+              style={{position: "absolute", 
+              color:"white", 
+              padding: "40rem 15rem 2rem 4rem", 
+              textShadow: "1px 1px 4px #000"}}>
+              Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
-          </Typography> 
-    </Grid> 
+          </Typography>  
+
+</Grid>
   </Grid>    
 </div>
 {/* Landscape Mode */}

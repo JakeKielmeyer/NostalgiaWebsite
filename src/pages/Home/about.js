@@ -17,7 +17,7 @@ const styles = {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
-    backgroundColor: "#fff",
+    background: "linear-gradient(to left top,  #cbcbcb, white)",
   },
   
 head: {

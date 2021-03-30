@@ -8,7 +8,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 
 const styles = {
   appBar: {
-    background: "black",
+    background: "linear-gradient(to left top,  #cbcbcb, white)",
     boxShadow: "none",
     paddingLeft: "2rem",
     position: "sticky",
@@ -29,7 +29,7 @@ const styles = {
 
   navContainer: {
     display: "flex",
-    color: "white",
+    color: "black",
     width: "88vw",
     justifyContent: "space-between",
   },

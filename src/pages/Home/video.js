@@ -1,5 +1,6 @@
 import React from "react";
 import iPadVideo from "../../images/iPadVideo.png";
+import tv from "../../images/tv.jpg"
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -12,13 +13,12 @@ import {CreateMoreVideo} from "../../component/ReadMore/CreateMore";
 
 const styles = {
   video: {
-    display: "flex",
-    padding: "6rem 5rem 2rem 4rem",
-    minHeight: "80vh",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
+    backgroundImage: `url(${tv})`,
     backgroundAttachment: "fixed",
-    backgroundColor: "#000",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    minHeight: "80vh",
   },
   
   headp: {
@@ -93,7 +93,8 @@ text1: {
    overlay: {
     zIndex: 2,
     position: "absolute",
-    backgroundColor: "rgba(143, 143, 143, .6)",
+    backgroundColor: "#000",
+    opacity: ".85",
     top: "2.5rem",
     marginLeft: "4.5rem",
     width: "36vw",
@@ -101,17 +102,15 @@ text1: {
     textAlign: "center",
     textTransform: "none",
     fontSize: "20px",
+    border: "2px",
+    borderRadius: "12px",
     '@media (max-width: 768px)': {
       zIndex: 2,
       position: "absolute",
-      backgroundColor: "rgba(143, 143, 143, .6)",
-      top: "9rem",
+      top: "15.5rem",
       marginLeft: "5.5rem",
-      width: "58vw",
-      height: "53vh",
-      textAlign: "center",
-      textTransform: "none",
-      fontSize: "20px",
+      width: "40vw",
+      height: "35vh",
     },
   },
   overlayText: {
@@ -131,28 +130,32 @@ function Video(props) {
       direction="row"
       alignItems="center">
 
-    <Grid container item sm={12} md={7}
+    <Grid container item sm={12}
     style = {{position: "relative"}}
     >  
-    <Typography variant="h3" className={classes.headp}>Nostalgia TV</Typography>
-          <img 
-            src = {iPadVideo}
-            className={classes.hero}>
-          </img>
-          <Button className = {classes.overlay}>
+   <Typography variant="h3"
+        style={{
+          position: "absolute", 
+          color:"white", 
+          padding: "4.5rem 5rem 0 20rem", 
+          textShadow: "1px 1px 4px #000" }}>
+          Nostalgia TV
+      </Typography>
+
+  {/* <Button className = {classes.overlay}>
         <Typography variant = "h3" className= {classes.overlayText}>
           Try It!
         </Typography>
-      </Button>
-          <Typography variant="h4" 
-              className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+      </Button> */}
+
+      <Typography variant="h4" 
+              style={{position: "absolute", 
+              color:"white", 
+              padding: "10rem 4rem 2rem 20rem", 
+              textShadow: "1px 1px 4px #000"}}>
+              Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
           </Typography> 
-    </Grid>  
-    <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>Nostalgia TV</Typography>       
-          <Typography variant="h4" className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>  
   
   </Grid>    
@@ -162,7 +165,6 @@ function Video(props) {
       direction="row"
       alignItems="center"></Grid>
 
-    {/* Landscape Mode */}
     <Grid container item sm={12} style = {{background: "white"}}>
       <CreateMoreVideo/>
     </Grid>

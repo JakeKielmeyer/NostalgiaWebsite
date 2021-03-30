@@ -16,7 +16,7 @@ import {CreateMoreMusic} from "../../component/ReadMore/CreateMore";
 const styles = {
   music: {
     backgroundImage: `url(${MusicImg})`,
-    backgroundAttachment: "fixed",
+    // backgroundAttachment: "fixed",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",

@@ -26,9 +26,9 @@ const Home = (props) => {
   <Call/>
   <About/>
   <Call/>
-  <FeaturesP/>
+  {/* <FeaturesP/>
   <FeaturesL/>
-  <Call/> 
+  <Call/>  */}
   <Photo/>
   <Call/>
   <Music/>

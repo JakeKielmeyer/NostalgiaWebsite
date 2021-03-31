@@ -1,5 +1,5 @@
 import React,{useState}  from "react";
-import iPadDashboard from "../../images/iPadPuzzle.png";
+import iPadDashboard from "../../images/iPadDashboard.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -81,7 +81,7 @@ text2: {
  },
 };
 
-function NewAbout(props) {
+function NewFeatures(props) {
   const { classes } = props;
   return (
     <div id="about">
@@ -92,7 +92,7 @@ function NewAbout(props) {
       alignItems="center">
 
     <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>Puzzle Fun</Typography>       
+          <Typography variant="h3" className={classes.head}>Product Features</Typography>       
           <Typography variant="h4" 
               className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
@@ -113,4 +113,4 @@ function NewAbout(props) {
   );
 };
 
-export default withStyles(styles)(NewAbout);
+export default withStyles(styles)(NewFeatures);

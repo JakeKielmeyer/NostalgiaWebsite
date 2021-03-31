@@ -1,87 +1,88 @@
 import React from "react";
-import iPadVideo from "../../images/iPadVideo.png";
-import tv from "../../images/tv.jpg"
+import Cat from "../../images/moments/erik.jpg";
+import Dog from "../../images/moments/Animals.jpg";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
+
 
 // Components
-import {CreateMoreVideo} from "../../component/ReadMore/CreateMore";
+import {CreateMorePhoto} from "../../component/ReadMore/CreateMore";
+import SpringModalWestern from "../../component/Demos/VideoDemoWestern";
+import SpringModalSciFi from "../../component/Demos/VideoDemoSciFi";
 
 const styles = {
-  video: {
-    backgroundImage: `url(${tv})`,
-    backgroundAttachment: "fixed",
-    backgroundPosition: "center",
+  photo: {
+    position: "relative",
+    display: "flex",
+    padding: "6rem 5rem 2rem 4rem",
+    display: "flex",
+    minHeight: "63vh",
     backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
-    minHeight: "80vh",
-  },
-  
-  headp: {
-    color: "#fff",
-    margin: "25px auto",
-    disaply: "none",
-    '@media (max-width: 1024px)': {
-      display: "none",
-  },
-    '@media (max-width: 768px)': {
-      display: "block",
-  },
+    backgroundPosition: "center",
+    backgroundAttachment: "fixed",
+    background: "linear-gradient(to left top,  #cbcbcb, white)",
 },
 
-  head: {
-    color: "#fff",
-    marginTop: "125px",
-    marginLeft: "260px",
+hero: {
+    maxWidth: "90%",
+    maxHeight: "90%",
+    marginTop: ".5rem",
+    marginLeft: "40px",
+    border: "2px solid white",
+    borderRadius: "12px",
     '@media (max-width: 1024px)': {
-      marginTop: "0",
-      marginLeft: "45px",
-  },
-    '@media (max-width: 768px)': {
-      display: "none",
-  },
-},
-  
-  hero: {
-    maxWidth: "80%",
-    maxHeight: "80%",
-    margin: ".5rem auto",
-    filter: "drop-shadow(0 0 0.1rem white)",
-    '@media (max-width: 1024px)': {
+      marginLeft: "15px",
+      marginTop: "10px",
   },
     '@media (max-width:414px)': {
       fontSize: '1.5rem',
       margin: "0",
   },
 },
-  
-text1: {
-      color: "#8f8f8f",
-      marginLeft: "70px",
-      fontSize: "2rem",
-      lineHeight: "1.25",
-      '@media (max-width: 1024px)': {
-        marginLeft: "45px",
-        marginRight: "15px",
-        marginTop: "20px",
-    },
-      '@media (max-width: 768px)': {
-        display: "none",
-    },
+
+  head: {
+    color: "#000",
+    marginTop: "5px",
+    marginLeft: "40px",
+    '@media (max-width: 768px)': {
+      display: "none",
   },
+},
+
+headp: {
+  color: "#000",
+  marginTop: "5px",
+  marginLeft: "100px",
+  display: "none",
+  '@media (max-width: 768px)': {
+    display: "block",
+  },
+},
+
+  text1: {
+    color: "#8f8f8f",
+    fontSize: "2rem",
+    lineHeight: "1.25",
+    '@media (max-width: 1024px)': {
+      marginTop: "5px",
+      marginLeft: "40px",
+  },
+    '@media (max-width: 768px)': {
+      display: "none",
+  },
+},
+  
   text2: {
     color: "#8f8f8f",
-    marginLeft: "70px",
     fontSize: "2rem",
     lineHeight: "1.25",
     display: "none",
     '@media (max-width: 768px)': {
-      marginLeft: "70px",
-      marginTop: "5px",
+      marginLeft: "20px",
+      marginTop: "30px",
       display: "block",
   },
     '@media (max-width:414px)': {
@@ -90,80 +91,42 @@ text1: {
       display: "block",
     },
    },
-   overlay: {
-    zIndex: 2,
-    position: "absolute",
-    backgroundColor: "#000",
-    opacity: ".85",
-    top: "2.5rem",
-    marginLeft: "4.5rem",
-    width: "36vw",
-    height: "58vh",
-    textAlign: "center",
-    textTransform: "none",
-    fontSize: "20px",
-    border: "2px",
-    borderRadius: "12px",
-    '@media (max-width: 768px)': {
-      zIndex: 2,
-      position: "absolute",
-      top: "15.5rem",
-      marginLeft: "5.5rem",
-      width: "40vw",
-      height: "35vh",
-    },
+
+   landscape: {
+     '@media (max-width: 768px)': {
+      display: "none",
   },
-  overlayText: {
-    color: "#fff",
-    margin: "25px auto",
-    disaply: "none",
-  },
- };
+   },
+};
 
 function NewVideo(props) {
   const { classes } = props;
-  return (
-    <div id="video">
-      <div  className={classes.video}>
-    <Grid 
-      container
-      direction="row"
-      alignItems="center">
+    return (
 
-    <Grid container item sm={12}
-    style = {{position: "relative"}}
-    >  
-   <Typography variant="h3"
-        style={{
-          position: "absolute", 
-          color:"white", 
-          padding: "4.5rem 5rem 0 20rem", 
-          textShadow: "1px 1px 4px #000" }}>
-          Nostalgia TV
-      </Typography>
+  <div className={classes.photo}>
+    <Grid container direction="row" alignItems="center">
 
-      <Typography variant="h4" 
-              style={{position: "absolute", 
-              color:"white", 
-              padding: "10rem 4rem 2rem 20rem", 
-              textShadow: "1px 1px 4px #000"}}>
-              Nostalgia Therapy is based on proven reminsicense therapy tools 
+    <Grid container item sm={12}>  
+    <Typography variant="h3" className={classes.headp}>Nostalgia TV</Typography>       
+      <SpringModalWestern/>
+      <img src = {Dog} className={classes.hero}></img>
+    </Grid> 
+    <Grid container item sm = {12}>
+      <SpringModalSciFi/>
+    <img src = {Cat} className={classes.hero}></img>
+    <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
+    </Grid>
+  </Grid>  
+  <Grid container direction="row" alignItems="center" className={classes.landscape}>
+  <Grid container item sm={12} md={12}>  
+          <Typography variant="h3" className={classes.head}>Nostalgia TV</Typography>       
+          <Typography variant="h4" 
+              className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
           </Typography> 
     </Grid>  
-  
-  </Grid>    
-</div>
- {/* <Grid 
-      container
-      direction="row"
-      alignItems="center"></Grid> */}
-
-    {/* <Grid container item sm={12} style = {{background: "white"}}>
-      <CreateMoreVideo/>
-    </Grid> */}
-
-</div>
+  </Grid>
+  </div>      
   );
 };
 

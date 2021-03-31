@@ -1,6 +1,4 @@
 import React from "react";
-import iPadPhotos from "../../images/iPadPhotos.png";
-import photos from "../../images/photos.jpg";
 import Cat from "../../images/moments/erik.jpg";
 import Dog from "../../images/moments/Animals.jpg";
 
@@ -121,7 +119,7 @@ function NewPhotos(props) {
   </Grid>  
   <Grid container direction="row" alignItems="center" className={classes.landscape}>
   <Grid container item sm={12} md={12}>  
-          <Typography variant="h3" className={classes.head}>What is Nostalgia Therapy?</Typography>       
+          <Typography variant="h3" className={classes.head}>Nostalgic Moments</Typography>       
           <Typography variant="h4" 
               className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.

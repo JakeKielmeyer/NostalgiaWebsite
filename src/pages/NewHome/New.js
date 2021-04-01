@@ -2,6 +2,7 @@ import React,{useState}  from "react";
 
 //mui stuff
 import withStyles from "@material-ui/core/styles/withStyles";
+import GridList from "@material-ui/core/GridList";
 
 // Components
 import NewAbout from "./NewAbout";
@@ -25,7 +26,7 @@ function New(props) {
         <Banner/>
         <NewAbout/>
         <Call/>
-        <Carousel
+          <Carousel
             autoPlay={false}
             fullHeightHover={false}
             animation={"fade"}
@@ -33,12 +34,12 @@ function New(props) {
             navButtonsAlwaysVisible={true}
             indicatorContainerProps={{style: {  },}}>
             
-            <NewFeatures/> 
-            <NewPhotos/>
+            {/* <NewFeatures/> 
+            <NewPhotos/> */}
             <NewMusic/>          
-            <NewVideo/>
-            <NewPuzzle/>
-        </Carousel>
+            {/* <NewVideo/>
+            <NewPuzzle/> */}
+          </Carousel>
         </div>
   );
 };

@@ -107,10 +107,12 @@ const useStyles = makeStyles((theme) => ({
       fontSize: '1.5rem',
    },
   },
+  
   special: {
     fontFamily: "KOJ",
     display: "inline",
-    paddingRight: "5px",
+    padding: "0 1.5rem",
+    margin: "0",
     textTransform: "capitalize",
     '@media (min-width:760px)': {
       fontSize: '1.5rem',
@@ -212,7 +214,7 @@ export default function MobileNavbar() {
     
           <Link to  = "/caregiver">
            <Button className={classes.special}>
-              Caregiver Corner
+              Caregiver <br></br> Corner
             </Button>
           </Link>
         </ul>

@@ -4,17 +4,8 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // Compenents
-import Banner from "../../component/banner";
-import Call from "../../component/callToAction";
 
 // Page Sections
-import About from "./about";
-import FeaturesP from "./featuresP";
-import FeaturesL from "./featuresL";
-import Photo from "./photo";
-import Music from "./music";
-import Video from "./video";
-import Puzzle from "./puzzle"; 
 import New from "../NewHome/New";
 
 const styles = {
@@ -25,20 +16,6 @@ const Home = (props) => {
   return (
 <div>
   <New/>
-  {/* <About/> */}
-  {/* <Banner/>
-  <Call/>
-  <Call/> */}
-  {/* <FeaturesP/>
-  <FeaturesL/>
-  <Call/>  */}
-  {/* <Photo/>
-  <Call/>
-  <Music/>
-  <Call/>
-  <Video/>
-  <Call/>
-  <Puzzle/> */}
 </div>
   );
 };

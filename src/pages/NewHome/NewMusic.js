@@ -1,6 +1,7 @@
 import React from "react";
 import PopSocks from "../../images/PopSocks.png";
 import BoomerHeyday from "../../images/BoomerHeyday.png";
+import MusicPlayer from "../../component/Demos/MusicPlayer";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -103,12 +104,13 @@ function NewMusic(props) {
     <Typography variant="h3" className={classes.headp}>Nostalgic Moments</Typography>       
 
       <img src = {BoomerHeyday} className={classes.hero}></img>
+      <MusicPlayer/>
     </Grid> 
     <Grid container item sm = {12}>
-
     <img src = {PopSocks} className={classes.hero}></img>
     <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>
+    
   </Grid>  
   <Grid container direction="row" alignItems="center" className={classes.landscape}>
   <Grid container item sm={12} md={12}>  

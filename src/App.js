@@ -4,6 +4,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect,
   Link
 } from "react-router-dom";
 
@@ -20,7 +21,7 @@ import MobileNavbar from "../src/component/Navbar/MobileNavbar";
 import Scroll from "../src/component/scroll";
 
 //pages
-import Home from "./pages/Home/home";
+import Home from "./pages/Home/Home";
 import HowTo from "./pages/How To/HowTo";
 import Caregiver from "./pages/CaregiverCorner/caregiver";
 
@@ -49,9 +50,11 @@ function App() {
       <Router>
       <Navbar />
       <MobileNavbar/>
-      <Route path = "/home" component = {Home}/>
+      <Switch>
+      <Route exact path = "/" component = {Home}/>
       <Route exact path = "/HowTo" component = {HowTo}/>
       <Route exact path = "/caregiver" component = {Caregiver}/>
+      </Switch>
         <Scroll/>
         <Footer />
       </Router>

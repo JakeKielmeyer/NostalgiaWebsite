@@ -52,12 +52,12 @@ function Navbar(props) {
 
 <AppBar position="absolute" className={classes.appBar}>
        <ToolBar className={classes.navContainer}>
-           <Link to="/home">
+           <Link to="/Home">
              <Button color="inherit" className={classes.brandName}>
                Nostalgia Therapy
              </Button>
            </Link>
-           <Link to="/home">
+           <Link to="/Home">
              <Button color="inherit" className={classes.navLink}>
                Home
              </Button>

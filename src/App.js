@@ -21,7 +21,7 @@ import MobileNavbar from "../src/component/Navbar/MobileNavbar";
 import Scroll from "../src/component/scroll";
 
 //pages
-import Home from "./pages/Home/Home";
+import Home from "./pages/Home/home";
 import HowTo from "./pages/How To/HowTo";
 import Caregiver from "./pages/CaregiverCorner/caregiver";
 
@@ -48,13 +48,13 @@ function App() {
   return (
     <MuiThemeProvider theme={theme}>
       <Router>
-      <Navbar />
-      <MobileNavbar/>
-      <Switch>
-      <Route exact path = "/" component = {Home}/>
-      <Route exact path = "/HowTo" component = {HowTo}/>
-      <Route exact path = "/caregiver" component = {Caregiver}/>
-      </Switch>
+        <Navbar />
+          <MobileNavbar/>
+            <Switch>
+            <Route exact path = "/" component = {Home}/>
+            <Route exact path = "/HowTo" component = {HowTo}/>
+            <Route exact path = "/caregiver" component = {Caregiver}/>
+          </Switch>
         <Scroll/>
         <Footer />
       </Router>

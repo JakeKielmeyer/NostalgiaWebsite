@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     '@media (max-width:1024px)': {
       display: "none",
     },
-    '@media (max-width:768px)': {
+    '@media (max-width:812px)': {
       display: "flex",
     },
   },
@@ -49,7 +49,12 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Leviathan",
     textTransform: "capitalize",
     marginRight: "45rem",
+    '@media (max-width:812px)': {
+      width: "30%",
+      marginRight: "30rem",
+    },
     '@media (max-width:770px)': {
+      width: "30%",
       marginRight: "30rem",
     },
     '@media (max-width:740px)': {
@@ -59,9 +64,11 @@ const useStyles = makeStyles((theme) => ({
       marginRight: "24rem",
     },
     '@media (max-width:414px)': {
+      width: "60%",
       marginRight: "8rem",
     },
     '@media (max-width:375px)': {
+      width: "70%",
       marginRight: "6rem",
     },
   },
@@ -146,11 +153,11 @@ export default function MobileNavbar() {
         }}
       >
         <Toolbar>
-        <a href="#banner">
+        <Link to="/">
         <Typography variant="h6" noWrap className={classes.title}>
             Nostalgia Therapy
           </Typography>
-        </a>
+        </Link>
           <IconButton
             aria-label="open drawer"
             edge="end"
@@ -178,16 +185,17 @@ export default function MobileNavbar() {
         </div>
         <Divider />
           <ul>
-          <Link to="/home">
+          <Link to="/">
              <Button color="inherit" className={classes.navLink}>
                Home
              </Button>
            </Link>
+
             <a class="navLink" href="#about">
               <Button className={classes.navLink}>
                 About
               </Button>
-          </a>
+            </a>
 
           <a class="navLink" href="#features">
               <Button className={classes.navLink}>

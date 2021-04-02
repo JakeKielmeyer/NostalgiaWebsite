@@ -12,7 +12,7 @@ const styles = {
     boxShadow: "none",
     paddingLeft: "2rem",
     position: "sticky",
-    '@media (max-width:812px)': {
+    '@media (max-width:820px)': {
       display: "none",
     },
   },
@@ -52,12 +52,17 @@ function Navbar(props) {
 
 <AppBar position="absolute" className={classes.appBar}>
        <ToolBar className={classes.navContainer}>
-           <Link to="/Home">
+
+           <Link to="/">
+           
              <Button color="inherit" className={classes.brandName}>
                Nostalgia Therapy
              </Button>
            </Link>
-           <Link to="/Home">
+
+           <Link to="/">
+
+           
              <Button color="inherit" className={classes.navLink}>
                Home
              </Button>

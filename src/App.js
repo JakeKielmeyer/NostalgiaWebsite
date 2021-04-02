@@ -48,6 +48,15 @@ function App() {
   return (
     <MuiThemeProvider theme={theme}>
       <Router>
+
+        <Navbar />
+          <MobileNavbar/>
+            <Switch>
+            <Route exact path = "/" component = {Home}/>
+            <Route exact path = "/HowTo" component = {HowTo}/>
+            <Route exact path = "/caregiver" component = {Caregiver}/>
+          </Switch>
+
       <Navbar />
       <MobileNavbar/>
       <Switch>
@@ -55,6 +64,7 @@ function App() {
       <Route exact path = "/HowTo" component = {HowTo}/>
       <Route exact path = "/caregiver" component = {Caregiver}/>
       </Switch>
+
         <Scroll/>
         <Footer />
       </Router>

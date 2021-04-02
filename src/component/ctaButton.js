@@ -16,6 +16,7 @@ const styles = {
       },
     '@media (max-width:414px)': {
     fontSize: '1.5rem',
+    marginLeft: "50px",
     },
   },
 };

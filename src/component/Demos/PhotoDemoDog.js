@@ -113,6 +113,9 @@ function SpringModalDog(props) {
       </Typography>
       </Button>
       <Modal
+        style = {{
+          backgroundColor: "black"
+        }}
         aria-labelledby="spring-modal-title"
         aria-describedby="spring-modal-description"
         className={classes.modal}
@@ -120,7 +123,7 @@ function SpringModalDog(props) {
         onClose={handleClose}
         closeAfterTransition
         BackdropComponent={Backdrop}
-        BackdropProps={{timeout: 500,}}>
+        BackdropProps={{timeout: 100,}}>
         
         <Fade in={open}>
         

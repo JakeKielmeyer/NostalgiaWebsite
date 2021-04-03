@@ -116,6 +116,9 @@ function SpringModalCat(props) {
       </Typography>
       </Button>
       <Modal
+        style = {{
+        backgroundColor: "black"
+        }}
         aria-labelledby="spring-modal-title"
         aria-describedby="spring-modal-description"
         className={classes.modal}

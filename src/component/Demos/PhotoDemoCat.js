@@ -93,7 +93,6 @@ const Fade = React.forwardRef(function Fade(props, ref) {
   );
 });
 
-
 function SpringModalCat(props) {
   const {classes} = props;
   const [open, setOpen] = React.useState(false);

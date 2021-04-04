@@ -19,6 +19,7 @@ import Footer from "../src/component/Footer";
 import Navbar from "../src/component/Navbar/Navbar";
 import MobileNavbar from "../src/component/Navbar/MobileNavbar";
 import Scroll from "../src/component/scroll";
+import NewNavbar from "../src/component/Navbar/newNavbar";
 
 //pages
 import Home from "./pages/Home/home";
@@ -48,8 +49,9 @@ function App() {
   return (
     <MuiThemeProvider theme={theme}>
       <Router>
-        <Navbar />
-          <MobileNavbar/>
+        {/* <Navbar />
+          <MobileNavbar/> */}
+          <NewNavbar/>
           <Switch>
             <Route exact path = "/" component = {Home}/>
             <Route exact path = "/HowTo" component = {HowTo}/>

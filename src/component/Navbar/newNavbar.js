@@ -26,7 +26,6 @@ const styles = {
         width: "40%",
         listStyleType: "none",
         '@media (max-width:820px)': {
-            // display: "none",
             zIndex: "2",
             position: "absolute",
             right: "0px",
@@ -36,13 +35,17 @@ const styles = {
             flexDirection: "column",
             alignItems: "center",
             width: "40%",
-            // Transform: "translateX(100%)",
-            opactiy: "0",
+            transition: "transform 0.5s ease-in",
          },
+    },
+
+    navActive: {
+        transform: "translateX(0%)",
     },
 
     burger: {
         display: "none",
+        cursor: "pointer",
         '@media (max-width:820px)': {
             display: 'block',
          },
@@ -56,33 +59,27 @@ const styles = {
     },
   };
   
+
 function NewNavbar(props) {
 const { classes } = props;
     return (
+
 
         <nav className = {classes.nav}>
             <div>
                 <Typography variant = "h6" className={classes.logo}>Nostalgia Therapy</Typography>
             </div>
             <ul className= {classes.navlinks}>
-                <li style = {{
-                    opacity: "0",
-                }}>
+                <li>
                     <a href = "#">Home</a>
                 </li>
-                <li style = {{
-                    opacity: "0",
-                }}>
+                <li>
                     <a href = "#">Home</a>
                 </li>
-                <li style = {{
-                    opacity: "0",
-                }}>
+                <li>
                     <a href = "#">Home</a>
                 </li>
-                <li style = {{
-                    opacity: "0",
-                }}>
+                <li>
                     <a href = "#" >Home</a>
                 </li>
             </ul>

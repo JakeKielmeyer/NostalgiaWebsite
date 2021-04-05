@@ -10,15 +10,15 @@ import Cta from "../component/ctaButton";
 const styles = {
   call: {
     display: "flex",
-    padding: "1.25rem 4rem",
+    padding: "1.5rem 18rem",
     minHeight: "20vh",
     background: "linear-gradient(to left top,  #cbcbcb, white)",
   },
 
   head: {
     color: "#3fa9f5",
+    margin: "10px auto",
     '@media (max-width: 1024px)': {
-        margin: "10px auto",
         display: "block",
   },
   '@media (max-width:414px)': {
@@ -28,8 +28,8 @@ const styles = {
   },
   text: {
     color: "#000",
+    margin: "10px auto",
     '@media (max-width: 1024px)': {
-        margin: "10px auto",
         display: "block",
   },
   '@media (max-width:414px)': {

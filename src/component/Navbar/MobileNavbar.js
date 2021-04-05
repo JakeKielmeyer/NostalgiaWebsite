@@ -18,7 +18,7 @@ const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    '@media (max-width:1024px)': {
+    '@media (min-width:1024px)': {
       display: "none",
     },
     '@media (max-width:812px)': {

@@ -21,8 +21,7 @@ const styles = {
   
 head: {
     color: "#000",
-    marginTop: "125px",
-    marginLeft: "260px",
+    marginBottom: "50px",
     '@media (max-width: 1024px)': {
       marginLeft: "15px",
       marginTop: "0",
@@ -84,7 +83,7 @@ text2: {
 function NewAbout(props) {
   const { classes } = props;
   return (
-    <div id="about">
+    <div id="features">
       <div  className={classes.about}>
     <Grid 
       container

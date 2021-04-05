@@ -1,17 +1,16 @@
 import React from "react";
-import Cat from "../../images/moments/erik.jpg";
-import Dog from "../../images/moments/Animals.jpg";
+import Flash from "../../images/Flash Gordon.jpg";
+import Bonanza from "../../images/tv/Bonanza.jpg";
+import Commercial from "../../images/tv/Commercial.PNG";
+import Beaver from "../../images/tv/LeaveItToBeaver.jpg";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 
-
 // Components
 import {CreateMorePhoto} from "../../component/ReadMore/CreateMore";
-import SpringModalWestern from "../../component/Demos/VideoDemoWestern";
-import SpringModalSciFi from "../../component/Demos/VideoDemoSciFi";
 
 const styles = {
   photo: {
@@ -45,7 +44,7 @@ hero: {
 
   head: {
     color: "#000",
-    marginTop: "5px",
+    marginBottom: "50px",
     marginLeft: "40px",
     '@media (max-width: 768px)': {
       display: "none",
@@ -66,9 +65,10 @@ headp: {
     color: "#8f8f8f",
     fontSize: "2rem",
     lineHeight: "1.25",
+    marginLeft: "40px",
     '@media (max-width: 1024px)': {
       marginTop: "5px",
-      marginLeft: "40px",
+
   },
     '@media (max-width: 768px)': {
       display: "none",
@@ -102,18 +102,25 @@ headp: {
 function NewVideo(props) {
   const { classes } = props;
     return (
-
+<div id="features">
   <div className={classes.photo}>
     <Grid container direction="row" alignItems="center">
 
-    <Grid container item sm={12}>  
+    <Grid container item sm={6}>  
     <Typography variant="h3" className={classes.headp}>Nostalgia TV</Typography>       
-      <SpringModalWestern/>
-      <img src = {Dog} className={classes.hero}></img>
+
+      <img src = {Bonanza} className={classes.hero}></img>
     </Grid> 
-    <Grid container item sm = {12}>
-      <SpringModalSciFi/>
-    <img src = {Cat} className={classes.hero}></img>
+    <Grid container item sm = {6}>
+    <img src = {Flash} className={classes.hero}></img>
+    <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
+    </Grid>
+    <Grid container item sm = {6}>
+    <img src = {Beaver} className={classes.hero}></img>
+    <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
+    </Grid>
+    <Grid container item sm = {6}>
+    <img src = {Commercial} className={classes.hero}></img>
     <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>
   </Grid>  
@@ -127,6 +134,7 @@ function NewVideo(props) {
     </Grid>  
   </Grid>
   </div>      
+  </div>
   );
 };
 

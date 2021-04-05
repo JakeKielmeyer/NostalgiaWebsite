@@ -45,7 +45,7 @@ hero: {
 
   head: {
     color: "#000",
-    marginTop: "5px",
+    marginBottom: "50px",
     marginLeft: "40px",
     '@media (max-width: 768px)': {
       display: "none",
@@ -66,9 +66,9 @@ headp: {
     color: "#8f8f8f",
     fontSize: "2rem",
     lineHeight: "1.25",
+    marginLeft: "40px",
     '@media (max-width: 1024px)': {
       marginTop: "5px",
-      marginLeft: "40px",
   },
     '@media (max-width: 768px)': {
       display: "none",
@@ -103,6 +103,7 @@ function NewPhotos(props) {
   const { classes } = props;
     return (
 
+      <div id="features">
   <div className={classes.photo}>
     <Grid container direction="row" alignItems="center">
 
@@ -126,7 +127,8 @@ function NewPhotos(props) {
           </Typography> 
     </Grid>  
   </Grid>
-  </div>      
+  </div> 
+  </div>     
   );
 };
 

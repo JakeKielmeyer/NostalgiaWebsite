@@ -17,7 +17,8 @@ const styles = {
   photo: {
     position: "relative",
     display: "flex",
-    padding: "6rem 5rem 2rem 4rem",
+    padding: "7% 15%", 
+    // padding: "6rem 5rem 2rem 4rem",
     display: "flex",
     minHeight: "63vh",
     backgroundRepeat: "no-repeat",

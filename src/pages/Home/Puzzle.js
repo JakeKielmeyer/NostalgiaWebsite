@@ -9,8 +9,8 @@ import Grid from "@material-ui/core/Grid";
 import {CreateMore} from "../../component/ReadMore/CreateMore";
 
 const styles = {
-  about: {
-    padding: "6rem 5rem 2rem 4rem",
+  puzzle: {
+    padding: "7% 15%", 
     display: "flex",
     minHeight: "63vh",
     backgroundRepeat: "no-repeat",
@@ -84,7 +84,7 @@ function NewAbout(props) {
   const { classes } = props;
   return (
     <div id="features">
-      <div  className={classes.about}>
+      <div  className={classes.puzzle}>
     <Grid 
       container
       direction="row"

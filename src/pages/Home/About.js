@@ -10,7 +10,7 @@ import {CreateMore} from "../../component/ReadMore/CreateMore";
 
 const styles = {
   about: {
-    padding: "6rem 5rem 2rem 4rem",
+    padding: "7% 15%", 
     display: "flex",
     minHeight: "63vh",
     backgroundRepeat: "no-repeat",

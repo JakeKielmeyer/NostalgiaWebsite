@@ -34,11 +34,11 @@ function New(props) {
             navButtonsAlwaysVisible={true}
             indicatorContainerProps={{style: {  },}}>
             
-            {/* <Features/>  */}
+            <Features/> 
             <Photos/>
-            {/* <Music/>          
+            <Music/>          
             <Video/>
-            <Puzzle/> */}
+            <Puzzle/>
           </Carousel>
         </div>
   );

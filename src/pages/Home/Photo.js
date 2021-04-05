@@ -103,6 +103,7 @@ function NewPhotos(props) {
   const { classes } = props;
     return (
 
+      <div id="features">
   <div className={classes.photo}>
     <Grid container direction="row" alignItems="center">
 
@@ -126,7 +127,8 @@ function NewPhotos(props) {
           </Typography> 
     </Grid>  
   </Grid>
-  </div>      
+  </div> 
+  </div>     
   );
 };
 

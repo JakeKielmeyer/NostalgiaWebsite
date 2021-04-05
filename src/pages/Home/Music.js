@@ -1,7 +1,6 @@
 import React from "react";
 import PopSocks from "../../images/PopSocks.png";
 import BoomerHeyday from "../../images/BoomerHeyday.png";
-import MusicPlayer from "../../component/Demos/MusicPlayer";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -96,7 +95,7 @@ headp: {
 function NewMusic(props) {
   const { classes } = props;
     return (
-
+<div id="features">
   <div className={classes.photo}>
     <Grid container direction="row" alignItems="center">
 
@@ -104,7 +103,7 @@ function NewMusic(props) {
     <Typography variant="h3" className={classes.headp}>Nostalgic Moments</Typography>       
 
       <img src = {BoomerHeyday} className={classes.hero}></img>
-      <MusicPlayer/>
+
     </Grid> 
     <Grid container item sm = {12}>
     <img src = {PopSocks} className={classes.hero}></img>
@@ -122,6 +121,7 @@ function NewMusic(props) {
     </Grid>  
   </Grid>
   </div>      
+  </div>
   );
 };
 

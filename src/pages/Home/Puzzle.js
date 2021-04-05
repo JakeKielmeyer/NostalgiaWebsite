@@ -84,7 +84,7 @@ text2: {
 function NewAbout(props) {
   const { classes } = props;
   return (
-    <div id="about">
+    <div id="features">
       <div  className={classes.about}>
     <Grid 
       container

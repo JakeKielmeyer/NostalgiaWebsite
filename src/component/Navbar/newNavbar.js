@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+import navSlide from "./navbarAnimation";
 
 // Mui Stuff
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -26,6 +27,9 @@ const styles = {
         width: "40%",
         listStyleType: "none",
         '@media (max-width:820px)': {
+            width: "60%",
+         },
+        '@media (max-width:820px)': {
             zIndex: "2",
             position: "absolute",
             right: "0px",
@@ -34,7 +38,8 @@ const styles = {
             backgroundColor: "black",
             flexDirection: "column",
             alignItems: "center",
-            width: "40%",
+            width: "50%",
+            transform: "translateX(100%)",
             transition: "transform 0.5s ease-in",
          },
     },
@@ -53,17 +58,17 @@ const styles = {
 
     burgerLine: {
         width: "25px",
-        height: "2px",
+        height: "3px",
         background: "white",
         margin: "5px",
     },
   };
-  
+
 
 function NewNavbar(props) {
 const { classes } = props;
-    return (
 
+    return (
 
         <nav className = {classes.nav}>
             <div>
@@ -89,8 +94,9 @@ const { classes } = props;
                 <div className={classes.burgerLine}></div>
             </div>
         </nav>
-
     );
   }
-  
+
+//   navSlide();
+
   export default withStyles(styles)(NewNavbar);

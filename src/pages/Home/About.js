@@ -1,5 +1,6 @@
 import React,{useState}  from "react";
 import iPadDashboard from "../../images/iPadDashboard.png";
+import hugging from "../../images/bannermobile.jpg";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -41,6 +42,8 @@ hero: {
   maxHeight: "100%",
   marginTop: ".5rem",
   marginLeft: "40px",
+  border: ".5px solid white",
+  borderRadius: "6px",
   '@media (max-width: 1024px)': {
     marginLeft: "15px",
     marginTop: "10px",
@@ -100,7 +103,7 @@ function NewAbout(props) {
 
     <Grid container item sm={12} md={5}>  
           <img 
-            src = {iPadDashboard}
+            src = {hugging}
             className={classes.hero}>
           </img>
           <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 

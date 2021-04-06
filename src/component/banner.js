@@ -1,7 +1,7 @@
 import React from "react";
 import iPadDash from "../images/iPadDashboard.png";
 import Banner1 from "../images/Banner1.jpg";
-import BannerMobile from "../images/bannermobile.jpg";
+import BannerMobile from "../images/TabletUse.JPG";
 //mui stuff
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -84,7 +84,7 @@ function Banner(props) {
               Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
           </Typography> 
-        <img src={iPadDash} className={classes.hero}>
+        <img src={BannerMobile} className={classes.hero}>
 
         </img>  
           <Button

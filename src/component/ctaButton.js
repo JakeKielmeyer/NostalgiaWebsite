@@ -9,15 +9,16 @@ const styles = {
     textTransform: "none",
     fontSize: "1.5rem",
     fontFamily: "KOW",
-    marginLeft: "395px",
-    whiteSpace: "nowrap",
-    '@media (max-width:768px)': {
-      marginLeft: '18rem',
-      },
-    '@media (max-width:414px)': {
-    fontSize: '1.5rem',
-    marginLeft: "50px",
-    },
+    left: "50%",
+    top: "50%",
+    tranform: "translate(-50%, -50%)",
+  //   '@media (max-width:768px)': {
+  //     marginLeft: '18rem',
+  //     },
+  //   '@media (max-width:414px)': {
+  //   fontSize: '1.5rem',
+  //   marginLeft: "50px",
+  //   },
   },
 };
 

@@ -41,17 +41,12 @@ const styles ={
       margin: "0",
   },
 },
+
 overlay: {
-    zIndex: 2,
-    backgroundColor: "rgba(143, 143, 143, .6)",
-    borderRadius: "12px",
-    marginLeft: "18px",
-    marginTop: "135px",
-    minHeight: "5vh",
-    minWidth: "38.75vw",
     position: "absolute",
     textAlign: "center",
     textTransform: "none",
+    padding: "1% 5%",
     '@media (max-width: 768px)': {
         marginLeft: "0",
         marginTop: "65px",
@@ -60,6 +55,7 @@ overlay: {
     },
   },
   overlayText: {
+    backgroundColor: "rgba(143, 143, 143, .6)",
     color: "#fff",
     margin: "25px auto",
     disaply: "none",

@@ -31,7 +31,7 @@ hero: {
     marginTop: ".5rem",
     marginLeft: "40px",
     border: "2px solid white",
-    borderRadius: "12px",
+    borderRadius: "6px",
     '@media (max-width: 1024px)': {
       marginLeft: "15px",
       marginTop: "10px",
@@ -108,23 +108,27 @@ function NewVideo(props) {
 
     <Grid container item sm={6}>  
     <Typography variant="h3" className={classes.headp}>Nostalgia TV</Typography>       
-
-      <img src = {Bonanza} className={classes.hero}></img>
+      <img src = {Flash} className={classes.hero}></img>
     </Grid> 
-    <Grid container item sm = {6}>
-    <img src = {Flash} className={classes.hero}></img>
-    <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
-    </Grid>
+
     <Grid container item sm = {6}>
     <img src = {Beaver} className={classes.hero}></img>
     <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>
+    
     <Grid container item sm = {6}>
     <img src = {Commercial} className={classes.hero}></img>
     <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>
+    
+    <Grid container item sm = {6}>
+    <img src = {Bonanza} className={classes.hero}></img>
+    <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
+    </Grid>
   </Grid>  
+  
   <Grid container direction="row" alignItems="center" className={classes.landscape}>
+  
   <Grid container item sm={12} md={12}>  
           <Typography variant="h3" className={classes.head}>Nostalgia TV</Typography>       
           <Typography variant="h4" 

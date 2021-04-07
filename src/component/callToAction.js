@@ -43,6 +43,7 @@ const styles = {
     textTransform: "none",
     fontSize: "1.5rem",
     fontFamily: "KOW",
+    margin: "10px auto",
     // left: "450%",
     // tranform: "translate(-50%, -50%)",
   },
@@ -65,14 +66,13 @@ function Call(props) {
           <Typography variant="h6" className={classes.text}>Only $15 a month</Typography>       
         </Grid>
 
-    <a href="https://nostalgiadev-1f319.web.app/" target="_blank">
+  
     <Button
       variant="contained"
       className={classes.cta}
-      >Sign Up
+      >
+       <a href="https://nostalgiadev-1f319.web.app/" target="_blank">Sign Up</a>
     </Button>
-     </a>
-
     </Grid>
 
     </div>

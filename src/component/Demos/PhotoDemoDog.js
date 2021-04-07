@@ -43,19 +43,17 @@ const styles ={
 },
 
 overlay: {
-    position: "absolute",
-    textAlign: "center",
-    textTransform: "none",
-    padding: "1% 5%",
+  textAlign: "center",
+  textTransform: "none",
+  backgroundImage: `url(${Dog})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
     '@media (max-width: 768px)': {
-        marginLeft: "0",
-        marginTop: "65px",
-        minHeight: "37vh",
-        minWidth: "50vw",
     },
   },
   overlayText: {
-    backgroundColor: "rgba(143, 143, 143, .6)",
+    textShadow: "1px 1px 4px #000",
     color: "#fff",
     margin: "25px auto",
     disaply: "none",

@@ -50,14 +50,10 @@ overlay: {
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
     '@media (max-width: 768px)': {
-      zIndex: 2,
-      backgroundColor: "rgba(143, 143, 143, .6)",
-      textAlign: "center",
-      textTransform: "none",
-      fontSize: "20px",
     },
   },
   overlayText: {
+    textShadow: "1px 1px 4px #000",
     color: "#fff",
     margin: "25px auto",
     disaply: "none",
@@ -102,13 +98,16 @@ function SpringModalCat(props) {
 
   return (
     <div>
-      <Button type="button" 
+    <div className={classes.bg}>
+    <Button type="button" 
         className = {classes.overlay}
         onClick={handleOpen}>
       <Typography variant = "h3" className= {classes.overlayText}>
           Preview the Cat Album!
       </Typography>
       </Button>
+    </div>
+      
       <Modal
         style = {{
         backgroundColor: "black"

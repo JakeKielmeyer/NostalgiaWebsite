@@ -43,26 +43,17 @@ const styles ={
   },
 },
 overlay: {
-    zIndex: 2,
-    backgroundColor: "rgba(143, 143, 143, .6)",
-    borderRadius: "12px",
-    marginLeft: "18px",
-    marginTop: "135px",
-    minHeight: "5vh",
-    minWidth: "38.75vw",
-    position: "absolute",
-    textAlign: "center",
-    textTransform: "none",
-    fontSize: "20px",
+  textAlign: "center",
+  textTransform: "none",
+  backgroundImage: `url(${Cat})`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
     '@media (max-width: 768px)': {
-      zIndex: 2,
-      backgroundColor: "rgba(143, 143, 143, .6)",
-      textAlign: "center",
-      textTransform: "none",
-      fontSize: "20px",
     },
   },
   overlayText: {
+    textShadow: "1px 1px 4px #000",
     color: "#fff",
     margin: "25px auto",
     disaply: "none",
@@ -107,13 +98,16 @@ function SpringModalCat(props) {
 
   return (
     <div>
-      <Button type="button" 
+    <div className={classes.bg}>
+    <Button type="button" 
         className = {classes.overlay}
         onClick={handleOpen}>
       <Typography variant = "h3" className= {classes.overlayText}>
           Preview the Cat Album!
       </Typography>
       </Button>
+    </div>
+      
       <Modal
         style = {{
         backgroundColor: "black"

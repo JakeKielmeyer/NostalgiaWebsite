@@ -6,7 +6,9 @@ import Dog from "../../images/moments/Animals.jpg";
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
-
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
+import GridListTileBar from '@material-ui/core/GridListTileBar';
 
 // Components
 import {CreateMorePhoto} from "../../component/ReadMore/CreateMore";
@@ -56,6 +58,7 @@ hero: {
 headp: {
   color: "#000",
   marginTop: "5px",
+  marginBottom: "20px",
   marginLeft: "100px",
   display: "none",
   '@media (max-width: 768px)': {
@@ -107,17 +110,19 @@ function NewPhotos(props) {
       <div id="features">
   <div className={classes.photo}>
     <Grid container direction="row" alignItems="center">
-
-    <Grid container item sm={12}>  
     <Typography variant="h3" className={classes.headp}>Nostalgic Moments</Typography>       
+    <Grid container item sm={12}
+    style = {{  marginLeft: "50px",}}
+    >  
       <SpringModalDog/>
-      <img src = {Dog} className={classes.hero}></img>
     </Grid> 
-    <Grid container item sm = {12}>
+    <Grid container item sm = {12} style = {{  marginLeft: "50px",}}>
       <SpringModalCat/>
-    <img src = {Cat} className={classes.hero}></img>
-    <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>
+    <Typography variant="h4" className={classes.text2}>
+    Nostalgia Therapy is based on proven reminsicense
+    therapy tools that are designed to increase quality of life and time 
+    spent together.</Typography> 
   </Grid>  
   <Grid container direction="row" alignItems="center" className={classes.landscape}>
   <Grid container item sm={12} md={12}>  

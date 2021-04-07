@@ -12,7 +12,7 @@ const styles = {
     boxShadow: "none",
     paddingLeft: "2rem",
     position: "sticky",
-    '@media (max-width:820px)': {
+    '@media (max-width:760px)': {
       display: "none",
     },
   },

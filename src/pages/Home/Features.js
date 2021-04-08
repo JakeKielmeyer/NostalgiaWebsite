@@ -10,13 +10,14 @@ import {CreateMore} from "../../component/ReadMore/CreateMore";
 
 const styles = {
   features: {
-    padding: "7% 15%", 
+    padding: "0 15%", 
+    // padding: "7% 15%", 
     display: "flex",
     minHeight: "63vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
-    background: "linear-gradient(to left top,  #cbcbcb, white)",
+    // background: "linear-gradient(to left top,  #cbcbcb, white)",
   },
   
 head: {

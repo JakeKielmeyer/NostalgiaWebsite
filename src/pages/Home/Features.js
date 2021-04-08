@@ -9,7 +9,7 @@ import Grid from "@material-ui/core/Grid";
 import {CreateMore} from "../../component/ReadMore/CreateMore";
 
 const styles = {
-  about: {
+  features: {
     padding: "7% 15%", 
     display: "flex",
     minHeight: "63vh",
@@ -84,7 +84,7 @@ function NewFeatures(props) {
   const { classes } = props;
   return (
     <div id="features">
-      <div  className={classes.about}>
+      <div  className={classes.features}>
     <Grid 
       container
       direction="row"
@@ -98,7 +98,7 @@ function NewFeatures(props) {
           </Typography> 
     </Grid>  
 
-    <Grid container item sm={12} md={5}>  
+    <Grid container item sm={12} md={7}>  
           <img 
             src = {iPadDashboard}
             className={classes.hero}>

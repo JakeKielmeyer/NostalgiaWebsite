@@ -93,7 +93,7 @@ function NewAbout(props) {
       direction="row"
       alignItems="center">
 
-    <Grid container item sm={12} md={5}>  
+    <Grid container item sm={12} md={7}>  
           <Typography variant="h3" className={classes.head}>What is Nostalgia Therapy?</Typography>       
           <Typography variant="h4" 
               className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 

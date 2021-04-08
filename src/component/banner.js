@@ -11,8 +11,8 @@ import Button from "@material-ui/core/Button";
 const styles = {
   banner: {
     padding: "7% 15%", 
-    background: "linear-gradient(to left bottom,  #cbcbcb, black)",
-    // background: "linear-gradient(to left, #303030, #414141)", 
+    // background: "linear-gradient(to left bottom,  #cbcbcb, black)",
+    background: "linear-gradient(to left, #303030, #414141)", 
     fontFamily:"Segoe UI",
     fontSize: "1.25rem",
 },
@@ -73,10 +73,9 @@ function Banner(props) {
 <div id="banner">
   <div className={classes.banner}>
 
-<Grid itm sm = {12} style={{paddingTop: "10rem",}}>
+<Grid itm sm = {12} style={{paddingTop: "4rem",}}>
   <Typography variant = "h3" className={classes.head}>
           Reminsicense Therapy Simplified</Typography>
-
           <Typography variant="h4" 
               style={{
               color:"white", 

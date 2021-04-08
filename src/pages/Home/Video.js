@@ -13,7 +13,7 @@ import Grid from "@material-ui/core/Grid";
 import {CreateMorePhoto} from "../../component/ReadMore/CreateMore";
 
 const styles = {
-  photo: {
+  video: {
     position: "relative",
     display: "flex",
     padding: "7% 15%", 
@@ -103,7 +103,7 @@ function NewVideo(props) {
   const { classes } = props;
     return (
 <div id="features">
-  <div className={classes.photo}>
+  <div className={classes.video}>
     <Grid container direction="row" alignItems="center">
 
     <Grid container item sm={6}>  

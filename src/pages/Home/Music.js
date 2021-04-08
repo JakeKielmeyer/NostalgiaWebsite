@@ -9,7 +9,7 @@ import Grid from "@material-ui/core/Grid";
 
 
 const styles = {
-  photo: {
+  radio: {
     position: "relative",
     display: "flex",
     padding: "7% 15%", 
@@ -22,18 +22,9 @@ const styles = {
 },
 
 hero: {
-    maxWidth: "90%",
-    maxHeight: "90%",
-    marginTop: ".5rem",
-    marginLeft: "40px",
-    '@media (max-width: 1024px)': {
-      marginLeft: "15px",
-      marginTop: "10px",
-  },
-    '@media (max-width:414px)': {
-      fontSize: '1.5rem',
-      margin: "0",
-  },
+    maxWidth: "100%",
+    maxHeight: "100%",
+    marginTop: "2.5rem",
 },
 
   head: {
@@ -96,24 +87,23 @@ function NewMusic(props) {
   const { classes } = props;
     return (
 <div id="features">
-  <div className={classes.photo}>
+  <div className={classes.radio}>
     <Grid container direction="row" alignItems="center">
 
-    <Grid container item sm={12}>  
-    <Typography variant="h3" className={classes.headp}>Nostalgic Moments</Typography>       
+    <Grid container item sm={12} md={7}>  
+    <Typography variant="h3" className={classes.headp}>Nostalgia Radio</Typography>       
 
       <img src = {BoomerHeyday} className={classes.hero}></img>
 
-    </Grid> 
-    <Grid container item sm = {12}>
+
     <img src = {PopSocks} className={classes.hero}></img>
     <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>
     
-  </Grid>  
-  <Grid container direction="row" alignItems="center" className={classes.landscape}>
-  <Grid container item sm={12} md={12}>  
-          <Typography variant="h3" className={classes.head}>Nostalgic Moments</Typography>       
+  {/* </Grid>   */}
+  {/* <Grid container direction="row" alignItems="center" className={classes.landscape}> */}
+  <Grid container item sm={12} md={5}>  
+          <Typography variant="h3" className={classes.head}>Nostalgia Radio</Typography>       
           <Typography variant="h4" 
               className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.

@@ -14,7 +14,6 @@ import {CreateMorePhoto} from "../../component/ReadMore/CreateMore";
 
 const styles = {
   video: {
-    padding: "0 15%", 
     display: "flex",
     minHeight: "63vh",
     backgroundRepeat: "no-repeat",

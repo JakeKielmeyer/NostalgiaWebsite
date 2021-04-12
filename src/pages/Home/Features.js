@@ -10,8 +10,6 @@ import {CreateMore} from "../../component/ReadMore/CreateMore";
 
 const styles = {
   features: {
-    padding: "0 15%", 
-    // padding: "7% 15%", 
     display: "flex",
     minHeight: "63vh",
     backgroundRepeat: "no-repeat",

@@ -10,12 +10,6 @@ import Button from "@material-ui/core/Button";
 
 const styles = {
   banner: {
-    padding: "0 15%", 
-
-    // padding: "7% 15%", 
-    // background: "linear-gradient(to left bottom,  #cbcbcb, black)",
-    // background: "linear-gradient(to left, #303030, #414141)", 
-    
     fontFamily:"Segoe UI",
     fontSize: "1.25rem",
 },

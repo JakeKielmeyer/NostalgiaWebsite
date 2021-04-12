@@ -17,16 +17,12 @@ import SpringModalCat from "../../component/Demos/PhotoDemoCat";
 
 const styles = {
   photo: {
-    position: "relative",
-    display: "flex",
-    padding: "7% 15%", 
-    // padding: "6rem 5rem 2rem 4rem",
+    padding: "0 15%", 
     display: "flex",
     minHeight: "63vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
-    background: "linear-gradient(to left top,  #cbcbcb, white)",
 },
 
 hero: {

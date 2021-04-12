@@ -13,11 +13,10 @@ const styles = {
   about: {
     padding: "0 15% 5%", 
     display: "flex",
-    // minHeight: "3vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
-    // background: "linear-gradient(to left top,  #cbcbcb, white)",
+    background: "linear-gradient(to left top,  #cbcbcb, white)",
   },
   
 head: {

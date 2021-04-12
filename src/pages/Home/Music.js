@@ -10,15 +10,12 @@ import Grid from "@material-ui/core/Grid";
 
 const styles = {
   radio: {
-    position: "relative",
-    display: "flex",
-    padding: "7% 15%", 
+    padding: "0 15%", 
     display: "flex",
     minHeight: "63vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
-    background: "linear-gradient(to left top,  #cbcbcb, white)",
 },
 
 hero: {

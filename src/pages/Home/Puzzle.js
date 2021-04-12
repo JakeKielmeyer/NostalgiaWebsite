@@ -10,13 +10,12 @@ import {CreateMore} from "../../component/ReadMore/CreateMore";
 
 const styles = {
   puzzle: {
-    padding: "7% 15%", 
+    padding: "0 15%", 
     display: "flex",
     minHeight: "63vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
-    background: "linear-gradient(to left top,  #cbcbcb, white)",
   },
   
 head: {

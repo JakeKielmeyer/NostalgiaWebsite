@@ -11,7 +11,8 @@ const styles = {
   call: {
     display: "flex",
     minHeight: "20vh",
-    background: "linear-gradient(to left bottom,  #cbcbcb, black)",
+    backgroundColor: "#000",
+    // background: "linear-gradient(to left bottom,  #cbcbcb, black)",
   },
 
   head: {

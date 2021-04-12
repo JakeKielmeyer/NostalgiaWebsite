@@ -10,18 +10,15 @@ import Button from "@material-ui/core/Button";
 
 const styles = {
   banner: {
-    padding: "7% 15%", 
-    // background: "linear-gradient(to left bottom,  #cbcbcb, black)",
-    background: "linear-gradient(to left, #303030, #414141)", 
     fontFamily:"Segoe UI",
     fontSize: "1.25rem",
 },
 
   head: {
     position: "absolute",
-    color: "#fff",
+    color: "#000",
     marginTop: "1px",
-    textShadow: "1px 1px 4px #000",
+    // textShadow: "1px 1px 4px #000",
     '@media (max-width: 768px)': {
       marginTop: "1px",
   },
@@ -32,7 +29,7 @@ const styles = {
 },
 
   text: {
-    color: "#8f8f8f",
+    color: "#fff",
     marginLeft: "70px",
     fontSize: "2rem",
     lineHeight: "1.25",
@@ -78,9 +75,8 @@ function Banner(props) {
           Reminsicense Therapy Simplified</Typography>
           <Typography variant="h4" 
               style={{
-              color:"white", 
-              paddingTop: "70px", 
-              textShadow: "1px 1px 4px #000"}}>
+              color:"#000", 
+              paddingTop: "70px", }}>
               Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
           </Typography> 

@@ -17,11 +17,14 @@ const styles = {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
+    backgroundColor: "#fff",
+    // backgroundColor: "#000",
     // background: "linear-gradient(to left top,  #cbcbcb, white)",
   },
   
 head: {
-    color: "#000",
+  // color: "#fff",
+  color: "#000",
     marginBottom: "50px",
     '@media (max-width: 1024px)': {
       marginLeft: "15px",
@@ -52,7 +55,8 @@ hero: {
 },
 },
 text1: {
-  color: "#8f8f8f",
+  // color: "#fff",
+  color: "#000",
   fontSize: "2rem",
   lineHeight: "1.25",
   '@media (max-width: 1024px)': {
@@ -64,7 +68,8 @@ text1: {
 },
 
 text2: {
-  color: "#8f8f8f",
+  color: "#fff",
+  // color: "#000",
   fontSize: "2rem",
   lineHeight: "1.25",
   display: "none",

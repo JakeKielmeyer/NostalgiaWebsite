@@ -10,21 +10,24 @@ import Button from "@material-ui/core/Button";
 
 const styles = {
   banner: {
+    paddingTop: "4rem",
     padding: "0 15%", 
-
-    // padding: "7% 15%", 
-    // background: "linear-gradient(to left bottom,  #cbcbcb, black)",
-    // background: "linear-gradient(to left, #303030, #414141)", 
-    
-    fontFamily:"Segoe UI",
     fontSize: "1.25rem",
+    backgroundColor: "#000",
+    borderBottom: "8px solid #222",
 },
 
+  heroText: {
+    position: "relative",
+    width: "100%",
+    maxWidth: "950px",
+    margin: "0 auto",
+    textAlign: "center",
+    zIndex: "1",
+  },
   head: {
-    position: "absolute",
-    color: "#000",
+    color: "#fff",
     marginTop: "1px",
-    // textShadow: "1px 1px 4px #000",
     '@media (max-width: 768px)': {
       marginTop: "1px",
   },
@@ -34,21 +37,20 @@ const styles = {
   },
 },
 
-  text: {
-    color: "#fff",
-    marginLeft: "70px",
-    fontSize: "2rem",
-    lineHeight: "1.25",
-    '@media (max-width:414px)': {
-      fontSize: '1.5rem',
-      margin: "0",
-  },
-},
+//   text: {
+//     color: "#fff",
+//     fontSize: "2rem",
+//     lineHeight: "1.25",
+//     padding: "10px",
+//     '@media (max-width:414px)': {
+//       fontSize: '1.5rem',
+//   },
+// },
   
   hero: {
     maxWidth: "100%",
     maxHeight: "100%",
-    marginTop: "5rem",
+    marginTop: "1rem",
     filter: "drop-shadow(0 0 0.1rem white)",
     '@media (max-width:414px)': {
       fontSize: '1.5rem',
@@ -75,28 +77,28 @@ function Banner(props) {
   return (
 <div id="banner">
   <div className={classes.banner}>
-
-<Grid itm sm = {12} style={{paddingTop: "4rem",}}>
+  <div className={classes.heroText}>
   <Typography variant = "h3" className={classes.head}>
-          Reminsicense Therapy Simplified</Typography>
-          <Typography variant="h4" 
-              style={{
-              color:"#000", 
-              paddingTop: "70px", }}>
-              Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.
+  Reminscense Therapy for You and Your Family</Typography>
+          <Typography variant="h3" 
+          style={{color: "#fff", fontSize: "2rem", paddingTop: "40px",}}
+          >
+              Alzheimer's is hard, we're here to make it a little bit easier
           </Typography> 
-        <img src={BannerMobile} className={classes.hero}>
-
-        </img>  
-          <Button
+          <img src={BannerMobile} className={classes.hero}></img>  
+          <Typography variant="h3" 
+          style={{color: "#fff", fontSize: "1.5rem", paddingTop: "40px",}}>
+            Ready to try it? Sign up today to start your free two week trial.
+            </Typography>           
+            <Button
             variant="contained"
-            className={classes.cta}>Sign Up
+            className={classes.cta}
+            >Sign Up
           </Button>
-        </Grid>
-
-    </div>
   </div>
+</div>
+
+    </div> 
   );
 };
 

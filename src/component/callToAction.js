@@ -12,6 +12,7 @@ const styles = {
     display: "flex",
     minHeight: "20vh",
     backgroundColor: "#000",
+    borderBottom: "8px solid #222",
     // background: "linear-gradient(to left bottom,  #cbcbcb, black)",
   },
 
@@ -29,8 +30,8 @@ const styles = {
   },
 
   text: {
-    // color: "#000",
-    color: "#8f8f8f",
+    color: "#fff",
+    // color: "#8f8f8f",
     margin: "10px auto",
     '@media (max-width: 1024px)': {
         display: "block",

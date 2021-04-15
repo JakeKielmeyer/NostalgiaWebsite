@@ -37,7 +37,7 @@ function New(props) {
             <Photos/>
             <Music/>          
             <Video/>
-            <Puzzle/>
+            {/* <Puzzle/> */}
           </Carousel>
         </div>
   );

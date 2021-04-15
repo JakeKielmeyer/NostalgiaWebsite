@@ -18,7 +18,8 @@ const styles = {
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
     backgroundColor: "#fff",
-    // backgroundColor: "#000",
+    // backgroundColor: "#282c34",
+    backgroundColor: "#fff",
     // background: "linear-gradient(to left top,  #cbcbcb, white)",
   },
   
@@ -68,8 +69,8 @@ text1: {
 },
 
 text2: {
-  color: "#fff",
-  // color: "#000",
+  // color: "#fff",
+  color: "#000",
   fontSize: "2rem",
   lineHeight: "1.25",
   display: "none",

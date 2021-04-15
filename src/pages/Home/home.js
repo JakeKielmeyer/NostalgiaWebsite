@@ -26,14 +26,13 @@ function New(props) {
         <Banner/>
         <About/>
         <Call/>
-          <Carousel
+          <Carousel 
             autoPlay={false}
             fullHeightHover={false}
             animation={"fade"}
             timeout={12}
             navButtonsAlwaysVisible={true}
             indicatorContainerProps={{style: {  },}}>
-            
             <Features/> 
             <Photos/>
             <Music/>          

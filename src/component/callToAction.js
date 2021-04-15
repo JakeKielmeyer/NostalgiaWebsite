@@ -12,6 +12,7 @@ const styles = {
     display: "flex",
     minHeight: "20vh",
     backgroundColor: "#000",
+    // backgroundColor: "#282c34",
     borderBottom: "8px solid #222",
     // background: "linear-gradient(to left bottom,  #cbcbcb, black)",
   },

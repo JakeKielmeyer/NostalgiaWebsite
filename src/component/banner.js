@@ -13,6 +13,7 @@ const styles = {
     paddingTop: "4rem",
     padding: "0 15%", 
     fontSize: "1.25rem",
+    // backgroundColor: "#282c34",
     backgroundColor: "#000",
     borderBottom: "8px solid #222",
 },
@@ -79,26 +80,25 @@ function Banner(props) {
   <div className={classes.banner}>
   <div className={classes.heroText}>
   <Typography variant = "h3" className={classes.head}>
-  Reminscense Therapy for You and Your Family</Typography>
-          <Typography variant="h3" 
-          style={{color: "#fff", fontSize: "2rem", paddingTop: "40px",}}
-          >
-              Alzheimer's is hard, we're here to make it a little bit easier
-          </Typography> 
-          <img src={BannerMobile} className={classes.hero}></img>  
-          <Typography variant="h3" 
-          style={{color: "#fff", fontSize: "1.5rem", paddingTop: "40px",}}>
-            Ready to try it? Sign up today to start your free two week trial.
-            </Typography>           
-            <Button
+  Reminscense Therapy for You and Your Family
+  </Typography>
+    <Typography variant="h3" 
+      style={{color: "#fff", fontSize: "2rem", paddingTop: "40px",}}
+      >Stream music, videos, and photos that help you reconnect to a loved one with Alzheimer's 
+    </Typography> 
+      <img src={BannerMobile} className={classes.hero}></img>  
+        <Typography variant="h3" 
+        style={{color: "#fff", fontSize: "1.5rem", paddingTop: "40px",}}>
+        Ready to try it? Sign up today to start your free two week trial.
+        </Typography>           
+          <Button
             variant="contained"
-            className={classes.cta}
-            >Sign Up
+            className={classes.cta}>
+            Sign Up
           </Button>
   </div>
-</div>
-
-    </div> 
+  </div>
+</div> 
   );
 };
 

@@ -17,6 +17,7 @@ const styles = {
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
     backgroundColor: "#fff",
+    // backgroundColor: "#282c34",
     // backgroundColor: "#000",
     borderBottom: "8px solid #222",
     // background: "linear-gradient(to left top,  #cbcbcb, white)",

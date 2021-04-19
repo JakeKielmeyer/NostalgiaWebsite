@@ -25,8 +25,12 @@ function New(props) {
       <div>
         <Banner/>
         <About/>
-        <Call/>
-          <Carousel 
+        {/* <Call/> */}
+        <Photos/>
+        <Music/>
+        <Video/>
+
+          {/* <Carousel 
             autoPlay={false}
             fullHeightHover={false}
             animation={"fade"}
@@ -37,8 +41,7 @@ function New(props) {
             <Photos/>
             <Music/>          
             <Video/>
-            {/* <Puzzle/> */}
-          </Carousel>
+          </Carousel> */}
         </div>
   );
 };

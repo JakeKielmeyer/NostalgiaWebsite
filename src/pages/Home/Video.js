@@ -16,10 +16,12 @@ const styles = {
   video: {
     padding: "0 15%", 
     display: "flex",
-    minHeight: "63vh",
+    minHeight: "40vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
+    backgroundColor: "#000",
+    borderBottom: "8px solid #222",
 },
 
 hero: {
@@ -40,7 +42,8 @@ hero: {
 },
 
   head: {
-    color: "#000",
+    // color: "#000",
+    color: "#fff",
     marginBottom: "50px",
     marginLeft: "40px",
     '@media (max-width: 768px)': {
@@ -49,7 +52,8 @@ hero: {
 },
 
 headp: {
-  color: "#000",
+  // color: "#000",
+  color: "#fff",
   marginTop: "5px",
   marginLeft: "100px",
   display: "none",
@@ -103,16 +107,16 @@ function NewVideo(props) {
   <div className={classes.video}>
     <Grid container direction="row" alignItems="center">
 
-    <Grid container item sm={6}>  
+    <Grid container item sm={8}>  
     <Typography variant="h3" className={classes.headp}>Nostalgia TV</Typography>       
       <img src = {Flash} className={classes.hero}></img>
     </Grid> 
 
-    <Grid container item sm = {6}>
-    <img src = {Beaver} className={classes.hero}></img>
+    <Grid container item sm = {4}>
+    {/* <img src = {Beaver} className={classes.hero}></img> */}
     <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>
-    
+{/*     
     <Grid container item sm = {6}>
     <img src = {Commercial} className={classes.hero}></img>
     <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
@@ -121,7 +125,7 @@ function NewVideo(props) {
     <Grid container item sm = {6}>
     <img src = {Bonanza} className={classes.hero}></img>
     <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
-    </Grid>
+    </Grid> */}
   </Grid>  
   
   <Grid container direction="row" alignItems="center" className={classes.landscape}>

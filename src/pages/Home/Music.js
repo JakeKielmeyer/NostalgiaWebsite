@@ -12,10 +12,12 @@ const styles = {
   radio: {
     padding: "0 15%", 
     display: "flex",
-    minHeight: "63vh",
+    minHeight: "40vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
+    backgroundColor: "#000",
+    borderBottom: "8px solid #222",
 },
 
 hero: {
@@ -25,9 +27,10 @@ hero: {
 },
 
   head: {
-    color: "#000",
+    color: "#fff",
+    // color: "#000",
     marginBottom: "50px",
-    marginLeft: "40px",
+    // marginLeft: "40px",
     '@media (max-width: 768px)': {
       display: "none",
   },
@@ -36,7 +39,7 @@ hero: {
 headp: {
   color: "#000",
   marginTop: "5px",
-  marginLeft: "100px",
+  // marginLeft: "100px",
   display: "none",
   '@media (max-width: 768px)': {
     display: "block",
@@ -47,7 +50,7 @@ headp: {
     color: "#8f8f8f",
     fontSize: "2rem",
     lineHeight: "1.25",
-    marginLeft: "40px",
+    // marginLeft: "40px",
     '@media (max-width: 1024px)': {
       marginTop: "5px",
   },
@@ -62,7 +65,7 @@ headp: {
     lineHeight: "1.25",
     display: "none",
     '@media (max-width: 768px)': {
-      marginLeft: "20px",
+      // marginLeft: "20px",
       marginTop: "30px",
       display: "block",
   },
@@ -87,7 +90,15 @@ function NewMusic(props) {
   <div className={classes.radio}>
     <Grid container direction="row" alignItems="center">
 
-    <Grid container item sm={12} md={7}>  
+    <Grid container item sm={12} md={6}>  
+          <Typography variant="h3" className={classes.head}>Nostalgia Radio</Typography>       
+          <Typography variant="h4" 
+              className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
+              that are designed to increase quality of life and time spent together.
+          </Typography> 
+    </Grid>  
+
+    <Grid container item sm={12} md={6}>  
     <Typography variant="h3" className={classes.headp}>Nostalgia Radio</Typography>       
 
       <img src = {BoomerHeyday} className={classes.hero}></img>
@@ -97,15 +108,6 @@ function NewMusic(props) {
     <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>
     
-  {/* </Grid>   */}
-  {/* <Grid container direction="row" alignItems="center" className={classes.landscape}> */}
-  <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>Nostalgia Radio</Typography>       
-          <Typography variant="h4" 
-              className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
-              that are designed to increase quality of life and time spent together.
-          </Typography> 
-    </Grid>  
   </Grid>
   </div>      
   </div>

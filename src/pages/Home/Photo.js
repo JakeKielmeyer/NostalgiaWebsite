@@ -23,6 +23,8 @@ const styles = {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
+    backgroundColor: "#000",
+    borderBottom: "8px solid #222",
 },
 
 hero: {
@@ -43,7 +45,8 @@ hero: {
 },
 
   head: {
-    color: "#000",
+    color: "#fff",
+    // color: "#000",
     marginBottom: "50px",
     marginLeft: "40px",
     '@media (max-width: 768px)': {
@@ -52,7 +55,8 @@ hero: {
 },
 
 headp: {
-  color: "#000",
+  // color: "#000",
+  color: "#fff",
   marginTop: "5px",
   marginBottom: "20px",
   marginLeft: "100px",

@@ -6,7 +6,7 @@ function Footer() {
   textAlign: "center", 
   padding: "7% 15%", 
   // background: "linear-gradient(to left bottom,  #cbcbcb, black)",
-  background: "black",
+  background: "#222",
   fontFamily:"Segoe UI",
   fontSize: "1.25rem",
   color: "#8f8f8f",

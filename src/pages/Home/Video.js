@@ -16,7 +16,7 @@ const styles = {
   video: {
     padding: "0 15%", 
     display: "flex",
-    minHeight: "40vh",
+    minHeight: "63vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
@@ -25,12 +25,15 @@ const styles = {
 },
 
 hero: {
-    maxWidth: "90%",
-    maxHeight: "90%",
+    maxWidth: "100%",
+    maxHeight: "100%",
     marginTop: ".5rem",
     marginLeft: "40px",
     border: "2px solid white",
     borderRadius: "6px",
+    '@media (max-width: 768px)': {
+      marginLeft: "0",
+  },
     '@media (max-width: 1024px)': {
       marginLeft: "15px",
       marginTop: "10px",
@@ -55,7 +58,7 @@ headp: {
   // color: "#000",
   color: "#fff",
   marginTop: "5px",
-  marginLeft: "100px",
+  // marginLeft: "100px",
   display: "none",
   '@media (max-width: 768px)': {
     display: "block",
@@ -107,12 +110,12 @@ function NewVideo(props) {
   <div className={classes.video}>
     <Grid container direction="row" alignItems="center">
 
-    <Grid container item sm={8}>  
+    <Grid container item sm={5}>  
     <Typography variant="h3" className={classes.headp}>Nostalgia TV</Typography>       
       <img src = {Flash} className={classes.hero}></img>
     </Grid> 
 
-    <Grid container item sm = {4}>
+    <Grid container item sm = {7}>
     {/* <img src = {Beaver} className={classes.hero}></img> */}
     <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>

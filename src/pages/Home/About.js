@@ -26,6 +26,7 @@ const styles = {
 head: {
     color: "#fff",
     // color: "#000",
+    marginTop: "5px",
     marginBottom: "50px",
     '@media (max-width: 1024px)': {
       marginLeft: "15px",

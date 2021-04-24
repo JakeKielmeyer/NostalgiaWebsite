@@ -12,7 +12,7 @@ const styles = {
   radio: {
     padding: "0 15%", 
     display: "flex",
-    minHeight: "40vh",
+    minHeight: "63vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
@@ -24,20 +24,24 @@ hero: {
     maxWidth: "100%",
     maxHeight: "100%",
     marginTop: "2.5rem",
-},
-
-  head: {
-    color: "#fff",
-    // color: "#000",
-    marginBottom: "50px",
-    // marginLeft: "40px",
+    marginLeft: "2.5rem",
     '@media (max-width: 768px)': {
-      display: "none",
+      marginLeft: "0",
   },
 },
 
+head: {
+  color: "#fff",
+  // color: "#000",
+  marginBottom: "50px",
+  // marginLeft: "40px",
+  '@media (max-width: 768px)': {
+    display: "none",
+},
+},
+
 headp: {
-  color: "#000",
+  color: "#fff",
   marginTop: "5px",
   // marginLeft: "100px",
   display: "none",
@@ -90,7 +94,7 @@ function NewMusic(props) {
   <div className={classes.radio}>
     <Grid container direction="row" alignItems="center">
 
-    <Grid container item sm={12} md={6}>  
+    <Grid container item sm={12} md={5}>  
           <Typography variant="h3" className={classes.head}>Nostalgia Radio</Typography>       
           <Typography variant="h4" 
               className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
@@ -98,7 +102,7 @@ function NewMusic(props) {
           </Typography> 
     </Grid>  
 
-    <Grid container item sm={12} md={6}>  
+    <Grid container item sm={12} md={7}>  
     <Typography variant="h3" className={classes.headp}>Nostalgia Radio</Typography>       
 
       <img src = {BoomerHeyday} className={classes.hero}></img>

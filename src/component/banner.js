@@ -8,6 +8,12 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
+
+// Orange #e69e6c;
+// Blue #ebf6f8;
+// Tan #aba49d;
+// Brown #746661;
+
 const styles = {
   banner: {
     paddingTop: "4rem",

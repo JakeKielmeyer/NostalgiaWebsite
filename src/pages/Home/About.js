@@ -13,6 +13,7 @@ const styles = {
   about: {
     padding: "0 15% 5%", 
     display: "flex",
+    minHeight: "63vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
@@ -96,7 +97,8 @@ function NewAbout(props) {
   const { classes } = props;
   return (
     <div id="about">
-      <div  className={classes.about}>
+    <div>
+    <div  className={classes.about}>
     <Grid 
       container
       direction="row"
@@ -118,6 +120,8 @@ function NewAbout(props) {
           <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
     </Grid> 
   </Grid>   
+    </div>
+     
 
 </div>  
 </div>

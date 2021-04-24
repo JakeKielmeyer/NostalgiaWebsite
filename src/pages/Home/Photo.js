@@ -28,8 +28,8 @@ const styles = {
 },
 
 hero: {
-    maxWidth: "90%",
-    maxHeight: "90%",
+    maxWidth: "100%",
+    maxHeight: "100%",
     marginTop: ".5rem",
     marginLeft: "40px",
     border: "2px solid white",
@@ -113,11 +113,12 @@ function NewPhotos(props) {
     <Grid container item sm={12}
     style = {{  marginRight: "50px",}}
     >  
-      <SpringModalDog/>
+    <img className={classes.hero} src={Dog}></img>
+      {/* <SpringModalDog/> */}
     </Grid> 
-    <Grid container item sm = {12} style = {{ marginRight: "50px",}}>
+    {/* <Grid container item sm = {12} style = {{ marginRight: "50px",}}>
       <SpringModalCat/>
-    </Grid>
+    </Grid> */}
     <Typography variant="h4" className={classes.text2}>
     Nostalgia Therapy is based on proven reminsicense
     therapy tools that are designed to increase quality of life and time 

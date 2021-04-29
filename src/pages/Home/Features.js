@@ -1,8 +1,8 @@
 import React,{useState}  from "react";
 import iPadDashboard from "../../images/iPadDashboard.png";
-import Photo from "../../images/photo.svg";
-import Radio from "../../images/Radio_1.svg";
-import Tv from "../../images/TV_1.svg";
+import Photo from "../../images/photow.svg";
+import Radio from "../../images/Radiow.svg";
+import Tv from "../../images/TVw.svg";
 //mui stuff
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -22,12 +22,12 @@ const styles = {
     backgroundAttachment: "fixed",
     backgroundColor: "#fff",
     // backgroundColor: "#282c34",
-    backgroundColor: "#3fa9f5",
+    // backgroundColor: "#3fa9f5",
     // background: "linear-gradient(to left top,  #cbcbcb, white)",
   },
   
   text: {
-    color: "#fff",
+    color: "#8f8f8f"
   },
 
   featureRow: {
@@ -36,6 +36,7 @@ const styles = {
 
   featuresText: {
     marginLeft: "1rem",
+    color: "#fff",
   },
 
   featuresText1: {
@@ -46,19 +47,17 @@ const styles = {
   photosFeature: {
     margin: "4% auto",
     filter: "drop-shadow(0 0 0.5rem #8f8f8f)",
+    backgroundColor: "#3fa9f5",
     transistion: "transform 2.5s ease-in-out",
     '&:hover': {
       transform: "scale(1.1)",
     },
-    // border: "1px solid black",
-    // borderRadius: "12px",
-    backgroundColor: "#fff",
   },
 
 head: {
-  color: "#fff",
+  // color: "#fff",
   // color: "#000",
-  // color: "#3fa9f5",
+  color: "#3fa9f5",
   marginBottom: "2rem",
  },
  icons: {
@@ -74,7 +73,7 @@ function NewFeatures(props) {
     <div className={classes.features}>
       <div>
         <Typography variant="h3" className={classes.head}>Designed for Reconnection</Typography>
-        <Typography variant="h4" className={classes.text}>Designed for Reconnection esigned for Reconnectionesigned for Reconnection</Typography>
+        <Typography variant="h4" className={classes.text}>Designed for Reconnection esigned for Reconnection Designed for Reconnection</Typography>
       </div>
      
       <div className={classes.featureRow}>
@@ -82,21 +81,21 @@ function NewFeatures(props) {
         <img src={Photo} className={classes.icons}></img>
         <Typography variant="h4" className={classes.featuresText}>Nostalgic Moments</Typography>
         <Typography variant="h4" className={classes.featuresText1}>Nostalgic Moments Nostalgic Moments Nostalgic</Typography>
-        <Button style={{position: "absolute", left: "75%", top: "70%"}}><Typography variant="h7" style={{textTransform: "none", fontFamily: "KOW", fontSize:"1.25rem"}}>Learn More ⬇</Typography></Button>
+        <Button style={{position: "absolute", left: "75%", top: "70%"}}><Typography variant="h7" style={{textTransform: "none", fontFamily: "KOW", fontSize:"1.25rem", color: "#fff"}}>Learn More ⬇</Typography></Button>
         </div>
 
         <div className={classes.photosFeature}>
         <img src={Radio} className={classes.icons}></img>
         <Typography variant="h4" className={classes.featuresText}>Nostalgic Moments</Typography>
         <Typography variant="h4" className={classes.featuresText1}>Nostalgic Moments Nostalgic Moments Nostalgic</Typography>
-        <Button style={{position: "absolute", left: "75%", top: "70%"}}><Typography variant="h7" style={{textTransform: "none", fontFamily: "KOW", fontSize:"1.25rem"}}>Learn More ⬇</Typography></Button>
+        <Button style={{position: "absolute", left: "75%", top: "70%"}}><Typography variant="h7" style={{textTransform: "none", fontFamily: "KOW", fontSize:"1.25rem", color: "#fff"}}>Learn More ⬇</Typography></Button>
         </div>
 
         <div className={classes.photosFeature}>
         <img src={Tv} className={classes.icons}></img>
         <Typography variant="h4" className={classes.featuresText}>Nostalgic Moments</Typography>
         <Typography variant="h4" className={classes.featuresText1}>Nostalgic Moments Nostalgic Moments Nostalgic</Typography>
-        <Button style={{position: "absolute", left: "75%", top: "70%"}}><Typography variant="h7" style={{textTransform: "none", fontFamily: "KOW", fontSize:"1.25rem"}}>Learn More ⬇</Typography></Button>
+        <Button style={{position: "absolute", left: "75%", top: "70%"}}><Typography variant="h7" style={{textTransform: "none", fontFamily: "KOW", fontSize:"1.25rem", color: "#fff"}}>Learn More ⬇</Typography></Button>
         </div>
 
         </div>

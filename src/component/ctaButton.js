@@ -7,19 +7,18 @@ import Button from "@material-ui/core/Button";
 const styles = {
   cta: {
     textTransform: "none",
-    fontSize: "1.5rem",
+    fontSize: "2rem",
     fontFamily: "KOW",
-    left: "50%",
-    top: "50%",
-    tranform: "translate(-50%, -50%)",
-  //   '@media (max-width:768px)': {
-  //     marginLeft: '18rem',
-  //     },
-  //   '@media (max-width:414px)': {
-  //   fontSize: '1.5rem',
-  //   marginLeft: "50px",
-  //   },
-  },
+    margin: "75px 40%",
+    color: "#fff",
+    backgroundColor: "#3fa9f5",
+    whiteSpace: "nowrap",
+      '&:hover': {
+        color: "#3fa9f5",
+        backgroundColor: "#fff",
+        filter: "drop-shadow(0 0 0.1rem #8f8f8f)",
+      },
+    },
 };
 
 const Cta = (props) => {
@@ -27,7 +26,7 @@ const Cta = (props) => {
   return (
   <div>
   <a href="https://nostalgiadev-1f319.web.app/" target="_blank">
-  <Button
+    <Button
       variant="contained"
       className={classes.cta}>Sign Up
     </Button>

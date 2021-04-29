@@ -11,15 +11,15 @@ const styles = {
   call: {
     display: "flex",
     minHeight: "20vh",
-    backgroundColor: "#000",
+    backgroundColor: "#fff",
     // backgroundColor: "#282c34",
     borderBottom: "8px solid #222",
     // background: "linear-gradient(to left bottom,  #cbcbcb, black)",
   },
 
   head: {
-    // color: "#3fa9f5",
-    color: "#fff",
+    color: "#3fa9f5",
+    // color: "#fff",
     margin: "10px auto",
     display: "block",
     '@media (max-width: 1024px)': {
@@ -31,8 +31,8 @@ const styles = {
   },
 
   text: {
-    color: "#fff",
-    // color: "#8f8f8f",
+    // color: "#fff",
+    color: "#8f8f8f",
     margin: "10px auto",
     '@media (max-width: 1024px)': {
         display: "block",
@@ -44,12 +44,18 @@ const styles = {
   },
   cta: {
     textTransform: "none",
-    fontSize: "1.5rem",
+    fontSize: "2rem",
     fontFamily: "KOW",
-    margin: "10px auto",
-    // left: "450%",
-    // tranform: "translate(-50%, -50%)",
-  },
+    margin: "75px 40%",
+    color: "#fff",
+    backgroundColor: "#3fa9f5",
+    whiteSpace: "nowrap",
+      '&:hover': {
+        color: "#3fa9f5",
+        backgroundColor: "#fff",
+        filter: "drop-shadow(0 0 0.1rem #8f8f8f)",
+      },
+    },
 };
 
 function Call(props) {

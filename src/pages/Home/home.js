@@ -25,11 +25,11 @@ function New(props) {
       <div>
         <Banner/>
         <About/>
-        {/* <Call/> */}
-        <Photos/>
+        <Features/> 
+        <Call/>
+        {/* <Photos/>
         <Music/>
-        <Video/>
-
+        <Video/> */}
           {/* <Carousel 
             autoPlay={false}
             fullHeightHover={false}

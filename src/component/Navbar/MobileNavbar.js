@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   appBar: {
-    boxShadow: "none",
+    boxShadow: "drop-shadow(0 0 0.1rem #8f8f8f)",
     paddingLeft: "2rem",
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
@@ -43,8 +43,9 @@ const useStyles = makeStyles((theme) => ({
   },
 
   title: {
+    boxShadow: "none",
     flexGrow: 1,
-    color: "#3fa9f5",
+    color: "#fff",
     fontSize: "1rem",
     fontFamily: "Leviathan",
     textTransform: "capitalize",
@@ -149,7 +150,8 @@ export default function MobileNavbar() {
           [classes.appBarShift]: open,
         })}
         style = {{
-          background: "linear-gradient(to left top,  #cbcbcb, white)",
+          // background: "linear-gradient(to left top,  #cbcbcb, white)",
+          background: "#3fa9f5"
         }}
       >
         <Toolbar>
@@ -162,7 +164,7 @@ export default function MobileNavbar() {
             aria-label="open drawer"
             edge="end"
             onClick={handleDrawerOpen}
-            style = {{color: "#8f8f8f"}}
+            style = {{color: "#fff"}}
           >
             <MenuIcon />
           </IconButton>

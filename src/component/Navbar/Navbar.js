@@ -7,8 +7,10 @@ import withStyles from "@material-ui/core/styles/withStyles";
 
 const styles = {
   appBar: {
-    background: "linear-gradient(to left top,  #cbcbcb, white)",
-    boxShadow: "none",
+    // background: "linear-gradient(to left top,  #cbcbcb, white)",
+    backgroundColor: "#3fa9f5",
+    boxShadow: "drop-shadow(0 0 0.1rem #8f8f8f)",
+    // filter: "drop-shadow(0 0 0.1rem #8f8f8f)",
     paddingLeft: "2rem",
     position: "sticky",
     '@media (max-width:760px)': {
@@ -17,7 +19,8 @@ const styles = {
   },
 
   brandName: {
-    color: "#3fa9f5",
+    // color: "#3fa9f5",
+    color: "#fff",
     fontSize: "1.18rem",
     fontFamily: "Leviathan",
     textTransform: "capitalize",
@@ -28,7 +31,7 @@ const styles = {
 
   navContainer: {
     display: "flex",
-    color: "black",
+    color: "#fff",
     width: "88vw",
     justifyContent: "space-between",
   },

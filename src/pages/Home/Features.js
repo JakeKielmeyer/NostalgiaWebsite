@@ -40,11 +40,12 @@ const styles = {
   },
 
   featuresText1: {
+    color: "#FEFEFA",
     marginLeft: "1rem",
     paddingBottom: "4rem",
   },
 
-  photosFeature: {
+  feature: {
     margin: "4% auto",
     filter: "drop-shadow(0 0 0.5rem #8f8f8f)",
     backgroundColor: "#3fa9f5",
@@ -73,27 +74,27 @@ function NewFeatures(props) {
     <div className={classes.features}>
       <div>
         <Typography variant="h3" className={classes.head}>Designed for Reconnection</Typography>
-        <Typography variant="h4" className={classes.text}>Designed for Reconnection esigned for Reconnection Designed for Reconnection</Typography>
+        <Typography variant="h4" className={classes.text}>Designed for Reconnection Designed for Reconnection Designed for Reconnection</Typography>
       </div>
      
       <div className={classes.featureRow}>
-        <div className={classes.photosFeature}>
+        <div className={classes.feature}>
         <img src={Photo} className={classes.icons}></img>
         <Typography variant="h4" className={classes.featuresText}>Nostalgic Moments</Typography>
         <Typography variant="h4" className={classes.featuresText1}>Nostalgic Moments Nostalgic Moments Nostalgic</Typography>
         <Button style={{position: "absolute", left: "75%", top: "70%"}}><Typography variant="h7" style={{textTransform: "none", fontFamily: "KOW", fontSize:"1.25rem", color: "#fff"}}>Learn More ⬇</Typography></Button>
         </div>
 
-        <div className={classes.photosFeature}>
+        <div className={classes.feature}>
         <img src={Radio} className={classes.icons}></img>
-        <Typography variant="h4" className={classes.featuresText}>Nostalgic Moments</Typography>
+        <Typography variant="h4" className={classes.featuresText}>Nostalgia Radio</Typography>
         <Typography variant="h4" className={classes.featuresText1}>Nostalgic Moments Nostalgic Moments Nostalgic</Typography>
         <Button style={{position: "absolute", left: "75%", top: "70%"}}><Typography variant="h7" style={{textTransform: "none", fontFamily: "KOW", fontSize:"1.25rem", color: "#fff"}}>Learn More ⬇</Typography></Button>
         </div>
 
-        <div className={classes.photosFeature}>
+        <div className={classes.feature}>
         <img src={Tv} className={classes.icons}></img>
-        <Typography variant="h4" className={classes.featuresText}>Nostalgic Moments</Typography>
+        <Typography variant="h4" className={classes.featuresText}>Nostalgia TV</Typography>
         <Typography variant="h4" className={classes.featuresText1}>Nostalgic Moments Nostalgic Moments Nostalgic</Typography>
         <Button style={{position: "absolute", left: "75%", top: "70%"}}><Typography variant="h7" style={{textTransform: "none", fontFamily: "KOW", fontSize:"1.25rem", color: "#fff"}}>Learn More ⬇</Typography></Button>
         </div>

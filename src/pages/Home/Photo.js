@@ -106,7 +106,7 @@ headp: {
 function NewPhotos(props) {
   const { classes } = props;
     return (
-<div id="features">
+{/* <div id="features"> */}
   <div className={classes.photo}>
     <Grid container direction="row" alignItems="center">
     <Typography variant="h3" className={classes.headp}>Nostalgic Moments</Typography>       
@@ -134,8 +134,8 @@ function NewPhotos(props) {
     </Grid>  
   </Grid>
   </div> 
-  </div>     
+  // </div>     
   );
 };
 
-export default withStyles(styles)(NewPhotos);
+// export default withStyles(styles)(NewPhotos);

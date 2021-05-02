@@ -17,28 +17,24 @@ function ReadMore({ children }) {
   return (
     <>
     <div>
-    <Grid 
-          container
-          direction="row"
-          alignItems="center">
 
     <div className={isHidden ? classes.hidden : null}>
     {children}
     </div>
 
-    <Grid container item sm={6}>
       <Button 
         size="Large"
-        style = {{ backgroundColor: "#DCDCDC", fontFamily: "KOW", fontSize: "1.5rem", textTransform: "none"}}
+        style = {{ textTransform: "none",
+        fontFamily: "KOW",
+        fontSize:"1.25rem",
+        color: "#fff",
+        left:"75%", 
+        bottom:"90%",}}
         onClick={() => 
         setIsHidden(!isHidden)}>{isHidden ? "Learn More ⬇" : "Collapse ⬆"}
       </Button>
-    </Grid>
-    
-    <Grid container item sm ={6}>
-      <Cta/>
-    </Grid>
-  </Grid>
+ 
+
 </div>
 </>
   );

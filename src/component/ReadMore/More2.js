@@ -18,7 +18,7 @@ const styles = {
     maxWidth: "80%",
     maxHeight: "80%",
     marginTop: ".5rem",
-    marginLeft: "40px",
+    marginLeft: "60px",
   },
 }
 
@@ -26,9 +26,7 @@ function More2(props) {
   const { classes } = props;
     return (
       <div>
-        <Grid container direction="row" alignItems="center">
-
-   <Grid container item sm={12}>
+        
       <div className={classes.readA}>
         <ReadMore>
                 {props.key}
@@ -36,15 +34,15 @@ function More2(props) {
                 {props.text1}
               </Typography>
               <div>
-              <img className={classes.hero} src={props.img}></img>
+              {/* <img className={classes.hero} src={props.img}></img> */}
+              <video controls className={classes.hero} src={props.img}></video>
               </div>
               <Typography variant="h4" className={classes.readTextA}>
                 {props.text2}
               </Typography>
         </ReadMore>
       </div> 
-    </Grid>
-  </Grid>    
+
 </div>
   );
 };

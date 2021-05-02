@@ -90,7 +90,7 @@ headp: {
 function NewMusic(props) {
   const { classes } = props;
     return (
-<div id="features">
+// {/* <div id="features"> */}
   <div className={classes.radio}>
     <Grid container direction="row" alignItems="center">
 
@@ -107,7 +107,6 @@ function NewMusic(props) {
 
       <img src = {BoomerHeyday} className={classes.hero}></img>
 
-
     <img src = {PopSocks} className={classes.hero}></img>
     <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
     </Grid>
@@ -118,4 +117,4 @@ function NewMusic(props) {
   );
 };
 
-export default withStyles(styles)(NewMusic);
+// export default withStyles(styles)(NewMusic);

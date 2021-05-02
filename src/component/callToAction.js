@@ -46,7 +46,7 @@ const styles = {
     textTransform: "none",
     fontSize: "2rem",
     fontFamily: "KOW",
-    margin: "75px 40%",
+    margin: "5px auto 30px",
     color: "#fff",
     backgroundColor: "#3fa9f5",
     whiteSpace: "nowrap",
@@ -78,8 +78,7 @@ function Call(props) {
   
     <Button
       variant="contained"
-      className={classes.cta}
-      >
+      className={classes.cta}>
        <a href="https://nostalgiadev-1f319.web.app/" target="_blank">Sign Up</a>
     </Button>
     </Grid>

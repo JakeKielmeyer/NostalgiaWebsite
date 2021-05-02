@@ -75,7 +75,7 @@ function Navbar(props) {
            </Button>
          </a>
         
-         <a href ="#features">
+         <a href="#features">
            <Button color="inherit" className={classes.navLink}>
              Features
            </Button>

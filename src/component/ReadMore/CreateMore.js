@@ -50,18 +50,10 @@ function CreateMoreVideo() {
     )
 }
 
-function CreateMorePuzzle() {
-    return (
-        <div>
-            {puzzleSection.map(loadText)}
-        </div>
-    )
-}
 
 export {
     CreateMore,
     CreateMorePhoto,
     CreateMoreMusic,
     CreateMoreVideo,
-    CreateMorePuzzle,
 };

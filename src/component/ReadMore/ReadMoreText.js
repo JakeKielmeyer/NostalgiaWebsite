@@ -10,7 +10,6 @@ import ReadMore from "./ReadMoreButton";
 
 const styles = {
     readA: {
-    padding: "1rem 5rem 1rem 4rem",
   },
   readTextA: {
     margin: "50px 50px 10px",
@@ -35,12 +34,7 @@ function More(props) {
   const { classes } = props;
     return (
       <div>
-        <Grid 
-          container
-          direction="row"
-          alignItems="center">
 
-   <Grid container item sm={12}>
       <div className={classes.readA}>
         <ReadMore>
               <Typography variant="h4" className={classes.readTextA}>
@@ -67,8 +61,6 @@ function More(props) {
               </Typography>
         </ReadMore>
       </div> 
-    </Grid>
-  </Grid>    
 </div>
   );
 };

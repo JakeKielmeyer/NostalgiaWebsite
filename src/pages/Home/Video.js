@@ -106,7 +106,7 @@ headp: {
 function NewVideo(props) {
   const { classes } = props;
     return (
-{/* <div id="features"> */}
+
   <div className={classes.video}>
     <Grid container direction="row" alignItems="center">
 
@@ -142,7 +142,6 @@ function NewVideo(props) {
     </Grid>  
   </Grid>
   </div>      
-  {/* </div> */}
   );
 };
 

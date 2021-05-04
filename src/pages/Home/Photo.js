@@ -106,7 +106,7 @@ headp: {
 function NewPhotos(props) {
   const { classes } = props;
     return (
-{/* <div id="features"> */}
+ <div id="features"> 
   <div className={classes.photo}>
     <Grid container direction="row" alignItems="center">
     <Typography variant="h3" className={classes.headp}>Nostalgic Moments</Typography>       
@@ -114,11 +114,9 @@ function NewPhotos(props) {
     style = {{  marginRight: "50px",}}
     >  
     <img className={classes.hero} src={Dog}></img>
-      {/* <SpringModalDog/> */}
+
     </Grid> 
-    {/* <Grid container item sm = {12} style = {{ marginRight: "50px",}}>
-      <SpringModalCat/>
-    </Grid> */}
+
     <Typography variant="h4" className={classes.text2}>
     Nostalgia Therapy is based on proven reminsicense
     therapy tools that are designed to increase quality of life and time 
@@ -134,7 +132,7 @@ function NewPhotos(props) {
     </Grid>  
   </Grid>
   </div> 
-  // </div>     
+  </div>     
   );
 };
 

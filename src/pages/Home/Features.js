@@ -68,7 +68,7 @@ head: {
  },
 };
 
-function NewFeatures(props) {
+function Features(props) {
   const { classes } = props;
   return (
   <div id ="#features">

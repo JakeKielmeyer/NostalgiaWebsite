@@ -113,7 +113,6 @@ function NewMusic(props) {
     
   </Grid>
   </div>      
-  </div>
   );
 };
 

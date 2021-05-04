@@ -82,7 +82,6 @@ text2: {
 function NewAbout(props) {
   const { classes } = props;
   return (
-    // <div id="features">
       <div  className={classes.puzzle}>
     <Grid 
       container
@@ -107,7 +106,6 @@ function NewAbout(props) {
   </Grid>   
 
 </div>  
-{/* // </div> */}
   );
 };
 

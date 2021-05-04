@@ -10,9 +10,11 @@ import ReadMore from "./ReadMoreButton";
 const styles = {
     readA: {
     padding: "1rem 5rem 1rem 4rem",
+    color: "#fff",
   },
   readTextA: {
     margin: "50px 50px 10px",
+    color: "#fff",
   },
   hero: {
     maxWidth: "80%",
@@ -20,7 +22,7 @@ const styles = {
     marginTop: ".5rem",
     marginLeft: "60px",
   },
-}
+};
 
 function More2(props) {
   const { classes } = props;

@@ -14,7 +14,7 @@ import Carousel from "react-material-ui-carousel";
 import Banner from "../../component/banner";
 import Call from "../../component/callToAction";
 import Features from "./Features";
-
+import How from "./HowTo";
 const styles = {
 };
 
@@ -27,6 +27,7 @@ function New(props) {
         <About/>
         <Features/> 
         <Call/>
+        <How/>
         {/* <Photos/>
         <Music/>
         <Video/> */}

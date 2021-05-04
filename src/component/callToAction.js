@@ -13,7 +13,7 @@ const styles = {
     minHeight: "20vh",
     backgroundColor: "#fff",
     // backgroundColor: "#282c34",
-    borderBottom: "8px solid #222",
+    // borderBottom: "8px solid #222",
     // background: "linear-gradient(to left bottom,  #cbcbcb, black)",
   },
 

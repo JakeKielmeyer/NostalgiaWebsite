@@ -1,62 +1,64 @@
-import React,{useState}  from "react";
+import React from "react";
 import iPadDash from "../../images/iPadDashboard.png";
-
-// Components
-import Call from "../../component/callToAction";
-
-// Sections
+import Banner1 from "../../images/Banner1.jpg";
+import BannerMobile from "../../images/TabletUse.JPG";
 import HowToUse from "./HowToUse";
+import Call from "../../component/callToAction";
 import CreateAccount from "./AccountCreation";
 
 //mui stuff
-import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
-import Cta from "../../component/ctaButton"
+import Button from "@material-ui/core/Button";
+import Cta from "../../component/ctaButton";
+
+// Orange #e69e6c;
+// Blue #ebf6f8;
+// Tan #aba49d;
+// Brown #746661;
 
 const styles = {
-  how: {
-    display: "flex",
-    paddingLeft: "4rem",
-    paddingRight: "5rem",
-    minHeight: "100vh",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    backgroundAttachment: "fixed",
+  banner: {
+    paddingTop: "4rem",
+    padding: "0 15%", 
+    fontSize: "1.25rem",
+    backgroundColor: "#282c34",
     backgroundColor: "#fff",
+    // borderBottom: "2px solid #8f8f8f",
+},
+
+  heroText: {
+    position: "relative",
+    width: "100%",
+    maxWidth: "950px",
+    margin: "0 auto",
+    textAlign: "center",
+    zIndex: "1",
   },
-  
+
+  text: {
+    color: "#000", 
+    fontSize: "2rem", 
+    paddingTop: "40px",
+  },
+
   head: {
-    color: "#000",
-    marginTop: "125px",
-    marginLeft: "200px",
+    color: "#3fa9f5",
+    marginTop: "1px",
     '@media (max-width: 768px)': {
-      marginLeft: "70px",
-      marginTop: "80px",
+      marginTop: "1px",
   },
     '@media (max-width:414px)': {
       fontSize: '1.75rem',
-      marginTop: "115px",
       margin: "0",
   },
 },
-
-  text: {
-    color: "#8f8f8f",
-    marginLeft: "70px",
-    fontSize: "2rem",
-    lineHeight: "1.25",
-    '@media (max-width:414px)': {
-      fontSize: '1.5rem',
-  },
-},
-  
   hero: {
     maxWidth: "100%",
     maxHeight: "100%",
-    marginLeft: "40px",
-    filter: "drop-shadow(0 0 0.1rem white)",
+    marginTop: "1rem",
+    filter: "drop-shadow(0 0 0.1rem black)",
     '@media (max-width:414px)': {
       fontSize: '1.5rem',
       margin: "0",
@@ -67,41 +69,31 @@ const styles = {
 function HowTo(props) {
   const { classes } = props;
   return (
-  <div>
-    <div id="HowTo">
-    <div className={classes.how}>
-    <Grid 
-      container
-      direction="row"
-      alignItems="center"
-    >
-    <Grid item item sm={12}>
-      <Box mt={10}>
-          <Typography variant="h3" className={classes.head}>The Guide to Nostalgia Therapy</Typography>
-         <Box mt={5}>
-            <Typography variant="h4" className={classes.text}>Therapy designed to reconnect families
-            to loved ones with Alzheimer's.
-            </Typography>
-          </Box>
-        </Box>
-    </Grid>      
-    <Grid item sm={12}>
-          <img src = {iPadDash}
-          className={classes.hero}
-          ></img>
-    </Grid>
+<div id="banner">
+  <div className={classes.banner}>
+  <div className={classes.heroText}>
+  <Typography variant = "h3" className={classes.head}>
+    How To Use Nostalgia Therapy
+  </Typography>
+  <Typography variant="h3" className={classes.text}>
+    Stream music, videos, and photos that help you reconnect 
+    to a loved one with Alzheimer's
+  </Typography> 
+    <img src={iPadDash} className={classes.hero}></img>  
+  <Typography variant="h3" style={{color: "#8f8f8f", paddingTop: "40px"}}>
+    Ready to try it? Sign up today to start your free two week trial.
+  </Typography>           
+    <Cta/>
 
-    <Grid item sm={12}>
-      <Cta/>
-    </Grid>
-  </Grid>
- </div>
-</div>
-<HowToUse/>
+    <HowToUse/>
 <Call/>
 <CreateAccount/> 
-</div>
+
+  </div>
+  </div>
+</div> 
   );
 };
+
 
 export default withStyles(styles)(HowTo);

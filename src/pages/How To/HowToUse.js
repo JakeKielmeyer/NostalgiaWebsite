@@ -1,27 +1,36 @@
 import React,{useState}  from "react";
 import iPadDashboard from "../../images/iPadDashboard.png";
+import hugging from "../../images/bannermobile.jpg";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
+import Cta from "../../component/ctaButton";
+import Button from "@material-ui/core/Button";
 
-import More from "../../component/ReadMore/ReadMoreText";
+import {CreateMore} from "../../component/ReadMore/CreateMore";
+
 const styles = {
-  account: {
-    padding: "6rem 5rem 2rem 4rem",
+  about: {
+    padding: "0 15% 5%", 
     display: "flex",
-    minHeight: "80vh",
+    minHeight: "63vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
-    backgroundColor: "#000",
+    backgroundColor: "#fff",
+    // backgroundColor: "#282c34",
+    // backgroundColor: "#000",
+    // borderBottom: "8px solid #222",
+    // background: "linear-gradient(to left top,  #cbcbcb, white)",
   },
   
 head: {
-    color: "#fff",
-    marginTop: "125px",
-    marginLeft: "260px",
+    color: "#3fa9f5",
+    // color: "#000",
+    marginTop: "5px",
+    marginBottom: "50px",
     '@media (max-width: 1024px)': {
       marginLeft: "15px",
       marginTop: "0",
@@ -41,6 +50,8 @@ hero: {
   maxHeight: "100%",
   marginTop: ".5rem",
   marginLeft: "40px",
+  border: ".5px solid white",
+  borderRadius: "6px",
   '@media (max-width: 1024px)': {
     marginLeft: "15px",
     marginTop: "10px",
@@ -51,7 +62,9 @@ hero: {
 },
 },
 text1: {
+  // color: "#fff",
   color: "#8f8f8f",
+  // color: "#000",
   fontSize: "2rem",
   lineHeight: "1.25",
   '@media (max-width: 1024px)': {
@@ -64,6 +77,8 @@ text1: {
 
 text2: {
   color: "#8f8f8f",
+  // color: "#fff",
+  // color: "#000",
   fontSize: "2rem",
   lineHeight: "1.25",
   display: "none",
@@ -78,20 +93,34 @@ text2: {
     display: "block",
   },
  },
+ Lm: {
+  textTransform: "none",
+  fontSize: "2rem",
+  fontFamily: "KOW",
+  color: "#3fa9f5",
+  backgroundColor: "#fff",
+  filter: "drop-shadow(0 0 0.1rem #8f8f8f)",
+  whiteSpace: "nowrap",
+    '&:hover': {
+      color: "#fff",
+      backgroundColor: "#3fa9f5",
+    },
+  },
 };
 
 function HowToUse(props) {
   const { classes } = props;
   return (
     <div id="about">
-      <div  className={classes.account}>
+    <div>
+    <div  className={classes.about}>
     <Grid 
       container
       direction="row"
       alignItems="center">
 
-    <Grid container item sm={12} md={5}>  
-          <Typography variant="h3" className={classes.head}>How To Use Nostalgia</Typography>       
+    <Grid container item sm={12} md={7}>  
+          <Typography variant="h3" className={classes.head}>What is Nostalgia Therapy?</Typography>       
           <Typography variant="h4" 
               className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
@@ -100,17 +129,21 @@ function HowToUse(props) {
 
     <Grid container item sm={12} md={5}>  
           <img 
-            src = {iPadDashboard}
+            src = {hugging}
             className={classes.hero}>
           </img>
           <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
     </Grid> 
+    <Button
+      variant="contained"
+      className={classes.Lm}>Learn More
+    </Button>
+    <Cta/>
   </Grid>   
+    </div>
+     
 
 </div>  
-    <Grid container item sm={12}>
-      <More/>
-    </Grid>
 </div>
   );
 };

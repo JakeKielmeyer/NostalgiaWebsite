@@ -93,7 +93,7 @@ function Navbar(props) {
            </Button>
          </a>
         
-         <Link to="/HowTo">
+         <Link to="/how">
            <Button color="inherit" className={classes.navLink}>
            How To
            </Button>

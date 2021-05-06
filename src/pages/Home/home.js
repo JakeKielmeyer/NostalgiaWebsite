@@ -26,22 +26,6 @@ function New(props) {
         <About/>
         <Features/> 
         <Call/>
-    
-        {/* <Photos/>
-        <Music/>
-        <Video/> */}
-          {/* <Carousel 
-            autoPlay={false}
-            fullHeightHover={false}
-            animation={"fade"}
-            timeout={12}
-            navButtonsAlwaysVisible={true}
-            indicatorContainerProps={{style: {  },}}>
-            <Features/> 
-            <Photos/>
-            <Music/>          
-            <Video/>
-          </Carousel> */}
         </div>
   );
 };

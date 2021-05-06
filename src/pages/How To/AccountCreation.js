@@ -12,8 +12,8 @@ import More from "../../component/ReadMore/ReadMoreText";
 const styles = {
   use: {
     display: "flex",
-    padding: "6rem 5rem 0 4rem",
-    minHeight: "80vh",
+    padding: "0 15%",
+    minHeight: "63vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
@@ -44,10 +44,10 @@ const styles = {
     maxWidth: "100%",
     maxHeight: "100%",
     marginTop: ".5rem",
-    marginLeft: "40px",
+    // marginLeft: "40px",
     filter: "drop-shadow(0 0 0.1rem white)",
     '@media (max-width: 1024px)': {
-      marginLeft: "15px",
+      // marginLeft: "15px",
       marginTop: "10px",
   },
     '@media (max-width:414px)': {

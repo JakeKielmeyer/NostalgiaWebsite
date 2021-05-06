@@ -13,10 +13,6 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Cta from "../../component/ctaButton";
 
-// Orange #e69e6c;
-// Blue #ebf6f8;
-// Tan #aba49d;
-// Brown #746661;
 
 const styles = {
   banner: {
@@ -84,10 +80,6 @@ function HowTo(props) {
     Ready to try it? Sign up today to start your free two week trial.
   </Typography>           
     <Cta/>
-
-    <HowToUse/>
-<Call/>
-<CreateAccount/> 
 
   </div>
   </div>

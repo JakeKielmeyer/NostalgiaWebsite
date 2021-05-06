@@ -71,7 +71,7 @@ head: {
 function Features(props) {
   const { classes } = props;
   return (
-  <div id ="#features">
+  <div id ="features">
  <div className={classes.features}>
       <div>
         <Typography variant="h3" className={classes.head}>Designed for Reconnection</Typography>

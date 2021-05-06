@@ -22,6 +22,7 @@ import Scroll from "../src/component/scroll";
 
 //pages
 import Home from "./pages/Home/home";
+import How from "./pages/How To/how";
 import HowTo from "./pages/How To/HowTo";
 import Caregiver from "./pages/CaregiverCorner/caregiver";
 
@@ -52,7 +53,7 @@ function App() {
           <MobileNavbar/>
           <Switch>
             <Route exact path = "/" component = {Home}/>
-            <Route exact path = "/HowTo" component = {HowTo}/>
+            <Route exact path = "/how" component = {How}/>
             <Route exact path = "/caregiver" component = {Caregiver}/>
           </Switch>
         <Scroll/>

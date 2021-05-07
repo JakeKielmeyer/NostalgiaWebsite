@@ -1,5 +1,4 @@
 import React,{useState}  from "react";
-import iPadDashboard from "../../images/iPadDashboard.png";
 import hugging from "../../images/bannermobile.jpg";
 
 //mui stuff

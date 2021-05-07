@@ -1,16 +1,9 @@
 import React from "react";
 import iPadDash from "../../images/iPadDashboard.png";
-import Banner1 from "../../images/Banner1.jpg";
-import BannerMobile from "../../images/TabletUse.JPG";
-import HowToUse from "./HowToUse";
-import Call from "../../component/callToAction";
-import CreateAccount from "./AccountCreation";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
-import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
 import Cta from "../../component/ctaButton";
 
 

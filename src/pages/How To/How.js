@@ -4,7 +4,7 @@ import React,{useState}  from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // Components
-import HowToBanner from "./HowToBanner";
+import HowToBanner from "./HowTo";
 import HowToUse from "./HowToUse";
 import CreateAccount from "./AccountCreation";
 

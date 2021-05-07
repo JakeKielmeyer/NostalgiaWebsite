@@ -21,7 +21,6 @@ const styles = {
     fontSize: "1.25rem",
     backgroundColor: "#282c34",
     backgroundColor: "#fff",
-    // borderBottom: "2px solid #8f8f8f",
 },
 
   heroText: {

@@ -5,7 +5,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import GridList from "@material-ui/core/GridList";
 
 // Components
-import HowTo from "./HowTo";
+import HowToBanner from "./HowToBanner";
 import HowToUse from "./HowToUse";
 import CreateAccount from "./AccountCreation";
 
@@ -17,7 +17,7 @@ function How(props) {
   return (
 
     <div>
-    <HowTo/>
+    <HowToBanner/>
     <HowToUse/>
     <CreateAccount/> 
     </div>

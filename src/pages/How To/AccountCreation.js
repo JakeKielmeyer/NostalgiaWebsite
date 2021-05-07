@@ -21,7 +21,7 @@ const styles = {
   },
   
   head: {
-    color: "#000",
+    color: "#3fa9f5",
     marginLeft: "42px",
     '@media (max-width: 768px)': {
       display: "none",

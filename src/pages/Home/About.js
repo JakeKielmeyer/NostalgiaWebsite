@@ -1,4 +1,4 @@
-import React,{useState}  from "react";
+import React,{useState, useEffect}  from "react";
 import iPadDashboard from "../../images/iPadDashboard.png";
 import hugging from "../../images/bannermobile.jpg";
 
@@ -8,6 +8,9 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Cta from "../../component/ctaButton";
 import Button from "@material-ui/core/Button";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import {CreateMore} from "../../component/ReadMore/CreateMore";
 
@@ -101,6 +104,9 @@ text2: {
 
 function NewAbout(props) {
   const { classes } = props;
+  useEffect(() => {
+    Aos.init({duration: 2000});
+}, []);
   return (
     <div id="about">
     <div>
@@ -110,7 +116,7 @@ function NewAbout(props) {
       direction="row"
       alignItems="center">
 
-    <Grid container item sm={12} md={7}>  
+    <Grid data-aos="fade-up" container item sm={12} md={7}>  
           <Typography variant="h3" className={classes.head}>What is Nostalgia Therapy?</Typography>       
           <Typography variant="h4" 
               className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
@@ -118,7 +124,7 @@ function NewAbout(props) {
           </Typography> 
     </Grid>  
 
-    <Grid container item sm={12} md={5}>  
+    <Grid data-aos="fade-up" container item sm={12} md={5}>  
           <img 
             src = {hugging}
             className={classes.hero}>

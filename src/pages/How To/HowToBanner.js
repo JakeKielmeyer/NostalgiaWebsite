@@ -54,7 +54,7 @@ const styles = {
 },
 };
 
-function HowToBanner(props) {
+function HowTo(props) {
   const { classes } = props;
   return (
 <div id="banner">
@@ -80,4 +80,4 @@ function HowToBanner(props) {
 };
 
 
-export default withStyles(styles)(HowToBanner);
+export default withStyles(styles)(HowTo);

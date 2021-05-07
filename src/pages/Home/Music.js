@@ -32,9 +32,7 @@ hero: {
 
 head: {
   color: "#fff",
-  // color: "#000",
   marginBottom: "50px",
-  // marginLeft: "40px",
   '@media (max-width: 768px)': {
     display: "none",
 },
@@ -43,7 +41,6 @@ head: {
 headp: {
   color: "#fff",
   marginTop: "5px",
-  // marginLeft: "100px",
   display: "none",
   '@media (max-width: 768px)': {
     display: "block",
@@ -54,7 +51,6 @@ headp: {
     color: "#8f8f8f",
     fontSize: "2rem",
     lineHeight: "1.25",
-    // marginLeft: "40px",
     '@media (max-width: 1024px)': {
       marginTop: "5px",
   },

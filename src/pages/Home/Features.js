@@ -34,8 +34,6 @@ const styles = {
     fontFamily: "Leviathan",
     marginLeft: "1rem",
     color: "#fff",
-    // color: "#B2F7EF",
-    // color: "#E4B7E5",
   },
 
   featuresText1: {
@@ -64,7 +62,6 @@ head: {
   margin: ".5rem 1rem",
  },
  learnMore: {
-  // position:"absolute", 
  },
 };
 

@@ -1,5 +1,4 @@
 import React,{useState}  from "react";
-import iPadDashboard from "../../images/iPadDashboard.png";
 import hugging from "../../images/bannermobile.jpg";
 
 //mui stuff
@@ -20,15 +19,10 @@ const styles = {
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
     backgroundColor: "#fff",
-    // backgroundColor: "#282c34",
-    // backgroundColor: "#000",
-    // borderBottom: "8px solid #222",
-    // background: "linear-gradient(to left top,  #cbcbcb, white)",
   },
   
 head: {
     color: "#3fa9f5",
-    // color: "#000",
     marginTop: "5px",
     marginBottom: "50px",
     '@media (max-width: 1024px)': {
@@ -62,9 +56,7 @@ hero: {
 },
 },
 text1: {
-  // color: "#fff",
   color: "#8f8f8f",
-  // color: "#000",
   fontSize: "2rem",
   lineHeight: "1.25",
   '@media (max-width: 1024px)': {
@@ -77,8 +69,6 @@ text1: {
 
 text2: {
   color: "#8f8f8f",
-  // color: "#fff",
-  // color: "#000",
   fontSize: "2rem",
   lineHeight: "1.25",
   display: "none",

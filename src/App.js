@@ -22,8 +22,8 @@ import Scroll from "../src/component/scroll";
 
 //pages
 import Home from "./pages/Home/home";
-import How from "./pages/How To/how";
-import HowTo from "./pages/How To/HowTo";
+import How from "./pages/How To/How";
+import HowTo from "./pages/How To/HowToBanner";
 import Caregiver from "./pages/CaregiverCorner/caregiver";
 
 const theme = createMuiTheme(); {

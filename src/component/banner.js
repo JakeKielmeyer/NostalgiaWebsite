@@ -9,10 +9,6 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Cta from "./ctaButton";
 
-// Orange #e69e6c;
-// Blue #ebf6f8;
-// Tan #aba49d;
-// Brown #746661;
 
 const styles = {
   banner: {
@@ -21,7 +17,6 @@ const styles = {
     fontSize: "1.25rem",
     backgroundColor: "#282c34",
     backgroundColor: "#fff",
-    // borderBottom: "2px solid #8f8f8f",
 },
 
   heroText: {

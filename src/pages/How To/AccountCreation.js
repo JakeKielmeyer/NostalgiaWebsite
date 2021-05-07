@@ -21,7 +21,7 @@ const styles = {
   },
   
   head: {
-    color: "#000",
+    color: "#3fa9f5",
     marginLeft: "42px",
     '@media (max-width: 768px)': {
       display: "none",
@@ -44,10 +44,8 @@ const styles = {
     maxWidth: "100%",
     maxHeight: "100%",
     marginTop: ".5rem",
-    // marginLeft: "40px",
     filter: "drop-shadow(0 0 0.1rem white)",
     '@media (max-width: 1024px)': {
-      // marginLeft: "15px",
       marginTop: "10px",
   },
     '@media (max-width:414px)': {

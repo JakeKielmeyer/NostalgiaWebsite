@@ -5,21 +5,16 @@ import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
-// import Cta from "../component/ctaButton";
 
 const styles = {
   call: {
     display: "flex",
     minHeight: "20vh",
     backgroundColor: "#fff",
-    // backgroundColor: "#282c34",
-    // borderBottom: "8px solid #222",
-    // background: "linear-gradient(to left bottom,  #cbcbcb, black)",
   },
 
   head: {
     color: "#3fa9f5",
-    // color: "#fff",
     margin: "10px auto",
     display: "block",
     '@media (max-width: 1024px)': {
@@ -31,7 +26,6 @@ const styles = {
   },
 
   text: {
-    // color: "#fff",
     color: "#8f8f8f",
     margin: "10px auto",
     '@media (max-width: 1024px)': {

@@ -1,4 +1,4 @@
-import React,{useState}  from "react";
+import React,{useState, useEffect}  from "react";
 import iPadDashboard from "../../images/iPadDashboard.png";
 import Photo from "../../images/photow.svg";
 import Radio from "../../images/Radiow.svg";
@@ -8,6 +8,9 @@ import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import {CreateMore, CreateMorePhoto, CreateMoreMusic, CreateMoreVideo} from "../../component/ReadMore/CreateMore";
 
@@ -66,16 +69,19 @@ head: {
 };
 
 function Features(props) {
+  useEffect(() => {
+    Aos.init({duration: 2000});
+}, []);
   const { classes } = props;
   return (
   <div id ="features">
- <div className={classes.features}>
+ <div data-aos="fade-left" className={classes.features}>
       <div>
         <Typography variant="h3" className={classes.head}>Designed for Reconnection</Typography>
         <Typography variant="h4" className={classes.text}>Designed for Reconnection Designed for Reconnection Designed for Reconnection</Typography>
       </div>
      
-      <div className={classes.featureRow}>
+      <div data-aos="fade-left" className={classes.featureRow}>
         <div className={classes.feature}>
         <img src={Photo} className={classes.icons}></img>
         <Typography variant="h4" className={classes.featuresText}>Nostalgic Moments</Typography>
@@ -85,17 +91,15 @@ function Features(props) {
       
         </div>
 
-        <div className={classes.feature}>
+        <div data-aos="fade-left" className={classes.feature}>
         <img src={Radio} className={classes.icons}></img>
         <Typography variant="h4" className={classes.featuresText}>Nostalgia Radio</Typography>
         <Typography variant="h4" className={classes.featuresText1}>Nostalgic Moments Nostalgic Moments Nostalgic</Typography>
-        
-         
           <CreateMoreMusic/>
        
         </div>
 
-        <div className={classes.feature}>
+        <div data-aos="fade-left" className={classes.feature}>
         <img src={Tv} className={classes.icons}></img>
         <Typography variant="h4" className={classes.featuresText}>Nostalgia TV</Typography>
         <Typography variant="h4" className={classes.featuresText1}>Nostalgic Moments 

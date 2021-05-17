@@ -9,52 +9,52 @@ import VideoPage from "../ReadMore/VideoPage.mp4";
 
 const copy = [
     {
-        text1: "To sit in solemn silence on a dull dark dark.." +
-        "To sit in solemn silence on a dull dark dark..."+ 
-        "To sit in solemn silence on a dull dark dark...",
+        text1: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         src: jakeAndGrandpa,
-        text2: "To sit in solemn silence on a dull dark dark.." +
-        "To sit in solemn silence on a dull dark dark..."+ 
-        "To sit in solemn silence on a dull dark dark...",
+        text2: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     },
 ];
 
 export const photoSection = [
     {
         id: 1,
-        text1: "In a pestilencial prison..." + 
-        "In a pestilencial prison..." +
-        "In a pestilencial prison...",
+        text1: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         src: PhotosPage,
-        text2: "In a pestilencial prison..." + 
-        "In a pestilencial prison..." +
-        "In a pestilencial prison...",
+        text2: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     }
 ];
 
 export const musicSection = [
     {
         id: 1,
-        text1: "With a life long lock, awaiting the sensation of a short sharp shock..." + 
-        "With a life long lock, awaiting the sensation of a short sharp shock..." +
-        "With a life long lock, awaiting the sensation of a short sharp shock...",
+        text1: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         src: MusicPage,
-        text2: "With a life long lock, awaiting the sensation of a short sharp shock..." + 
-        "With a life long lock, awaiting the sensation of a short sharp shock..." +
-        "With a life long lock, awaiting the sensation of a short sharp shock...",
+        text2:"Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     }
 ];
 
 export const videoSection = [
     {
         id: 1,
-        text1: "From a cheap and chippy chopper on a big black block. Big black block, short sharp shock from a cheap and chippy chopper..." + 
-        "From a cheap and chippy chopper on a big black block. Big black block, short sharp shock from a cheap and chippy chopper..." +
-        "From a cheap and chippy chopper on a big black block. Big black block, short sharp shock from a cheap and chippy chopper...",
+        text1: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         src: VideoPage,
-        text2: "From a cheap and chippy chopper on a big black block. Big black block, short sharp shock from a cheap and chippy chopper..." + 
-        "From a cheap and chippy chopper on a big black block. Big black block, short sharp shock from a cheap and chippy chopper..." +
-        "From a cheap and chippy chopper on a big black block. Big black block, short sharp shock from a cheap and chippy chopper...",
+        text2: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     }
 ];
 

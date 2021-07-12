@@ -25,9 +25,10 @@ function New(props) {
 
       <div>
         <Banner/>
+        <Features/> 
         <About/>
         {/* <Pricing/> */}
-        <Features/> 
+
         <Call/>
         </div>
   );

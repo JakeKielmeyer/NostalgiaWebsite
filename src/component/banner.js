@@ -2,6 +2,8 @@ import React from "react";
 import iPadDash from "../images/iPadDashboard.png";
 import Banner1 from "../images/Banner1.jpg";
 import BannerMobile from "../images/TabletUse.JPG";
+import video from "../images/prez vid.mp4"
+
 //mui stuff
 import Typography from "@material-ui/core/Typography";
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -29,7 +31,7 @@ const styles = {
   },
 
   text: {
-    color: "#000", 
+    color: "#8f8f8f", 
     fontSize: "2rem", 
     paddingTop: "40px",
   },
@@ -64,15 +66,19 @@ function Banner(props) {
   <div className={classes.banner}>
   <div className={classes.heroText}>
   <Typography variant = "h3" className={classes.head}>
-    Reminscense Therapy for You and Your Family
+    Reconnecting families to loved ones with Alzheimer's
   </Typography>
   <Typography variant="h3" className={classes.text}>
     Stream music, videos, and photos that help you reconnect 
-    to a loved one with Alzheimer's 
+    to a loved one with Alzheimer's
   </Typography> 
-    <img src={BannerMobile} className={classes.hero}></img>  
-  <Typography variant="h3" style={{color: "#8f8f8f", paddingTop: "40px"}}>
-    Ready to try it? Sign up today to start your free two week trial.
+    <video controls className={classes.hero}>
+    <source src = {video} type="video/mp4"/>
+    </video>
+
+    {/* <img src={BannerMobile} className={classes.hero}></img>   */}
+  <Typography variant="h3" style={{color: "#000", paddingTop: "40px"}}>
+    Ready to try it? Sign up today to start your free two week trial
   </Typography>           
     <Cta/>
   </div>

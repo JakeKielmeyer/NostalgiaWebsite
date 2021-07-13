@@ -1,6 +1,6 @@
 import React,{useState, useEffect}  from "react";
 import iPadDashboard from "../../images/iPadDashboard.png";
-import hugging from "../../images/bannermobile.jpg";
+import hugging from "../../images/Jake and Grandpa.png";
 
 //mui stuff
 import Typography from "@material-ui/core/Typography";
@@ -16,7 +16,7 @@ import {CreateMore} from "../../component/ReadMore/CreateMore";
 
 const styles = {
   about: {
-    padding: "0 15% 5%", 
+    padding: "0 15% 2%", 
     display: "flex",
     minHeight: "63vh",
     backgroundRepeat: "no-repeat",
@@ -117,7 +117,7 @@ function NewAbout(props) {
       alignItems="center">
 
     <Grid data-aos="fade-up" container item sm={12} md={7}>  
-          <Typography variant="h3" className={classes.head}>What is Nostalgia Therapy?</Typography>       
+          <Typography variant="h3" className={classes.head}>About Us</Typography>       
           <Typography variant="h4" 
               className={classes.text1}>Nostalgia Therapy is based on proven reminsicense therapy tools 
               that are designed to increase quality of life and time spent together.
@@ -131,11 +131,11 @@ function NewAbout(props) {
           </img>
           <Typography variant="h4" className={classes.text2}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
     </Grid> 
-    <Button
+    {/* <Button
       variant="contained"
       className={classes.Lm}>Learn More
     </Button>
-    <Cta/>
+    <Cta/> */}
   </Grid>   
     </div>
      

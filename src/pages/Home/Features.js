@@ -23,6 +23,7 @@ const styles = {
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
     backgroundColor: "#fff",
+    overflowX: "hidden",
   },
   
   text: {
@@ -78,14 +79,15 @@ function Features(props) {
  <div data-aos="fade-left" className={classes.features}>
       <div>
         <Typography variant="h3" className={classes.head}>Designed for Reconnection</Typography>
-        <Typography variant="h4" className={classes.text}>Designed for Reconnection Designed for Reconnection Designed for Reconnection</Typography>
+        <Typography variant="h4" className={classes.text}>Designed for Reconnection, Nostalgia Therapy 
+        helps reconnect families to loved ones with Alzheimer's Disease.</Typography>
       </div>
      
       <div data-aos="fade-left" className={classes.featureRow}>
         <div className={classes.feature}>
         <img src={Photo} className={classes.icons}></img>
         <Typography variant="h4" className={classes.featuresText}>Nostalgic Moments</Typography>
-        <Typography variant="h4" className={classes.featuresText1}>Nostalgic Moments Nostalgic Moments Nostalgic</Typography>
+        <Typography variant="h4" className={classes.featuresText1}>Look at one of our photo albums and create your own with Nostalgic Moments.</Typography>
     
           <CreateMorePhoto/>
       
@@ -94,7 +96,8 @@ function Features(props) {
         <div data-aos="fade-left" className={classes.feature}>
         <img src={Radio} className={classes.icons}></img>
         <Typography variant="h4" className={classes.featuresText}>Nostalgia Radio</Typography>
-        <Typography variant="h4" className={classes.featuresText1}>Nostalgic Moments Nostalgic Moments Nostalgic</Typography>
+        <Typography variant="h4" className={classes.featuresText1}>With Nostalgia Radio,
+         you and your loved one can listen to music from their era and popular radio shows.</Typography>
           <CreateMoreMusic/>
        
         </div>
@@ -102,8 +105,8 @@ function Features(props) {
         <div data-aos="fade-left" className={classes.feature}>
         <img src={Tv} className={classes.icons}></img>
         <Typography variant="h4" className={classes.featuresText}>Nostalgia TV</Typography>
-        <Typography variant="h4" className={classes.featuresText1}>Nostalgic Moments 
-   Nostalgic Moments Nostalgic</Typography>
+        <Typography variant="h4" className={classes.featuresText1}>With hundreds of videos to choose from, Nostalgia TV provides tons of content
+        to reconnect and reminisce with.</Typography>
    <CreateMoreVideo/>
         </div>
 

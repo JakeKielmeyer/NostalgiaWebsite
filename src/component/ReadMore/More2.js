@@ -9,18 +9,17 @@ import ReadMore from "./ReadMoreButton";
 
 const styles = {
     readA: {
-    padding: "1rem 5rem 1rem 4rem",
+    padding: "1rem 1rem",
     color: "#fff",
   },
   readTextA: {
-    margin: "50px 50px 10px",
     color: "#fff",
   },
+
   hero: {
     maxWidth: "80%",
     maxHeight: "80%",
-    marginTop: ".5rem",
-    marginLeft: "60px",
+    margin: "2% auto",
   },
 };
 
@@ -35,8 +34,7 @@ function More2(props) {
               <Typography variant="h4" className={classes.readTextA}>
                 {props.text1}
               </Typography>
-              <div>
-              {/* <img className={classes.hero} src={props.img}></img> */}
+              <div style={{textAlign: "center"}}>
               <video controls className={classes.hero} src={props.img}></video>
               </div>
               <Typography variant="h4" className={classes.readTextA}>

@@ -28,13 +28,33 @@ const styles = {
     margin: "0 auto",
     textAlign: "center",
     zIndex: "1",
+    '@media (max-width:414px)': {
+      fontSize: '1.75rem',
+      paddingTop: "10px",
+  },
   },
 
   text: {
     color: "#8f8f8f", 
     fontSize: "2rem", 
     paddingTop: "40px",
+    '@media (max-width:414px)': {
+      fontSize: '1.25rem',
+      marginBottom: "15px",
+      paddingTop: "20px",
   },
+  },
+
+  textB: {
+    color: "#000", 
+    fontSize: "2rem", 
+    paddingTop: "40px",
+    '@media (max-width:414px)': {
+      fontSize: '1.5rem',
+      paddingTop: "20px",
+  },
+  },
+
 
   head: {
     color: "#3fa9f5",
@@ -44,7 +64,7 @@ const styles = {
   },
     '@media (max-width:414px)': {
       fontSize: '1.75rem',
-      margin: "0",
+      marginBottom: "25px",
   },
 },
   hero: {
@@ -68,16 +88,16 @@ function Banner(props) {
   <Typography variant = "h3" className={classes.head}>
     Reconnecting families to loved ones with Alzheimer's
   </Typography>
-  <Typography variant="h3" className={classes.text}>
+  {/* <Typography variant="h3" className={classes.text}>
     Stream music, videos, and photos that help you reconnect 
     to a loved one with Alzheimer's
-  </Typography> 
+  </Typography>  */}
     <video controls className={classes.hero}>
     <source src = {video} type="video/mp4"/>
     </video>
 
     {/* <img src={BannerMobile} className={classes.hero}></img>   */}
-  <Typography variant="h3" style={{color: "#000", paddingTop: "40px"}}>
+  <Typography variant="h3" className={classes.textB}>
     Ready to try it? Sign up today to start your free two week trial
   </Typography>           
     <Cta/>

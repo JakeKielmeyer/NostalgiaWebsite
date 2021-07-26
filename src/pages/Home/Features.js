@@ -60,11 +60,17 @@ head: {
   color: "#3fa9f5",
   marginBottom: "2rem",
  },
+
  icons: {
   height: "10%",
   width: "10%",
   margin: ".5rem 1rem",
+    '@media (max-width:414px)': {
+    height: "30%",
+    width: "30%",
+  },
  },
+
  learnMore: {
  },
 };
@@ -76,10 +82,10 @@ function Features(props) {
   const { classes } = props;
   return (
   <div id ="features">
- <div data-aos="fade-left" className={classes.features}>
+ <div className={classes.features}>
       <div>
         <Typography variant="h3" className={classes.head}>Designed for Reconnection</Typography>
-        <Typography variant="h4" className={classes.text}>Designed for Reconnection, Nostalgia Therapy 
+        <Typography variant="h4" className={classes.text}>Nostalgia Therapy 
         helps reconnect families to loved ones with Alzheimer's Disease.</Typography>
       </div>
      

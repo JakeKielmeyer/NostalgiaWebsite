@@ -28,8 +28,7 @@ function ReadMore({ children }) {
         fontFamily: "KOW",
         fontSize:"1.25rem",
         color: "#fff",
-        left:"75%", 
-        bottom:"90%",}}
+        }}
         onClick={() => 
         setIsHidden(!isHidden)}>{isHidden ? "Learn More ⬇" : "Collapse ⬆"}
       </Button>

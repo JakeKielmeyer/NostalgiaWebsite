@@ -17,11 +17,9 @@ const styles = {
     color: "#3fa9f5",
     margin: "10px auto",
     display: "block",
-    '@media (max-width: 1024px)': {
-  },
   '@media (max-width:414px)': {
-    margin: "5px auto",
-    fontSize: '1.3rem',
+    margin: "15px auto",
+    fontSize: '1.6rem',
     },
   },
 
@@ -33,7 +31,7 @@ const styles = {
   },
   '@media (max-width:414px)': {
     margin: "5px auto",
-    fontSize: '1.3rem',
+    fontSize: '1.5rem',
     },
   },
   cta: {

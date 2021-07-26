@@ -93,7 +93,7 @@ function Navbar(props) {
            </Button>
          </a>
         
-         <Link to="/how">
+         {/* <Link to="/how">
            <Button color="inherit" className={classes.navLink}>
            How To
            </Button>
@@ -103,7 +103,7 @@ function Navbar(props) {
            <Button color="inherit" className={classes.navLink}>
              Caregiver Corner
            </Button>
-        </Link>
+        </Link> */}
 
        </ToolBar>
      </AppBar>

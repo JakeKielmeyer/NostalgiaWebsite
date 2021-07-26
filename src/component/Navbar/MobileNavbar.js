@@ -215,7 +215,7 @@ export default function MobileNavbar() {
                 Sign In
               </Button>
           </a>
-
+{/* 
           <Link to="/HowTo">
              <Button color="inherit" className={classes.navLink}>
                How To
@@ -226,7 +226,8 @@ export default function MobileNavbar() {
            <Button className={classes.special}>
               Caregiver <br></br> Corner
             </Button>
-          </Link>
+          </Link> */}
+        
         </ul>
 
       </Drawer>

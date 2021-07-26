@@ -18,6 +18,11 @@ const styles = {
         backgroundColor: "#fff",
         filter: "drop-shadow(0 0 0.1rem #8f8f8f)",
       },
+        '@media (max-width:414px)': {
+          fontSize: '1.75rem',
+          margin: "35px",
+      },
+    
     },
 };
 

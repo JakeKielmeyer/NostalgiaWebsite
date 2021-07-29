@@ -187,11 +187,18 @@ export default function MobileNavbar() {
         </div>
         <Divider />
           <ul>
-          <Link to="/">
-             <Button color="inherit" className={classes.navLink}>
+
+          <a href="#banner">
+          <Button color="inherit" className={classes.navLink}>
                Home
              </Button>
-           </Link>
+          </a>
+
+          <a class="navLink" href="#features">
+              <Button className={classes.navLink}>
+                Features
+              </Button>
+          </a>
 
             <a class="navLink" href="#about">
               <Button className={classes.navLink}>
@@ -199,11 +206,6 @@ export default function MobileNavbar() {
               </Button>
             </a>
 
-          <a class="navLink" href="#features">
-              <Button className={classes.navLink}>
-                Features
-              </Button>
-          </a>
           <a href="https://nostalgiadev-1f319.web.app/" target="_blank">
               <Button className={classes.navLink}>
                 Sign Up

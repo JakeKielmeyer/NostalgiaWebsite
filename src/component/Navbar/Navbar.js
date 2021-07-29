@@ -61,23 +61,21 @@ function Navbar(props) {
              </Button>
            </a>
 
-           <Link to="/">
             <a href="#banner">
             <Button color="inherit" className={classes.navLink}>
                Home
              </Button>
             </a>
-           </Link>
-
-       <a href="#about">
-           <Button color="inherit" className={classes.navLink}>
-             About
-           </Button>
-         </a>
         
          <a href="#features">
            <Button color="inherit" className={classes.navLink}>
              Features
+           </Button>
+         </a>
+
+         <a href="#about">
+           <Button color="inherit" className={classes.navLink}>
+             About
            </Button>
          </a>
 

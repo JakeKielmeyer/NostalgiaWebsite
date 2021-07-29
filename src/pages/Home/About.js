@@ -16,9 +16,9 @@ import {CreateMore} from "../../component/ReadMore/CreateMore";
 
 const styles = {
   about: {
-    padding: "5% 15%",
+    padding: "5% 15% 0",
     display: "block",
-    minHeight: "63vh",
+    minHeight: "45vh",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
@@ -28,13 +28,13 @@ const styles = {
   
   head: {
     color: "#3fa9f5",
-    marginBottom: "2rem",
+    // marginBottom: "2rem",
    },
 
 hero: {
-  maxWidth: "100%",
-  maxHeight: "100%",
-  margin:"4% auto", 
+  maxWidth: "50%",
+  maxHeight: "50%",
+  // margin:"4% auto", 
   border: ".5px solid white",
   borderRadius: "6px",
 },

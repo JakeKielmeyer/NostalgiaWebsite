@@ -26,9 +26,6 @@ export const photoSection = [
         "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
         "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         src: PhotosPage,
-        text2: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     }
 ];
 
@@ -39,9 +36,6 @@ export const musicSection = [
         "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
         "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         src: MusicPage,
-        text2:"Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     }
 ];
 
@@ -52,9 +46,6 @@ export const videoSection = [
         "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
         "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         src: VideoPage,
-        text2: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     }
 ];
 

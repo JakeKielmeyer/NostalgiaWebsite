@@ -79,13 +79,13 @@ function Navbar(props) {
            </Button>
          </a>
 
-         <a class="navLink" href="https://nostalgiadev-1f319.web.app/signup">
+         <a class="navLink" href="https://app.nostalgiatherapies.com/signup">
            <Button color="inherit" className={classes.navLink}>
              Sign Up
            </Button>
          </a>
 
-         <a class="navLink" href="https://nostalgiadev-1f319.web.app/">
+         <a class="navLink" href="https://app.nostalgiatherapies.com/">
            <Button color="inherit" className={classes.navLink}>
              Sign In
            </Button>

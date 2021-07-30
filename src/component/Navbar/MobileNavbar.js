@@ -206,17 +206,17 @@ export default function MobileNavbar() {
               </Button>
             </a>
 
-          <a href="https://nostalgiadev-1f319.web.app/" target="_blank">
-              <Button className={classes.navLink}>
-                Sign Up
-              </Button>
-          </a>
+            <a class="navLink" href="https://app.nostalgiatherapies.com/signup">
+           <Button color="inherit" className={classes.navLink}>
+             Sign Up
+           </Button>
+         </a>
 
-          <a href="https://nostalgiadev-1f319.web.app/signin" target="_blank">
-              <Button  className={classes.navLink}>
-                Sign In
-              </Button>
-          </a>
+         <a class="navLink" href="https://app.nostalgiatherapies.com/">
+           <Button color="inherit" className={classes.navLink}>
+             Sign In
+           </Button>
+         </a>
 {/* 
           <Link to="/HowTo">
              <Button color="inherit" className={classes.navLink}>

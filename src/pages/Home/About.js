@@ -16,7 +16,7 @@ import {CreateMore} from "../../component/ReadMore/CreateMore";
 
 const styles = {
   about: {
-    padding: "5% 15% 0",
+    padding: "5% 20%",
     display: "block",
     minHeight: "45vh",
     backgroundRepeat: "no-repeat",
@@ -34,9 +34,8 @@ const styles = {
 hero: {
   maxWidth: "50%",
   maxHeight: "50%",
-  // margin:"4% auto", 
-  border: ".5px solid white",
-  borderRadius: "6px",
+  margin: "2rem auto",
+  filter: "drop-shadow(0 0 0.1rem black)",
 },
 
 text: {
@@ -62,7 +61,13 @@ function NewAbout(props) {
             src = {hugging}
             className={classes.hero}>
           </img>
-          <Typography variant="h4" className={classes.text}>Nostalgia Therapy is based on proven reminsicense therapy tools that are designed to increase quality of life and time spent together.</Typography> 
+          <Typography variant="h4" className={classes.text}>
+          The emotional disconnect that families experience with loved ones with Alzheimer’s disease is incredibly painful, and I know this firsthand.
+          My grandfather was diagnosed with Alzheimer's when I was five years old, and because of that, I never had the relationship that I wanted to have 
+          with him. The disconnect I felt with my grandfather was hard as a child, and it stayed with me long after his passing. This feeling of disconnect 
+          inspired me to find a way to help families reconnect to loved ones with Alzheimer's disease, and that idea is Nostalgia Therapy. I hope that it can help 
+          you and your family reconnect to a loved one.
+          </Typography> 
 
     </div>
      

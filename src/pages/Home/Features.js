@@ -85,8 +85,10 @@ function Features(props) {
  <div className={classes.features}>
       <div>
         <Typography variant="h3" className={classes.head}>Designed for Reconnection</Typography>
-        <Typography variant="h4" className={classes.text}>Nostalgia Therapy 
-        helps reconnect families to loved ones with Alzheimer's Disease.</Typography>
+        <Typography variant="h4" className={classes.text}>Nostalgia Therapy is a multimodal reminiscence therapy application that provides a simple and effective way for 
+        families to reconnect to a loved one with Alzheimer’s by combining three effective memory therapies: photos, music, and videos, into one easy-to-use 
+        web application. Reminiscence therapy works by stimulating the brain with familiar images, sounds, videos, and activities to spur conversations and unlock 
+        memories.</Typography>
       </div>
      
       <div data-aos="fade-left" className={classes.featureRow}>

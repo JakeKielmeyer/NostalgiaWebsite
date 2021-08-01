@@ -22,39 +22,30 @@ const copy = [
 export const photoSection = [
     {
         id: 1,
-        text1: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        // text1: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        // "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        // "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         src: PhotosPage,
-        text2: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     }
 ];
 
 export const musicSection = [
     {
         id: 1,
-        text1: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        // text1: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        // "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        // "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         src: MusicPage,
-        text2:"Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     }
 ];
 
 export const videoSection = [
     {
         id: 1,
-        text1: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+        // text1: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        // "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
+        // "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
         src: VideoPage,
-        text2: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" +
-        "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
     }
 ];
 

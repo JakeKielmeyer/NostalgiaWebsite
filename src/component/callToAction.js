@@ -71,7 +71,7 @@ function Call(props) {
     <Button
       variant="contained"
       className={classes.cta}>
-       <a href="https://nostalgiadev-1f319.web.app/" target="_blank">Sign Up</a>
+       <a href="https://app.nostalgiatherapies.com/signup" target="_blank">Sign Up</a>
     </Button>
     </Grid>
 

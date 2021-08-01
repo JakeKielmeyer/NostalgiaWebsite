@@ -207,10 +207,10 @@ export default function MobileNavbar() {
             </a>
 
             <a class="navLink" href="https://app.nostalgiatherapies.com/signup">
-           <Button color="inherit" className={classes.navLink}>
-             Sign Up
-           </Button>
-         </a>
+              <Button color="inherit" className={classes.navLink}>
+                Sign Up
+              </Button>
+            </a>
 
          <a class="navLink" href="https://app.nostalgiatherapies.com/">
            <Button color="inherit" className={classes.navLink}>

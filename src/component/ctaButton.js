@@ -30,7 +30,7 @@ const Cta = (props) => {
   const { classes } = props;
   return (
   <div>
-  <a href="https://nostalgiadev-1f319.web.app/" target="_blank">
+  <a href="https://app.nostalgiatherapies.com/signup" target="_blank">
     <Button
       variant="contained"
       className={classes.cta}>Sign Up

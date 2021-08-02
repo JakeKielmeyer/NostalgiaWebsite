@@ -3,9 +3,9 @@ import Cherub from "../ReadMore/Cherub.png";
 import Commercial from "../../images/tv/Commercial.PNG";
 import Boomer from "../../images/radio/Boomer1-100.jpg";
 import Pumpkin from "../../images/puzzles/pumpkin.jpg";
-import MusicPage from "../ReadMore/MusicPage.mp4";
-import PhotosPage from "../ReadMore/PhotosPage.mp4";
-import VideoPage from "../ReadMore/VideoPage.mp4";
+import MusicPage from "../ReadMore/RadioRecording.mp4";
+import PhotosPage from "../ReadMore/MomentsRecording.mp4";
+import VideoPage from "../ReadMore/TvRecording.mp4";
 
 const copy = [
     {

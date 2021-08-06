@@ -53,8 +53,8 @@ function App() {
           <MobileNavbar/>
           <Switch>
             <Route exact path = "/" component = {Home}/>
-            <Route exact path = "/how" component = {How}/>
-            <Route exact path = "/caregiver" component = {Caregiver}/>
+            {/* <Route exact path = "/how" component = {How}/>
+            <Route exact path = "/caregiver" component = {Caregiver}/> */}
           </Switch>
         <Scroll/>
         <Footer />

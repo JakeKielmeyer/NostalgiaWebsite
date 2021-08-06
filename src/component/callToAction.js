@@ -64,7 +64,7 @@ function Call(props) {
         </Grid>  
         
         <Grid container item sm={12}>  
-          <Typography variant="h6" className={classes.text}>Only $15 a month</Typography>       
+          <Typography variant="h6" className={classes.text}>Only $8 a month</Typography>       
         </Grid>
 
   

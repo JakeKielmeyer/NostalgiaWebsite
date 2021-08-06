@@ -62,11 +62,13 @@ function NewAbout(props) {
             className={classes.hero}>
           </img>
           <Typography variant="h4" className={classes.text}>
-          The emotional disconnect that families experience with loved ones with Alzheimer’s disease is incredibly painful, and I know this firsthand.
-          My grandfather was diagnosed with Alzheimer's when I was five years old, and because of that, I never had the relationship that I wanted to have 
-          with him. The disconnect I felt with my grandfather was hard as a child, and it stayed with me long after his passing. This feeling of disconnect 
-          inspired me to find a way to help families reconnect to loved ones with Alzheimer's disease, and that idea is Nostalgia Therapy. I hope that it can help 
-          you and your family reconnect to a loved one.
+          The emotional disconnect families experience with loved ones with 
+          Alzheimer’s disease is incredibly painful, and I know this firsthand. 
+          The disconnect I felt with my grandfather because of his Alzheimer's, 
+          was hard as a child, and it stayed with me long after his passing. 
+          This feeling inspired me to find a way to help families reconnect to 
+          loved ones with Alzheimer's disease, and that idea is Nostalgia Therapy.
+          I hope that it can help you and your family reconnect to a loved one.
           </Typography> 
 
     </div>
